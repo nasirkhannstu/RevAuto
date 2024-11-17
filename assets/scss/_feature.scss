@@ -1,0 +1,324 @@
+.feature-box-items {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 33px;
+        right: 35px;
+        content: "";
+        height: 2px;
+        width: 284px;
+        background: linear-gradient(180deg, #4376FB 0%, rgba(67, 118, 251, 0.10) 100%);
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .number {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        background-color: $theme-color;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $heading-font;
+        color: $white;
+        text-align: center;
+    }
+
+    .content {
+        margin-top: 20px;
+
+        h3 {
+            font-size: 32px;
+            margin-bottom: 5px;
+
+            @include breakpoint (max-sm){
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.feature-car-wrapper {
+    position: relative;
+    z-index: 9;
+
+    .feature-car-content {
+        max-width: 490px;
+
+        .feature-button {
+            @include flex;
+            gap: 30px;
+            margin-top: 40px;
+
+            @include breakpoint (max-xl){
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .review-items {
+                @include flex;
+                gap: 15px;
+    
+                .content {
+                    h2 {
+                        font-size: 32px;
+                        font-weight: 700;
+                        color: $white;
+    
+                        span {
+                            font-size: 32px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+                            color: $white;
+                        }
+    
+                        p {
+                            color: $white;
+                            opacity: 0.7;
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .car-list-box {
+        background-color: $theme-color;
+        border-radius: 4px;
+        padding: 32px;
+
+        &.style-2 {
+            background-color: $white;
+
+            h3 {
+                color: $header-color;
+            }
+
+            .form-clt {
+                span {
+                    color: $header-color;
+                }
+                .nice-select {
+                    background: #F4F6FA;
+    
+                    span {
+                        color: $text-color;
+                    }
+    
+                    &::after {
+                        border-color: $header-color;
+                        border-bottom: 2px solid $header-color;
+                        border-right: 2px solid $header-color;
+                      }
+                }
+            }
+    
+            .theme-btn {
+                background-color: $theme-color;
+                color: $white;
+    
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        .form-clt {
+            span {
+                font-size: 18px;
+                display: inline-block;
+                margin-bottom: 10px;
+                color: $white;
+                font-weight: 400;
+            }
+            .nice-select {
+                border-radius: 4px;
+                background: rgba(244, 246, 250, 0.10);
+                width: 100%;
+                padding: 14px 16px;
+
+                span {
+                    font-size: 16px;
+                    color: $white;
+                    font-weight: 300;
+                    margin-bottom: 0;
+                }
+
+                &::after {
+                    height: 8px;
+                    width: 8px;
+                    right: 22px;
+                    top: 25px;
+                    border-color: $white;
+                    border-bottom: 2px solid $white;
+                    border-right: 2px solid $white;
+                  }
+              
+                .list {
+                    right: 0;
+                    background-color: $white;
+                    padding: 8px 15px;
+                }
+
+                .option {
+                    border: none;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .theme-btn {
+            width: 100%;
+            background-color: $white;
+            color: $header-color;
+            border-radius: 4px;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+.feature-car-section {
+    position: relative;
+    z-index: 9;
+
+    &::before {
+        width: 376px;
+        height: 376px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.10);
+        position: absolute;
+        top: -25%;
+        left: -10%;
+        content: "";
+        z-index: -1;
+    }
+
+    &::after {
+        width: 846px;
+        height: 846px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.10);
+        position: absolute;
+        bottom: -65%;
+        right: -10%;
+        content: "";
+        z-index: -1;
+    }
+
+    .car-shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.counter-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+
+    @include breakpoint (max-xxl){
+        flex-wrap: wrap;
+        grid-template-columns: initial;
+        gap: 30px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .counter-box {
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        border: 1px solid $border-color;
+        text-align: center;
+        position: relative;
+        @include transition;
+        margin-right: -25px;
+        margin-left: -25px;
+
+        @include breakpoint (max-xxl){
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        @include breakpoint (max-md){
+           width: 300px;
+           height: 300px;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            h2 {
+                color: $header-color;
+                font-size: 64px;
+                @include transition;
+
+                span {
+                    @include transition;
+                }
+            }
+        }
+
+        &:hover,&.active {
+            background-color: $theme-color;
+            position: relative;
+            z-index: 9;
+
+            .content {
+                h2,p {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.feature-card-items {
+    position: relative;
+    padding: 34px;
+    background-color: #F4F6FA;
+    border-radius: 4px;
+
+    &::before {
+        position: absolute;
+        top: 52px;
+        right: 35px;
+        content: "";
+        height: 2px;
+        width: 275px;
+        background: linear-gradient(180deg, #4376FB 0%, rgba(67, 118, 251, 0.10) 100%);
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .icon {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        h3 {
+            margin-bottom: 5px;
+        }
+    }
+}

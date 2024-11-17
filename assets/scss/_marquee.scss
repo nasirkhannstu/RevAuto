@@ -1,0 +1,93 @@
+// .scrolling-wrap {
+// 	overflow: hidden;
+// 	white-space: nowrap;
+// 	display: flex;
+// 	gap: 20px;
+//     border-top: 1px solid rgba(255, 255, 255, .10);
+//     border-bottom: 1px solid rgba(255, 255, 255, .10);
+//     padding: 35px 0;
+// 	.comm {
+// 		display: flex;
+// 		align-items: center;
+// 		animation: scroll 40s linear infinite;
+// 		gap: 30px;
+// 		cursor: pointer;
+// 		.cmn-textslide {
+// 			font-size: 120px;
+// 			font-weight: 800;
+// 			line-height: 100px;
+// 			text-transform: uppercase;
+// 		}
+// 		.text-custom-storke {
+// 			-webkit-text-stroke: 1.5px rgba(255, 255, 255, 1);
+// 			-webkit-text-fill-color: transparent;
+//             font-weight: 800;
+//             font-size: 120px;
+// 		}
+// 	}
+// 	&:hover {
+// 		.comm {
+// 			animation-play-state: paused;
+// 		}
+// 	}
+// 	@include breakpoint (max-xxl) {
+// 		.comm {
+// 			gap: 20px;
+// 			.cmn-textslide {
+// 				font-size: 60px;
+// 				line-height: 65px;
+// 			}
+// 			img {
+// 				width: 70px;
+// 			}
+// 		}
+// 	}
+// 	@include breakpoint (max-lg) {
+// 		gap: 14px;
+// 		.comm {
+// 			gap: 14px;
+// 			.cmn-textslide {
+// 				font-size: 40px;
+// 				line-height: 55px;
+// 			}
+// 			img {
+// 				width: 50px;
+// 				object-fit: contain;
+// 			}
+// 		}
+// 	}
+// 	@include breakpoint (max-sm) {
+// 		.comm {
+// 			gap: 12px;
+// 			.cmn-textslide {
+// 				font-size: 24px;
+// 				line-height: 35px;
+// 			}
+// 			img {
+// 				width: 50px;
+// 				object-fit: contain;
+// 			}
+// 		}
+// 	}
+// }
+
+// .marquee-section {
+//     margin-top: 70px;
+// }
+
+// @keyframes scroll {
+// 	0% {
+// 		transform: translateX(0);
+// 	}
+// 	100% {
+// 		transform: translateX(-100%);
+// 	}
+// }
+// @keyframes scroll2 {
+// 	0% {
+// 		transform: translateX(0%);
+// 	}
+// 	100% {
+// 		transform: translateX(-200%);
+// 	}
+// }

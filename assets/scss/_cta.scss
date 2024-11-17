@@ -1,0 +1,110 @@
+.cta-sale-wrapper {
+    background-color: $theme-color;
+    border-radius: 12px;
+    padding: 40px 80px;
+    @include flex;
+    justify-content: space-between;
+
+    @include breakpoint (max-xxl){
+       flex-wrap: wrap;
+       gap: 30px;
+       justify-content: center;
+       text-align: center;
+
+       .cta-car-image {
+            max-width: 550px;
+
+            img {
+                @include imgw;
+            }
+       }
+    }
+
+    @include breakpoint (max-xl){
+        padding: 60px 50px;
+    }
+
+    @include breakpoint (max-md){
+        padding: 50px 40px;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 40px 30px;
+    }
+
+    .cta-car-content {
+        text-align: right;
+
+        @include breakpoint (max-xl){
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 56px;
+            font-weight: 600;
+            color: $white;
+            margin-bottom: 5px;
+
+            @include breakpoint (max-sm){
+               font-size: 44px;
+            }
+        }
+
+        p {
+            color: $white;
+        }
+
+        .theme-btn {
+            background-color: $white;
+            color: $header-color;
+            margin-top: 30px;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+.cta-sale-section {
+    position: relative;
+    z-index: 8;
+
+    &::before {
+        @include before;
+        background-color: $white;
+        height: 50%;
+        z-index: -1;
+    }
+
+    &.bg-2 {
+        &::before {
+            background-color: $bg-color;
+        }
+    }
+}
+
+.video-icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 90px;
+    text-align: center;
+    background-color: #FFBF25;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 6px 100px 0px #FFBB17;
+    border: 6px solid $white;
+   
+    i {
+        color: $white;
+    }
+}
+
+.cta-video-section-2 {
+    padding: 240px 0 240px;
+    background-attachment: fixed;
+}

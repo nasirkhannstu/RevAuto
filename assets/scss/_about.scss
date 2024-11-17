@@ -1,0 +1,313 @@
+.about-wrapper {
+    .about-image-items {
+        margin-bottom: 137px;
+
+        @include breakpoint (max-xl){
+            margin-bottom: 0;
+        }
+
+        .about-img {
+            max-width: 475px;
+            position: relative;
+
+            @include breakpoint (max-xl){
+               max-width: 700px;
+            }
+
+            img {
+                @include imgw;
+                border-radius: 12px;
+            }
+
+            .about-image-2 {
+                max-width: 330px;
+                position: absolute;
+                bottom: -138px;
+                right: -118px;
+
+                @include breakpoint (max-xxl){
+                    right: -50px;
+                }
+
+                @include breakpoint (max-xl){
+                    right: 0;
+                    bottom: 0;
+                }
+
+                @include breakpoint (max-md){
+                   max-width: 230px
+                }
+
+                @include breakpoint (max-sm){
+                    max-width: 180px
+                }
+
+                img {
+                    @include imgw;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+
+    .about-content {
+        .list-area {
+            @include flex;
+            justify-content: space-between;
+            margin-top: 35px;
+
+            @include breakpoint (max-xl){
+               flex-wrap: wrap;
+               gap: 20px;
+            }
+
+            ul {
+                li {
+                    color: $header-color;
+                    font-size: 16px;
+
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+
+                    i {
+                        color: $theme-color;
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .about-author {
+            @include flex;
+            gap: 30px;
+            margin-top: 50px;
+
+            @include breakpoint (max-xl){
+                flex-wrap: wrap;
+            }
+
+            @include breakpoint (max-md){
+               margin-top: 30px;
+            }
+
+            @include breakpoint (max-sm){
+                margin-top: 20px;
+            }
+
+            .author-icon {
+                @include flex;
+                gap: 20px;
+
+                .icon {
+                    width: 54px;
+                    height: 54px;
+                    line-height: 54px;
+                    text-align: center;
+                    background-color: transparent;
+                    text-align: center;
+                    color: $theme-color;
+                    border-radius: 50%;
+                    position: relative;
+                    border: 1px solid $theme-color;
+                }
+
+                .content {
+                    h5 {
+                        font-size: 20px;
+                        font-weight: 500;
+
+                        a {
+                            color: $header-color;
+                        }
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $text-color;
+                        font-family: $heading-font;
+                        margin-bottom: 10px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-wrapper-2 {
+    .about-image-items {
+        position: relative;
+
+        .about-image {
+            max-width: 391px;
+            position: relative;
+
+            @include breakpoint (max-xl){
+                max-width: 600px
+            }
+
+            img {
+                @include imgw;
+                border-radius: 12px;
+            }
+
+            .about-image-2 {
+                position: absolute;
+                bottom: -90px;
+                right: -180px;
+
+                @include breakpoint (max-xxl){
+                    right: -130px;
+                }
+
+                @include breakpoint (max-xl){
+                    right: 0;
+                    bottom: 0;
+                }
+
+                @include breakpoint (max-sm){
+                   max-width: 200px;
+                }
+            }
+        }
+
+        .counter-content {
+            background-color: $theme-color;
+            text-align: center;
+            padding: 55px 20px;
+            border-radius: 12px;
+            position: absolute;
+            top: 0;
+            right: 60px;
+
+            @include breakpoint (max-xl){
+                left: 0;
+                right: initial;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-weight: 700;
+                color: $white;
+            }
+
+            p {
+                color: $white;
+                font-size: 16px;
+            }
+        }
+    }
+    .about-content {
+        .text {
+           margin-bottom: 30px;
+        }
+
+        .tab-items {
+            margin-top: 30px;
+            border-top: 1px solid #E4E4E4;
+            padding-top: 35px;
+        }
+
+        .nav {
+            @include flex;
+            background: rgba(67, 118, 251, 0.06);
+            justify-content: space-between;
+            margin-bottom: 30px;
+           
+           // margin-top: 30px;
+
+            .nav-item {
+                .nav-link {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $text-color;
+                    padding: 14px 30px;
+
+                    &.active {
+                        background: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .about-author {
+            @include flex;
+            gap: 30px;
+            margin-top: 50px;
+
+            @include breakpoint (max-xl){
+                flex-wrap: wrap;
+            }
+
+            @include breakpoint (max-md){
+               margin-top: 30px;
+            }
+
+            @include breakpoint (max-sm){
+                margin-top: 20px;
+            }
+
+            .author-icon {
+                @include flex;
+                gap: 20px;
+
+                .icon {
+                    width: 54px;
+                    height: 54px;
+                    line-height: 54px;
+                    text-align: center;
+                    background-color: transparent;
+                    text-align: center;
+                    color: $theme-color;
+                    border-radius: 50%;
+                    position: relative;
+                    border: 1px solid $theme-color;
+                }
+
+                .content {
+                    h5 {
+                        font-size: 20px;
+                        font-weight: 500;
+
+                        a {
+                            color: $header-color;
+                        }
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $text-color;
+                        font-family: $heading-font;
+                        margin-bottom: 10px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-section {
+    position: relative;
+
+    .shape-img {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        opacity: .5;
+        width: 220px;
+
+        img {
+            @include imgw;
+        }
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+}
