@@ -1,18 +1,17 @@
-
 //page scroll bar add
 ::-webkit-scrollbar {
-	width: 4px;
-	height: 4px;
+  width: 4px;
+  height: 4px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px $theme-color; 
-	border-radius: 5px;
+  box-shadow: inset 0 0 5px $theme-color;
+  border-radius: 5px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: $theme-color;
-	border-radius: 10px;
+  background: $theme-color;
+  border-radius: 10px;
 }
 //page scroll bar add
 
@@ -21,16 +20,16 @@
   overflow: hidden;
 }
 
-.ralt{
- position: relative;
+.ralt {
+  position: relative;
 }
 
 .ml-50 {
   margin-left: 50px;
 
-    @include breakpoint (max-xl){
-     margin-left: 0;
-    }
+  @include breakpoint(max-xl) {
+    margin-left: 0;
+  }
 }
 //Basic Code End
 
@@ -38,36 +37,37 @@
 .ripple {
   position: relative;
 
-  &::before,&::after {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 110px;
-      height: 110px;
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
-      border-radius: 50%;
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
-      -webkit-animation: rippleOne 3s infinite;
-      animation: rippleOne 3s infinite;
+  &::before,
+  &::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    height: 110px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    -webkit-animation: rippleOne 3s infinite;
+    animation: rippleOne 3s infinite;
   }
 
   &::before {
-      -webkit-animation-delay: 0.9s;
-      animation-delay: 0.9s;
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 
   &::after {
-      -webkit-animation-delay: 0.6s;
-      animation-delay: 0.6s;
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 //Video Css End
@@ -77,92 +77,91 @@
 //pagination default
 .swiper-dot {
   .swiper-pagination-bullet {
-      width: 10px;
-      height: 10px;
-      @include transition;
-      background-color: $theme-color;
-      opacity: 1;
-      border-radius: 10px;
-      &:not(:last-child){
-        margin-right: 10px;
-      }
+    width: 10px;
+    height: 10px;
+    @include transition;
+    background-color: $theme-color;
+    opacity: 1;
+    border-radius: 10px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-      background-color: $theme-color;
-      transition: 0.6s;
-      position: relative;
+    background-color: $theme-color;
+    transition: 0.6s;
+    position: relative;
 
-      &::before{
-        position: absolute;
-        width: 22px;
-        height: 22px;
-        line-height: 22px;
-        top: -6px;
-        left: -6px;
-        border-radius: 50%;
-        background-color: transparent;
-        border: 2px solid $theme-color;
-        content: "";
-      }
-   }
+    &::before {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      top: -6px;
+      left: -6px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid $theme-color;
+      content: "";
+    }
+  }
 }
 
 .swiper-dot-2 {
   text-align: center;
 
   .swiper-pagination-bullet {
-      width: 32px;
-      height: 8px;
-      transition: 0.6s;
-      background-color: rgba(213, 213, 213, .6);
-      opacity: 1;
-      border-radius: 10px;
-      position: relative;
+    width: 32px;
+    height: 8px;
+    transition: 0.6s;
+    background-color: rgba(213, 213, 213, 0.6);
+    opacity: 1;
+    border-radius: 10px;
+    position: relative;
   }
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-      background: $theme-color;
-      transition: 0.6s;
-      position: relative;
-      width: 50px;
+    background: $theme-color;
+    transition: 0.6s;
+    position: relative;
+    width: 50px;
   }
-
 }
 
 .array-button {
-    @include flex;
-    gap: 15px;
+  @include flex;
+  gap: 15px;
 
-    .array-prev {
-      width: 48px;
-      height: 48px;
-      line-height: 48px;
-      text-align: center;
-      background: rgba(67, 118, 251, 0.10);
-      color: $theme-color;
-      border-radius: 12px;
-      @include transition;
-      border: 1px solid $theme-color;
+  .array-prev {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: rgba(67, 118, 251, 0.1);
+    color: $theme-color;
+    border-radius: 12px;
+    @include transition;
+    border: 1px solid $theme-color;
 
-      &:hover {
-          background-color: $theme-color;
-          color: $white;
-      }
+    &:hover {
+      background-color: $theme-color;
+      color: $white;
+    }
   }
 
   .array-next {
-      width: 48px;
-      height: 48px;
-      line-height: 48px;
-      text-align: center;
-      background-color: $theme-color;
-      color: $white;
-      border-radius: 12px;
-      border: 1px solid transparent;
-      @include transition;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: $theme-color;
+    color: $white;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    @include transition;
 
-      &:hover {
-          background-color: $header-color;
-      }
+    &:hover {
+      background-color: $header-color;
+    }
   }
 }
 
@@ -173,7 +172,7 @@
 }
 
 br {
-  @include breakpoint(max-md){
+  @include breakpoint(max-md) {
     display: none;
   }
 }
@@ -206,31 +205,32 @@ br {
 //>>>>> Nice Select Css Start <<<<<//
 
 .nice-select {
-    background-color: transparent;
-    border: transparent;
-    float: initial;
-    overflow: initial;
-    height: initial;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    line-height: 150%;
-    width: 100%;
-    border: none;
+  background-color: transparent;
+  border: transparent;
+  float: initial;
+  overflow: initial;
+  height: initial;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  line-height: 150%;
+  width: 100%;
+  border: none;
 
-    &:focus, &:hover {
-      border-color: transparent;
-    }
+  &:focus,
+  &:hover {
+    border-color: transparent;
+  }
 
-    &::after {
-      height: 8px;
-      width: 8px;
-      right: -25px;
-      top: 15px;
-      border-color: $header-color;
-      border-bottom: 2px solid $header-color;
-      border-right: 2px solid $header-color;
-    }
+  &::after {
+    height: 8px;
+    width: 8px;
+    right: -25px;
+    top: 15px;
+    border-color: $header-color;
+    border-bottom: 2px solid $header-color;
+    border-right: 2px solid $header-color;
+  }
 
   .list {
     width: initial;
@@ -244,36 +244,35 @@ br {
     max-height: 50vh;
     overflow-x: auto;
     right: -50px;
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       width: 2px;
       opacity: 1;
       display: block;
     }
     &::-webkit-scrollbar-button,
-    &::-webkit-scrollbar-thumb{
+    &::-webkit-scrollbar-thumb {
       background: $header-color;
     }
-}
-.option {
-  background-color: transparent;
-  font-size: 16px;
-  line-height: 150%;
-  padding: 4px 5px;
-  min-height: initial;
-  font-weight: 500;
-  &:hover,
-  &:focus,
-  &.selected.focus {
+  }
+  .option {
     background-color: transparent;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 4px 5px;
+    min-height: initial;
+    font-weight: 500;
+    &:hover,
+    &:focus,
+    &.selected.focus {
+      background-color: transparent;
+    }
+  }
+  .current {
+    font-weight: 500;
+    color: $header-color;
   }
 }
-.current{
-  font-weight: 500;
-  color: $header-color;
-}
-}
 //>>>>> Nice Select Css End <<<<<//
-
 
 .custom-container {
   max-width: 1680px;
@@ -281,61 +280,61 @@ br {
 
 .page-nav-wrap {
   ul {
-      li {
-          display: inline-block;
+    li {
+      display: inline-block;
 
-          .page-numbers {
-              &.current {
-                  background-color: $theme-color;
-                  color: $header-color;
-              }
+      .page-numbers {
+        &.current {
+          background-color: $theme-color;
+          color: $header-color;
+        }
 
-              display: inline-block;
-              width: 50px;
-              height: 50px;
-              line-height: 50px;           
-              background: transparent;
-              font-weight: 600;
-              transition: all 0.3s ease-in-out;
-              margin: 0 2px;
-              border: 1px solid $border-color;
-              color: $header-color;
-              border-radius: 50%;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: transparent;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        margin: 0 2px;
+        border: 1px solid $border-color;
+        color: $header-color;
+        border-radius: 50%;
 
-              @media (max-width: 767px) {
-                  margin-top: 10px;
-                  width: 50px;
-                  height: 50px;
-                  line-height: 50px;
-                  font-size: 14px;
-              }
+        @media (max-width: 767px) {
+          margin-top: 10px;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 14px;
+        }
 
-              i {
-                  margin-top: 2px;
-              }
+        i {
+          margin-top: 2px;
+        }
 
-              &.icon {
-                  border: none;
-                  background-color: transparent;
-                  color: $theme-color;
+        &.icon {
+          border: none;
+          background-color: transparent;
+          color: $theme-color;
 
-                  &:hover {
-                      border: none;
-                      background-color: transparent;
-                      color: $theme-color;
-                  }
-              }
-
-              &:hover {
-                  background-color: $theme-color;
-                  color: $white;
-                  border: 1px solid transparent;
-              }
+          &:hover {
+            border: none;
+            background-color: transparent;
+            color: $theme-color;
           }
+        }
+
+        &:hover {
+          background-color: $theme-color;
+          color: $white;
+          border: 1px solid transparent;
+        }
       }
+    }
   }
 }
 
 .item-bg-color {
-    background-color: #F4F6FA !important;
+  background-color: #f4f6fa !important;
 }
