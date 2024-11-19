@@ -6469,4 +6469,19 @@ span {
   background-color: #F4F6FA;
 }
 
+.client-3 {
+  padding: 100px 50px;
+}
+.client-3 .client-swiper img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+.client-3 .client-swiper img:hover {
+  filter: grayscale(0%) contrast(200%);
+}
+
 /*# sourceMappingURL=main.css.map */
