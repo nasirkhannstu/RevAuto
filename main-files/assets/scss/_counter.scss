@@ -1,0 +1,67 @@
+.counter-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+
+  @include breakpoint(max-xxl) {
+    flex-wrap: wrap;
+    grid-template-columns: initial;
+    gap: 30px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .counter-box-3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    transform: rotate(15deg);
+    border: 1px solid $border-color;
+    text-align: center;
+    position: relative;
+    @include transition;
+    margin-right: -25px;
+    margin-left: -25px;
+
+    @include breakpoint(max-xxl) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    @include breakpoint(max-md) {
+      width: 300px;
+      height: 300px;
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h2 {
+        color: $header-color;
+        font-size: 64px;
+        @include transition;
+
+        span {
+          @include transition;
+        }
+      }
+    }
+
+    &:hover,
+    &.active {
+      background-color: $theme-color;
+      position: relative;
+      z-index: 9;
+
+      .content {
+        h2,
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
+}
