@@ -1,2500 +1,1031 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--<< Header Area >>-->
-    <head>
-        <!-- ========== Meta Tags ========== -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="namespace-it">
-        <meta name="description" content="RevAuto - Car Dealer & Services Html Template">
-        <!-- ======== Page title ============ -->
-        <title>RevAuto - Car Dealer & Services Html Template</title>
-        <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
-        <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<< All Min Css >>-->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-        <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <!--<< Color.css >>-->
-        <link rel="stylesheet" href="assets/css/color.css">
-        <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
-    </head>
-    <body >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RevAuto - Car Dealer & Services Html Template</title>
+    <!-- Favicon img -->
+    <link rel="shortcut icon" href="landing/assets/images/favicon.svg" />
+    <!-- Bootstrap min css -->
+    <link rel="stylesheet" href="landing/assets/css/bootstrap.min.css" />
+    <!-- Mean menu css -->
+    <link rel="stylesheet" href="landing/assets/css/meanmenu.css" />
+    <!-- All min css -->
+    <link rel="stylesheet" href="landing/assets/css/all.min.css" />
+    <!-- Swiper bundle min css -->
+    <link rel="stylesheet" href="landing/assets/css/swiper-bundle.min.css" />
+    <!-- Magnigic popup css -->
+    <link rel="stylesheet" href="landing/assets/css/magnific-popup.css" />
+    <!-- Animate css -->
+    <link rel="stylesheet" href="landing/assets/css/animate.css" />
+    <!-- Nice select css -->
+    <link rel="stylesheet" href="landing/assets/css/nice-select.css" />
+    <!-- Style css -->
+    <link rel="stylesheet" href="landing/assets/css/style.css" />
+  </head>
 
-        <!-- Preloader Start -->
-        <div id="preloader" class="preloader">
-            <div class="animation-preloader">
-                <div class="spinner">                
-                </div>
-                <div class="txt-loading">
-                    <span data-text-preloader="R" class="letters-loading">
-                        R
-                    </span>
-                    <span data-text-preloader="E" class="letters-loading">
-                        E
-                    </span>
-                    <span data-text-preloader="V" class="letters-loading">
-                        V
-                    </span>
-                    <span data-text-preloader="A" class="letters-loading">
-                        A
-                    </span>
-                    <span data-text-preloader="U" class="letters-loading">
-                        U
-                    </span>
-                    <span data-text-preloader="T" class="letters-loading">
-                        T
-                    </span>
-                    <span data-text-preloader="0" class="letters-loading">
-                        O
-                    </span>
-                </div>
-                <p class="text-center">Loading</p>
-            </div>
-            <div class="loader">
-                <div class="row">
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
+  <body>
+    <!-- Preloader area start -->
+    <!-- <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="loading-icon text-center d-flex flex-column align-items-center justify-content-center">
+                    <img class="loading-logo" src="landing/assets/images/preloader.svg" alt="icon">
                 </div>
             </div>
         </div>
+    </div> -->
+    <!-- Preloader area end -->
 
-        <!--<< Mouse Cursor Start >>-->  
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
-
-        <!-- Back To Top Start -->
-        <button id="back-top" class="back-to-top">
-            <i class="fa-regular fa-arrow-up"></i>
-        </button>
-
-        <!-- Offcanvas Area Start -->
-        <div class="fix-area">
-            <div class="offcanvas__info">
-                <div class="offcanvas__wrapper">
-                    <div class="offcanvas__content">
-                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                            <div class="offcanvas__logo">
-                                <a href="index.html">
-                                    <img src="assets/img/logo/black-logo.svg" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="offcanvas__close">
-                                <button>
-                                <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <p class="text d-none d-xl-block">
-                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
-                        </p>
-                        <div class="mobile-menu fix mb-3"></div>
-                        <div class="offcanvas__contact">
-                            <h4>Contact Info</h4>
-                            <ul>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon">
-                                        <i class="fal fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fal fa-envelope"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@example.com</span></a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fal fa-clock"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="far fa-phone"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="tel:+11002345909">+11002345909</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="header-button mt-4">
-                                <a href="contact.html" class="theme-btn text-center">
-                                    Get A Quote
-                                </a>
-                            </div>
-                            <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Header area start here -->
+    <header class="header-area">
+      <div class="container">
+        <div class="header__main">
+          <a href="index.html" class="logo">
+            <img src="landing/assets/images/logo/logo.svg" alt="logo" />
+          </a>
+          <a href="index.html" class="logo logo-light">
+            <img src="landing/assets/images/logo/logo.svg" alt="logo" />
+          </a>
+          <div class="main-menu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#home">Home Page</a>
+                </li>
+                <li>
+                  <a href="#inner">Inner Page</a>
+                </li>
+                <li>
+                  <a href="#service">Services</a>
+                </li>
+                <li>
+                  <a target="_blank" href="documentation/index.html"
+                    >Documentation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://join.skype.com/invite/xjWb8Q8tBkyp"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a
+            target="_blank"
+            href="https://themeforest.net/item/revauto-car-showroom-and-accessories-html-template/55053351"
+            class="btn-one d-none d-lg-inline-block"
+            >Purchase Now<i class="fa-regular fa-circle-arrow-right ml-10"></i
+          ></a>
+          <div class="bars d-block d-lg-none">
+            <i id="openButton" class="fa-solid fa-bars"></i>
+          </div>
         </div>
-        <div class="offcanvas__overlay"></div>
+      </div>
+    </header>
+    <!-- Header area end here -->
 
-        <!-- Header Section Start -->
-        <header id="header-sticky" class="header-1">
-            <div class="container">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <div class="logo">
-                            <a href="index.html" class="header-logo">
-                                <img src="assets/img/logo/white-logo.svg" alt="logo-img">
-                            </a>
-                            <a href="index.html" class="header-logo-2">
-                                <img src="assets/img/logo/black-logo.svg" alt="logo-img">
-                            </a>
-                        </div>
-                        <div class="mean__menu-wrapper">
-                            <div class="main-menu">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li class="has-dropdown active menu-thumb">
-                                            <a href="index.html">
-                                                Home 
-                                            </a>
-                                            <ul class="submenu has-homemenu">
-                                                <li>
-                                                    <div class="row g-4 homemenu-items">
-                                                        <div class="col-lg-3">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="index.html">
-                                                                        <img src="assets/img/header/home-1.jpg" alt="img">
-                                                                    </a>
-                                                                </div>
-                                                                <h4 class="homemenu-title">
-                                                                    <a href="index.html">Home Page 01</a>
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="index-2.html">
-                                                                        <img src="assets/img/header/home-2.jpg" alt="img">
-                                                                    </a>
-                                                                </div>
-                                                                <h4 class="homemenu-title">
-                                                                    <a href="index-2.html">Home Page 02</a>
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="home-landing.html">
-                                                                        <img src="assets/img/header/home-3.jpg" alt="img">
-                                                                    </a>
-                                                                </div>
-                                                                <h4 class="homemenu-title">
-                                                                    <a href="home-landing.html">Car Accessories 01</a>
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                           <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="home-landing-2.html">
-                                                                        <img src="assets/img/header/home-4.jpg" alt="img">
-                                                                    </a>
-                                                                </div>
-                                                                <h4 class="homemenu-title">
-                                                                    <a href="home-landing-2.html">Car Accessories 02</a>
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-dropdown active d-xl-none">
-                                            <a href="team.html" class="border-none">
-                                            Home
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="index.html">Home Page 01</a></li>
-                                                <li><a href="index-2.html">Home Page 02</a></li>
-                                                <li><a href="home-landing.html">Car Accessories 01</a></li>
-                                                <li><a href="home-landing-2.html">Car Accessories 02</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about.html">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-details.html">
-                                                Services
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="service.html">Services</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-dropdown">
-                                            <a href="news.html">
-                                                Pages
-                                            </a>
-                                            <ul class="submenu">
-                                                <li class="has-dropdown">
-                                                    <a href="project-details.html">
-                                                        Portfolio
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="project.html">Portfolio 01</a></li>
-                                                        <li><a href="project-2.html">Portfolio 02</a></li>
-                                                        <li><a href="project-details.html">Project Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-dropdown">
-                                                    <a href="car-details.html">
-                                                        Vehicles
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="car.html">Vehicles</a></li>
-                                                        <li><a href="car-details.html">Vehicles Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="faq.html">Faq's</a></li>
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                                <li><a href="login.html">Log In</a></li>
-                                                <li><a href="register.html">Register</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="shop-details.html">
-                                                Shop
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                                <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="news.html">
-                                                Blog
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="news.html">Blog </a></li>
-                                                <li><a href="news-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="header-right d-flex justify-content-end align-items-center">
-                            <div class="menu-cart">
-                                <a href="shop-cart.html" class="cart-icon">
-                                    <i class="fa-regular fa-cart-shopping"></i>
-                                </a>
-                            </div>
-                            <div class="header-button">
-                                <a href="contact.html" class="theme-btn">Contact Us <i class="fa-regular fa-car"></i></a>
-                            </div>
-                            <div class="header__hamburger d-xl-none my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fas fa-bars"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <!-- Sidebar area start here -->
+    <div id="targetElement" class="sidebar-area sidebar__hide">
+      <div class="sidebar__overlay"></div>
+      <a target="_blank" href="index.html" class="logo mb-40">
+        <img src="landing/assets/images/logo/logo-light.svg" alt="logo" />
+      </a>
+      <div class="mobile-menu overflow-hidden"></div>
+      <ul class="info pt-40">
+        <li>
+          <i class="fa-solid primary-color fa-location-dot"></i>
+          <a target="_blank" href="#0">example@example.com</a>
+        </li>
+        <li class="py-2">
+          <i class="fa-solid primary-color fa-phone-volume"></i>
+          <a target="_blank" href="tel:+912659302003">+91 2659 302 003</a>
+        </li>
+        <li>
+          <i class="fa-solid primary-color fa-paper-plane"></i>
+          <a target="_blank" href="#0">info.company@gmail.com</a>
+        </li>
+      </ul>
+      <div class="social-icon mt-20">
+        <a target="_blank" href="#0"><i class="fa-brands fa-facebook-f"></i></a>
+        <a target="_blank" href="#0"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="#0"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a target="_blank" href="#0"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <button id="closeButton" class="text-white">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <!-- Sidebar area end here -->
 
-        <!-- Hero Section Start -->
-        <section class="hero-section hero-1 bg-cover" style="background-image: url('assets/img/hero/hero-bg.jpg');">
-            <div class="swiper-dot">
-                <div class="dot"></div>
+    <main>
+      <!-- Banner area start here -->
+      <section
+        class="banner-area bg-image"
+        data-background="landing/assets/images/landing-images/banner-bg.jpg"
+      >
+        <div
+          class="banner__hero wow fadeInLeft"
+          data-wow-delay="200ms"
+          data-wow-duration="1000ms"
+        >
+          <img
+            src="landing/assets/images/landing-images/banner-image.png"
+            alt="image"
+          />
+        </div>
+        <div class="container">
+          <div class="banner__content">
+            <h1
+              class="wow fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1000ms"
+            >
+              RevAuto - Car Dealer & Services Html Template
+            </h1>
+            <p
+              class="mt-20 wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="1000ms"
+            >
+              This lovely niche Template is built and suitable for <br />IT
+              Solution & Technology HTML Template.
+            </p>
+            <div class="d-flex align-items-center gap-4 mt-40">
+              <a
+                target="_blank"
+                href="main-files/"
+                class="btn-one wow fadeInDown"
+                data-wow-delay="200ms"
+                data-wow-duration="1000ms"
+                >Live Demo<i class="fa-regular fa-circle-arrow-right ml-10"></i
+              ></a>
+              <a
+                target="_blank"
+                href="documentation/index.html"
+                class="explore-btn wow fadeInDown"
+                data-wow-delay="400ms"
+                data-wow-duration="1000ms"
+                ><span> Documentation </span>
+                <i class="fa-regular fa-arrow-right"></i
+              ></a>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- Banner area end here -->
+
+      <!-- Brand area start here -->
+      <!-- <div class="brand-area pt-70">
             <div class="container">
-                <div class="swiper hero-slider">
+                <div class="swiper brand__slider  bor-bottom pb-60">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-lg-5">
-                                    <div class="hero-content">
-                                        <span>New in Stock</span>
-                                        <h1>
-                                            Explore The Next Generation <br> Of Cars
-                                        </h1>
-                                        <p>
-                                            Discover cutting-edge innovation and exceptional performance the latest models crafted for tomorrow’s roadways.
-                                        </p>
-                                        <div class="hero-button">
-                                            <a href="car-details.html" class="theme-btn hover-white">Buy This Car <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="about.html" class="link-btn">Explore More</a>
-                                        </div>
-                                        <div class="review-items">
-                                            <img src="assets/img/hero/client.png" alt="img">
-                                            <div class="content">
-                                                <h2><span class="count">1.5</span>k</h2>
-                                                <p>Good Reviews</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="hero-image-items">
-                                        <div class="hero-image">
-                                            <img src="assets/img/hero/hero-car-1.png" alt="img">
-                                        </div>
-                                        <div class="bg-shape">
-                                            <img src="assets/img/hero/car-shape.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="landing/assets/images/landing-images/brand1.png" alt="image">
                         </div>
                         <div class="swiper-slide">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-lg-5">
-                                    <div class="hero-content">
-                                        <span>New in Stock</span>
-                                        <h1>
-                                            Explore The Next Generation <br> Of Cars
-                                        </h1>
-                                        <p>
-                                            Discover cutting-edge innovation and exceptional performance the latest models crafted for tomorrow’s roadways.
-                                        </p>
-                                        <div class="hero-button">
-                                            <a href="car-details.html" class="theme-btn hover-white">Buy This Car <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="about.html" class="link-btn">Explore More</a>
-                                        </div>
-                                        <div class="review-items">
-                                            <img src="assets/img/hero/client.png" alt="img">
-                                            <div class="content">
-                                                <h2><span class="count">1.5</span>k</h2>
-                                                <p>Good Reviews</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="hero-image-items">
-                                        <div class="hero-image">
-                                            <img src="assets/img/hero/hero-car-1.png" alt="img">
-                                        </div>
-                                        <div class="bg-shape">
-                                            <img src="assets/img/hero/car-shape.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="landing/assets/images/landing-images/brand2.png" alt="image">
                         </div>
                         <div class="swiper-slide">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-lg-5">
-                                    <div class="hero-content">
-                                        <span>New in Stock</span>
-                                        <h1>
-                                            Explore The Next Generation <br> Of Cars
-                                        </h1>
-                                        <p>
-                                            Discover cutting-edge innovation and exceptional performance the latest models crafted for tomorrow’s roadways.
-                                        </p>
-                                        <div class="hero-button">
-                                            <a href="car-details.html" class="theme-btn hover-white">Buy This Car <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                            <a href="about.html" class="link-btn">Explore More</a>
-                                        </div>
-                                        <div class="review-items">
-                                            <img src="assets/img/hero/client.png" alt="img">
-                                            <div class="content">
-                                                <h2><span class="count">1.5</span>k</h2>
-                                                <p>Good Reviews</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="hero-image-items">
-                                        <div class="hero-image">
-                                            <img src="assets/img/hero/hero-car-1.png" alt="img">
-                                        </div>
-                                        <div class="bg-shape">
-                                            <img src="assets/img/hero/car-shape.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- About Section Start -->
-        <section class="about-section fix section-padding">
-            <div class="shape-img float-bob-x">
-                <img src="assets/img/about/taiyer.png" alt="img">
-            </div>
-            <div class="container">
-                <div class="about-wrapper">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="about-image-items">
-                                <div class="about-img">
-                                    <img src="assets/img/about/01.jpg" alt="img" class="img-custom-anim-left wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="about-image-2 img-custom-anim-top wow fadeInUp" data-wow-delay=".5s">
-                                        <img src="assets/img/about/02.jpg" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="about-content">
-                                <div class="section-title">
-                                    <h6 class="wow fadeInUp">About Us</h6>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                        Redefining the Car Showroom Experience
-                                    </h2>
-                                </div>
-                                <p class="wow fadeInUp" data-wow-delay=".5s">
-                                    At our showroom, we redefine the car buying experience with exceptional service, cutting-edge vehicles, and customer-focused solutions tailored to your needs.
-                                </p>
-                                <div class="list-area">
-                                    <ul class="wow fadeInUp" data-wow-delay=".3s">
-                                        <li>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            Customer-Centric Approach
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            Comprehensive Vehicle Selection
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            Test Drive Convenience
-                                        </li>
-                                    </ul>
-                                    <ul class="wow fadeInUp" data-wow-delay=".5s">
-                                        <li>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            Customer-Centric Approach
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            Comprehensive Vehicle Selection
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            Test Drive Convenience
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="about-author">
-                                    <div class="about-button wow fadeInUp" data-wow-delay=".3s">
-                                        <a href="about.html" class="theme-btn">
-                                            About Revauto <i class="fa-regular fa-car"></i>
-                                        </a>
-                                    </div>
-                                    <div class="author-icon wow fadeInUp" data-wow-delay=".5s">
-                                       <div class="icon">
-                                            <i class="fa-solid fa-phone"></i>
-                                       </div>
-                                        <div class="content">
-                                            <span>Call For Help</span>
-                                            <h5>
-                                                <a href="tel:+7045550127">+(704) 555-0127</a>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Car Section Start -->
-        <section class="car-section fix section-padding section-bg">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Our Car</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                            Let’s Find Your <br>
-                            Dream Car
-                        </h2>
-                    </div>
-                    <a href="car.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">Discover More <i class="fa-regular fa-car"></i></a>
-                </div>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="#Popular" data-bs-toggle="tab" class="nav-link">
-                            Most Popular 
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Honda" data-bs-toggle="tab" class="nav-link active">
-                            Honda
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Toyota" data-bs-toggle="tab" class="nav-link">
-                            Toyota
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Volkswagen" data-bs-toggle="tab" class="nav-link">
-                            Volkswagen
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#BMW" data-bs-toggle="tab" class="nav-link">
-                            BMW
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Chevrolet" data-bs-toggle="tab" class="nav-link">
-                            Chevrolet
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="Popular" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ford Mustang</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/01.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$175,270</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Toyota Supra</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/02.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$275,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Porsche 911</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/03.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$245,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Chevrolet Camaro</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/04.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$120,100</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">BMW M3</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/05.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$240,450</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ferrari F8 Tributo</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/06.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$125,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="Honda" class="tab-pane fade show active">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ford Mustang</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/01.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$175,270</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Toyota Supra</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/02.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$275,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Porsche 911</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/03.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$245,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Chevrolet Camaro</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/04.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$120,100</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">BMW M3</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/05.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$240,450</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ferrari F8 Tributo</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/06.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$125,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="Toyota" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ford Mustang</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/01.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$175,270</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Toyota Supra</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/02.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$275,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Porsche 911</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/03.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$245,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Chevrolet Camaro</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/04.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$120,100</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">BMW M3</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/05.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$240,450</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ferrari F8 Tributo</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/06.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$125,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="Volkswagen" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ford Mustang</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/01.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$175,270</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Toyota Supra</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/02.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$275,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Porsche 911</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/03.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$245,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Chevrolet Camaro</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/04.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$120,100</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">BMW M3</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/05.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$240,450</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ferrari F8 Tributo</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/06.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$125,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="BMW" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ford Mustang</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/01.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$175,270</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Toyota Supra</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/02.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$275,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Porsche 911</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/03.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$245,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Chevrolet Camaro</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/04.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$120,100</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">BMW M3</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/05.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$240,450</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ferrari F8 Tributo</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/06.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$125,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="Chevrolet" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ford Mustang</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/01.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$175,270</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Toyota Supra</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/02.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$275,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Porsche 911</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/03.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$245,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Chevrolet Camaro</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/04.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$120,100</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">BMW M3</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/05.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$240,450</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="car-box-items">
-                                    <div class="car-titile">
-                                        <h4><a href="car-details.html">Ferrari F8 Tributo</a></h4>
-                                        <p>Sport</p>
-                                    </div>
-                                    <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
-                                    <div class="car-image">
-                                        <img src="assets/img/car/06.png" alt="img">
-                                    </div>
-                                    <div class="car-list-items">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-regular fa-gas-pump"></i>
-                                                Diesel
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-steering-wheel"></i>
-                                                Manual
-                                            </li>
-                                            <li>
-                                                <i class="fa-light fa-users"></i>
-                                                4 People
-                                            </li>
-                                            <li>
-                                                <i class="fa-sharp fa-light fa-gauge"></i>
-                                                1270 km
-                                            </li>
-                                        </ul>
-                                        <div class="price-items">
-                                            <h3>$125,500</h3>
-                                            <a href="car-details.html" class="theme-btn">View More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Section Start -->
-        <section class="feature-section fix section-padding">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="feature-box-items">
-                            <div class="number">
-                                01
-                            </div>
-                            <div class="content">
-                                <h3>Variety of Cars</h3>
-                                <p>
-                                    Explore our wide variety of cars, each designed to deliver exceptional performance, luxury, and innovation.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="feature-box-items">
-                            <div class="number">
-                                02
-                            </div>
-                            <div class="content">
-                                <h3>Competitive Pricing</h3>
-                                <p>
-                                    Explore our wide variety of cars, each designed to deliver exceptional performance, luxury, and innovation.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="feature-box-items">
-                            <div class="number">
-                                03
-                            </div>
-                            <div class="content">
-                                <h3>24/7 support</h3>
-                                <p>
-                                    Explore our wide variety of cars, each designed to deliver exceptional performance, luxury, and innovation.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Car Section Start -->
-        <section class="feature-car-section fix section-padding section-bg-black">
-            <div class="car-shape float-bob-x">
-                <img src="assets/img/car-shape.png" alt="img">
-            </div>
-            <div class="container">
-                <div class="feature-car-wrapper">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="feature-car-content">
-                                <div class="section-title">
-                                    <h6 class="wow fadeInUp">Features Car</h6>
-                                    <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                                        Sign Up and Never Miss a Deal Again
-                                    </h2>
-                                </div>
-                                <p class="mt-3 mt-md-0 text-white wow fadeInUp" data-wow-delay=".5s">
-                                    We are committed to providing our customers with exceptional service, competitive pricing, and a wide range of vehicles to choose from.
-                                </p>
-                                <div class="feature-button">
-                                    <a href="contact.html" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".3s">Get Started <i class="fa-regular fa-car"></i></a>
-                                    <div class="review-items wow fadeInUp" data-wow-delay=".5s">
-                                        <img src="assets/img/hero/client.png" alt="img">
-                                        <div class="content">
-                                            <h2><span class="count">1.5</span>k</h2>
-                                            <p>Good Reviews</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="car-list-box">
-                                <h3>Find Your Car</h3>
-                                <div class="row g-4">
-                                    <div class="col-md-12">
-                                        <div class="form-clt">
-                                            <span>Branch</span>
-                                            <div class="nice-select" tabindex="0">
-                                               <span class="current">
-                                                    All Branch
-                                               </span>
-                                                <ul class="list">
-                                                    <li data-value="1" class="option selected focus">
-                                                        All Branch
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Branch 01
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Branch 02
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Branch 03
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-clt">
-                                            <span>Make</span>
-                                            <div class="nice-select" tabindex="0">
-                                               <span class="current">
-                                                    All Make
-                                               </span>
-                                                <ul class="list">
-                                                    <li data-value="1" class="option selected focus">
-                                                        All Make
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Style 01
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Style 02
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Style 03
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-clt">
-                                            <span>Model</span>
-                                            <div class="nice-select" tabindex="0">
-                                               <span class="current">
-                                                    All Model
-                                               </span>
-                                                <ul class="list">
-                                                    <li data-value="1" class="option selected focus">
-                                                        All Model
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Model 01
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Model 02
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Model 03
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button type="submit" class="theme-btn">
-                                            SEARCH
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Counter Section Start -->
-        <section class="counter-section fix section-padding">
-            <div class="container">
-                <div class="counter-wrapper">
-                    <div class="counter-box wow fadeInUp" data-wow-delay=".2s">
-                        <div class="content">
-                            <h2><span class="count">25</span>+</h2>
-                            <p>Years Experience</p>
-                        </div>
-                    </div>
-                    <div class="counter-box active wow fadeInUp" data-wow-delay=".4s">
-                        <div class="content">
-                            <h2><span class="count">155</span>+</h2>
-                            <p>Vehicle Brands</p>
-                        </div>
-                    </div>
-                    <div class="counter-box wow fadeInUp" data-wow-delay=".6s">
-                        <div class="content">
-                            <h2><span class="count">150</span>+</h2>
-                            <p>Vehicle Brands</p>
-                        </div>
-                    </div>
-                    <div class="counter-box wow fadeInUp" data-wow-delay=".8s">
-                        <div class="content">
-                            <h2><span class="count">25</span>+</h2>
-                            <p>Years Experience</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonial Section Start -->
-        <section class="testimonial-section fix section-padding section-bg">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Testimonials</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">What Our Clients Say</h2>
-                    </div>
-                    <p class="wow fadeInUp" data-wow-delay=".5s">
-                        These testimonials reflect positive customer <br> process, helping build trust and appeal for your car <br> showroom.
-                    </p>
-                </div>
-                <div class="swiper testimonial-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonial-box-items">
-                                <div class="testimonial-image">
-                                    <img src="assets/img/testimonial/01.jpg" alt="img">
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From start to finish, my experience at RevAuto patient, answered all my questions, and helped me drive away in my dream car. Highly recommend!
-                                    </p>
-                                    <div class="client-info">
-                                       <img src="assets/img/testimonial/client-1.png" alt="img">
-                                       <div class="content">
-                                            <h4>Floyd Miles</h4>
-                                            <span>Nursing Assistant</span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="landing/assets/images/landing-images/brand3.png" alt="image">
                         </div>
                         <div class="swiper-slide">
-                            <div class="testimonial-box-items">
-                                <div class="testimonial-image">
-                                    <img src="assets/img/testimonial/02.jpg" alt="img">
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From start to finish, my experience at RevAuto patient, answered all my questions, and helped me drive away in my dream car. Highly recommend!
-                                    </p>
-                                    <div class="client-info">
-                                       <img src="assets/img/testimonial/client-2.png" alt="img">
-                                       <div class="content">
-                                            <h4>Darlene Robertson</h4>
-                                            <span>Medical Assistant</span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="landing/assets/images/landing-images/brand4.png" alt="image">
                         </div>
                         <div class="swiper-slide">
-                            <div class="testimonial-box-items">
-                                <div class="testimonial-image">
-                                    <img src="assets/img/testimonial/01.jpg" alt="img">
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From start to finish, my experience at RevAuto patient, answered all my questions, and helped me drive away in my dream car. Highly recommend!
-                                    </p>
-                                    <div class="client-info">
-                                       <img src="assets/img/testimonial/client-1.png" alt="img">
-                                       <div class="content">
-                                            <h4>Floyd Miles</h4>
-                                            <span>Nursing Assistant</span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="landing/assets/images/landing-images/brand5.png" alt="image">
                         </div>
                         <div class="swiper-slide">
-                            <div class="testimonial-box-items">
-                                <div class="testimonial-image">
-                                    <img src="assets/img/testimonial/02.jpg" alt="img">
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From start to finish, my experience at RevAuto patient, answered all my questions, and helped me drive away in my dream car. Highly recommend!
-                                    </p>
-                                    <div class="client-info">
-                                       <img src="assets/img/testimonial/client-2.png" alt="img">
-                                       <div class="content">
-                                            <h4>Darlene Robertson</h4>
-                                            <span>Medical Assistant</span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="landing/assets/images/landing-images/brand6.png" alt="image">
                         </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial-box-items">
-                                <div class="testimonial-image">
-                                    <img src="assets/img/testimonial/01.jpg" alt="img">
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                    <p>
-                                        From start to finish, my experience at RevAuto patient, answered all my questions, and helped me drive away in my dream car. Highly recommend!
-                                    </p>
-                                    <div class="client-info">
-                                       <img src="assets/img/testimonial/client-1.png" alt="img">
-                                       <div class="content">
-                                            <h4>Floyd Miles</h4>
-                                            <span>Nursing Assistant</span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-dot-2 text-center pt-5">
-                        <div class="dots"></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div> -->
+      <!-- Brand area end here -->
 
-        <!-- News Section Start -->
-        <section class="news-section section-padding fix">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Latest News</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                            Check out our blog <br> posts
-                        </h2>
-                    </div>
-                    <a href="news.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">View More <i class="fa-regular fa-car"></i></a>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".3s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/01.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <h3><a href="news-details.html">What to Look for When Buying a Pre-Owned Car</a></h3>
-                                <p>From luxury and economy cars and find out which best suits your lifestyle.</p>
-                                <div class="link-btn-area">
-                                    <a href="news-details.html" class="link">Read More</a>
-                                    <a href="news-details.html" class="arrow-icon">
-                                        <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".5s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/02.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <h3><a href="news-details.html">Luxury Cars Economy Cars Which is Right for You</a></h3>
-                                <p>From luxury and economy cars and find out which best suits your lifestyle.</p>
-                                <div class="link-btn-area">
-                                    <a href="news-details.html" class="link">Read More</a>
-                                    <a href="news-details.html" class="arrow-icon">
-                                        <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".7s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/03.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <h3><a href="news-details.html">Understanding Car Financing: What You Need to Know</a></h3>
-                                <p>From luxury and economy cars and find out which best suits your lifestyle.</p>
-                                <div class="link-btn-area">
-                                    <a href="news-details.html" class="link">Read More</a>
-                                    <a href="news-details.html" class="arrow-icon">
-                                        <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Feature area start here -->
+      <!-- <section class="feature pt-120 pb-120">
+        <div class="container">
+          <div class="feature__wrp">
+            <div class="feature__item d-flex align-items-center gap-4">
+              <div class="icon">
+                <img
+                  src="landing/assets/images/landing-images/perfomence-icon1.png"
+                  alt="icon"
+                />
+              </div>
+              <div>
+                <h2>300+</h2>
+                <p>Clients Trust Gramentheme</p>
+              </div>
             </div>
-        </section>
+            <div class="feature__item d-flex align-items-center gap-4">
+              <div class="icon">
+                <img
+                  src="landing/assets/images/landing-images/perfomence-icon2.png"
+                  alt="icon"
+                />
+              </div>
+              <div>
+                <h2>Free</h2>
+                <p>Lifetime Updates</p>
+              </div>
+            </div>
+            <div class="feature__item d-flex align-items-center gap-4">
+              <div class="icon">
+                <img
+                  src="landing/assets/images/landing-images/perfomence-icon3.png"
+                  alt="icon"
+                />
+              </div>
+              <div>
+                <h2>24/7</h2>
+                <p>Dedicated Support Team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Feature area end here -->
 
-        <!-- Fotter Section Start -->
-        <section class="footer-section fix bg-cover" style="background-image: url('assets/img/footer-bg.jpg');">
-            <div class="cta-sale-section">
-                <div class="container">
-                    <div class="cta-sale-wrapper">
-                        <div class="cta-car-image img-custom-anim-left">
-                            <img src="assets/img/cta-car.png" alt="img">
-                        </div>
-                        <div class="cta-car-content">
-                            <h2 class="wow fadeInUp">
-                                Sale 50% Off
-                            </h2>
-                            <p class="wow fadeInUp" data-wow-delay=".3s">On All Rental Cars For 1 Month</p>
-                            <a href="car-details.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">Book Your Car <i class="fa-regular fa-car"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Preview area start here -->
+      <section class="preview-area pt-120 pb-120" id="home">
+        <div class="preview__shape">
+          <img
+            src="landing/assets/images/landing-images/preview-shape1.png"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div class="section-header mb-100 text-center">
+            <h5
+              class="wow fadeInUp"
+              data-wow-delay="00ms"
+              data-wow-duration="1000ms"
+            >
+              PRE MADE DEMOS
+            </h5>
+            <h2
+              class="wow fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1000ms"
+            >
+              Collection of creative and <br />
+              exclusive layouts
+            </h2>
+            <p
+              class="wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="1000ms"
+            >
+              Exclusive ECommerce Home pages with real and ready content as your
+              need. <br />
+              Updated technology and smooth animation.
+            </p>
+          </div>
+
+          <div class="row g-5">
+            <div class="col-xl-3 col-lg-4">
+              <div class="demo-area">
+                <a
+                  target="_blank"
+                  href="main-files/index.html"
+                  class="preview__item image d-block"
+                >
+                  <img
+                    src="landing/assets/images/landing-images/preview-home1.png"
+                    alt="image"
+                  />
+                </a>
+
+                <h3 class="text-center">
+                  <a
+                    target="_blank"
+                    href="main-files/index.html"
+                    class="primary-hover text-capitalize mt-30"
+                    >Home page 01</a
+                  >
+                </h3>
+              </div>
             </div>
-            <div class="container">
-                <div class="footer-widgets-wrapper">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>Utility Pages</h3>
-                                </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="contact.html">
-                                            Term & Condition
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">
-                                            Privacy Policy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details.html">
-                                            Legal Notice
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">
-                                            Accessibility
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>Explore</h3>
-                                </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="service.html">
-                                            Services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="project.html">
-                                            Portfolio
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">
-                                            Faq
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="news.html">
-                                            Our Blog
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>Find a car</h3>
-                                </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="shop.html">
-                                            Our Shop
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="car.html">
-                                            Cart
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="checkout.html">
-                                            Checkout
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>Get In Touch</h3>
-                                </div>
-                                <ul class="contact-list">
-                                    <li>
-                                        Valentin, Street Road 27, New
-                                        York. USA - 752252
-                                    </li>
-                                    <li>
-                                        <a href="tel:2395550108">(239) 555-0108</a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:info@example.com">info@example.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom-wrapper">
-                    <p><a href="contact.html" class="wow fadeInUp" data-wow-delay=".3s">Terms of Use</a></p>
-                    <p class="wow fadeInUp" data-wow-delay=".5s">
-                        © 2024 RevAuto. All rights reserved.
-                    </p>
-                    <p><a href="contact.html" class="wow fadeInUp" data-wow-delay=".7s">Privacy Policy</a></p>
-                </div>
+            <div class="col-xl-3 col-lg-4">
+              <div class="demo-area">
+                <a
+                  target="_blank"
+                  href="main-files/index-2.html"
+                  class="preview__item image d-block"
+                >
+                  <img
+                    src="landing/assets/images/landing-images/preview-home2.png"
+                    alt="image"
+                  />
+                </a>
+                <h3 class="text-center">
+                  <a
+                    target="_blank"
+                    href="main-files/index-2.html"
+                    class="primary-hover text-capitalize mt-30"
+                    >Home page 02</a
+                  >
+                </h3>
+              </div>
             </div>
-        </section>
-        
-        <!--<< All JS Plugins >>-->
-        <script src="assets/js/jquery-3.7.1.min.js"></script>
-        <!--<< Viewport Js >>-->
-        <script src="assets/js/viewport.jquery.js"></script>
-        <!--<< Bootstrap Js >>-->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!--<< Nice Select Js >>-->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!--<< Waypoints Js >>-->
-        <script src="assets/js/jquery.waypoints.js"></script>
-        <!--<< Counterup Js >>-->
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <!--<< Swiper Slider Js >>-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <!--<< MeanMenu Js >>-->
-        <script src="assets/js/jquery.meanmenu.min.js"></script>
-        <!--<< Magnific Popup Js >>-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!--<< Wow Animation Js >>-->
-        <script src="assets/js/wow.min.js"></script>
-        <!--<< Main.js >>-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="col-xl-3 col-lg-4">
+              <div class="demo-area">
+                <a
+                  target="_blank"
+                  href="main-files/home-landing.html"
+                  class="preview__item image d-block"
+                >
+                  <img
+                    src="landing/assets/images/landing-images/preview-home3.png"
+                    alt="image"
+                  />
+                </a>
+                <h3 class="text-center">
+                  <a
+                    target="_blank"
+                    href="main-files/home-landing.html"
+                    class="primary-hover text-capitalize mt-30"
+                    >Car Accessories 01</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+              <div class="demo-area">
+                <a
+                  target="_blank"
+                  href="main-files/home-landing-2.html"
+                  class="preview__item image d-block"
+                >
+                  <img
+                    src="landing/assets/images/landing-images/preview-home4.png"
+                    alt="image"
+                  />
+                </a>
+                <h3 class="text-center">
+                  <a
+                    target="_blank"
+                    href="main-files/home-landing-2.html"
+                    class="primary-hover text-capitalize mt-30"
+                    >Car Accessories 02</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Preview area end here -->
+
+      <div class="my-5 d-flex justify-content-center align-content-center">
+        <a
+          target="_blank"
+          href="https://themeforest.net/item/revauto-car-showroom-and-accessories-html-template/55053351"
+          class="btn-one d-none d-lg-inline-block"
+          >Purchase Now<i class="fa-regular fa-circle-arrow-right ml-10"></i
+        ></a>
+      </div>
+
+      <div class="py-3 primary-bg text-center">
+        <p class="text-white">More New Demos are Coming Soon...</p>
+      </div>
+
+      <!-- Preview area start here -->
+      <section class="preview-area pt-120 pb-120" id="inner">
+        <div class="preview__shape">
+          <img
+            src="landing/assets/images/landing-images/preview-shape2.png"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div class="section-header mb-100 text-center">
+            <h5
+              class="wow fadeInUp"
+              data-wow-delay="00ms"
+              data-wow-duration="1000ms"
+            >
+              MODERN AND CREATIVE
+            </h5>
+            <h2
+              class="wow fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1000ms"
+            >
+              Inner pages
+            </h2>
+            <p
+              class="wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="1000ms"
+            >
+              You will get some modern unique and minimal inner pages <br />
+              with light for your website. Let’s see all inner pages!
+            </p>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="https://gramentheme.com/html/infotek/about.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner1.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  target="_blank"
+                  href="https://gramentheme.com/html/infotek/about.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >About Us</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/service.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner2.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/service.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Services</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/service-details.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner4.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/service-details.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Services Details</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/project.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner8.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/project.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Portfolio 01</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/project-2.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner9.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/project-2.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Portfolio 02</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/project-details.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner10.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/project-details.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Project Details</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/faq.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner13.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/faq.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Faq</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/404.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner14.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/404.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >404 page</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/news.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner15.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/news.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Blog</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/news-details.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner17.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/news-details.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Blog Details</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/contact.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner11.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/contact.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Contact Us</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/shop.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner18.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/shop.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Shop</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/shop-right-sidebar.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner19.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/shop-right-sidebar.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Shop Right Sidebar</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/shop-left-sidebar.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner20.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/shop-left-sidebar.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Shop Left Sidebar</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/shop-cart.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner-21.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/shop-cart.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Shop Cart</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/shop-details.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner22.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/shop-details.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Shop Details</a
+                >
+              </h3>
+            </div>
+            <div class="col-lg-4">
+              <a
+                target="_blank"
+                href="main-files/checkout.html"
+                class="preview__item image d-block"
+              >
+                <img
+                  src="landing/assets/images/landing-images/preview-inner23.png"
+                  alt="image"
+                />
+              </a>
+              <h3 class="text-center">
+                <a
+                  target="_blank"
+                  href="main-files/checkout.html"
+                  class="primary-hover text-capitalize mt-30"
+                  >Checkout</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Preview area end here -->
+
+      <div class="py-3 primary-bg text-center">
+        <p class="text-white">
+          And Many More Inner Pages...
+          <img src="landing/assets/images/landing-images/emoji.png" alt="" />
+        </p>
+      </div>
+
+      <!-- Service area start here -->
+      <section class="service-area pb-120 pt-120" id="service">
+        <div class="container">
+          <div class="section-header mb-100 text-center">
+            <h2
+              class="wow fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1000ms"
+            >
+              Everything You need
+            </h2>
+            <p
+              class="wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="1000ms"
+            >
+              Our themes come with interactive design tools and features that
+              <br />
+              could leave you feeling like a pro after just a few clicks.p>
+            </p>
+          </div>
+
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="service__item wow fadeInUp"
+                data-wow-delay="00ms"
+                data-wow-duration="1000ms"
+              >
+                <div class="service__icon border-none mb-40">
+                  <img
+                    src="landing/assets/images/landing-images/icon1.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>Well Documented</h3>
+                <p>
+                  The Marketi code is well-documented code. And its
+                  customization is very easy with just a few clicks.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="service__item wow fadeInUp"
+                data-wow-delay="200ms"
+                data-wow-duration="1000ms"
+              >
+                <div class="service__icon border-none mb-40">
+                  <img
+                    src="landing/assets/images/landing-images/icon2.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>Design System</h3>
+                <p>
+                  Keep things consistent with Global Colors, Global Fonts and
+                  build beautiful websites.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="service__item wow fadeInUp"
+                data-wow-delay="400ms"
+                data-wow-duration="1000ms"
+              >
+                <div class="service__icon border-none mb-40">
+                  <img
+                    src="landing/assets/images/landing-images/icon3.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>Header Footer Builder</h3>
+                <p>
+                  Build unlimited header & footer on your website and connect to
+                  any page or post you want.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="service__item wow fadeInUp"
+                data-wow-delay="200ms"
+                data-wow-duration="1000ms"
+              >
+                <div class="service__icon border-none mb-40">
+                  <img
+                    src="landing/assets/images/landing-images/icon5.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>Automatic Updates</h3>
+                <p>
+                  Always keep your website up to date with minimal effort,
+                  simply all in a one-click operation.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="service__item wow fadeInUp"
+                data-wow-delay="400ms"
+                data-wow-duration="1000ms"
+              >
+                <div class="service__icon border-none mb-40">
+                  <img
+                    src="landing/assets/images/landing-images/icon6.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>SEO Optimized</h3>
+                <p>
+                  This theme is properly SEO optimized. Rank on search engines
+                  without raising issues.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="service__item wow fadeInUp"
+                data-wow-delay="00ms"
+                data-wow-duration="1000ms"
+              >
+                <div class="service__icon border-none mb-40">
+                  <img
+                    src="landing/assets/images/landing-images/icon7.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>Helpful Knowledgebase</h3>
+                <p>
+                  Read articles and tutorials that focus on improving your web
+                  creator skills.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="service__item wow fadeInUp"
+                data-wow-delay="200ms"
+                data-wow-duration="1000ms"
+              >
+                <div class="service__icon border-none mb-40">
+                  <img
+                    src="landing/assets/images/landing-images/icon8.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>Premium Human Support</h3>
+                <p>
+                  Enjoy our professional customer support and get help with any
+                  issue.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="service__item wow fadeInUp"
+                data-wow-delay="400ms"
+                data-wow-duration="1000ms"
+              >
+                <div class="service__icon border-none mb-40">
+                  <img
+                    src="landing/assets/images/landing-images/icon9.png"
+                    alt="icon"
+                  />
+                </div>
+                <h3>Lifetime Free Updates</h3>
+                <p>
+                  We consistently push new features. Buy once & get all for
+                  free.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service area end here -->
+
+      <!-- Talk area start here -->
+      <section class="talk-area pt-120 pb-120 sub-bg">
+        <div class="container">
+          <div class="section-header text-center">
+            <h5
+              class="wow fadeInUp mb-4"
+              data-wow-delay="00ms"
+              data-wow-duration="1000ms"
+            >
+              Buy once enjoy lifetime
+            </h5>
+            <h2
+              class="wow fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1000ms"
+            >
+              Create Stunning Website <br />
+              With RevAuto!
+            </h2>
+            <a
+              target="_blank"
+              href="https://themeforest.net/item/revauto-car-showroom-and-accessories-html-template/55053351"
+              class="btn-one mt-50 wow fadeInUp"
+              data-wow-delay="00ms"
+              data-wow-duration="400ms"
+              >Purchase Now<i class="fa-regular fa-circle-arrow-right ml-10"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- Talk area end here -->
+    </main>
+
+    <!-- Back to top btn area start here -->
+    <button class="btn-backToTop">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-- Back to top btn area end here -->
+
+    <!-- Jquery 3. 7. 1 Min Js -->
+    <script src="landing/assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap min Js -->
+    <script src="landing/assets/js/bootstrap.min.js"></script>
+    <!-- Mean menu Js -->
+    <script src="landing/assets/js/meanmenu.js"></script>
+    <!-- Swiper bundle min Js -->
+    <script src="landing/assets/js/swiper-bundle.min.js"></script>
+    <!-- Counterup min Js -->
+    <script src="landing/assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow min Js -->
+    <script src="landing/assets/js/wow.min.js"></script>
+    <!-- Magnific popup min Js -->
+    <script src="landing/assets/js/magnific-popup.min.js"></script>
+    <!-- Nice select min Js -->
+    <script src="landing/assets/js/nice-select.min.js"></script>
+    <!-- Parallax Js -->
+    <script src="landing/assets/js/parallax.js"></script>
+    <!-- Waypoints Js -->
+    <script src="landing/assets/js/jquery.waypoints.js"></script>
+    <!-- Script Js -->
+    <script src="landing/assets/js/script.js"></script>
+  </body>
 </html>

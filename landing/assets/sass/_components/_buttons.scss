@@ -1,0 +1,216 @@
+// Button one area start here ***
+.btn {
+	&-one {
+		padding: 10px 30px;
+		border-radius: 10px;
+		font-size: 18px;
+		font-weight: 500;
+		color: var(--white);
+		background-color: #384BFF;
+		display: inline-block;
+		position: relative;
+		letter-spacing: 0.5px;
+		z-index: 3;
+		overflow: hidden;
+		@include breakpoint(max-xxsmall) {
+			padding: 8px 16px;
+			font-size: 14px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			height: 500px;
+			width: 550px;
+			top: 50%;
+			left: 50%;
+			background: var(--black);
+			border-radius: 50%;
+			transform: translateY(-50%) translateX(-50%) scale(0);
+			transition: all 0.5s ease-out 0s;
+			z-index: -1;
+		}
+		&:hover {
+			color: var(--white);
+			&::before {
+				transform: translateY(-50%) translateX(-50%) scale(1);
+			}
+		}
+	}
+	&-two {
+		@extend .btn-one;
+		&::before {
+			background: var(--white);
+		}
+		&:hover {
+			color: var(--heading-color);
+		}
+		&.active {
+			background-color: var(--white);
+			&::before {
+				background-color: #384BFF;
+			}
+		}
+	}
+	&-three {
+		@extend .btn-one;
+		color: var(--white);
+		background-color: transparent;
+		border: 1px solid #ffffff52;
+		i {
+			transform: rotate(-45deg);
+			transition: var(--transition);
+		}
+		&::before {
+			display: none;
+		}
+		&:hover {
+			i {
+				transform: rotate(0deg);
+			}
+		}
+	}
+	&-menu {
+		padding: 10px 22px;
+		border-radius: 10px;
+		font-size: 18px;
+		font-weight: 500;
+		color: var(--heading-color);
+		display: inline-block;
+		letter-spacing: 0.5px;
+		border: 1px solid #384BFF;
+	}
+	&-backToTop {
+		@include radius(40px, 40px, 40px);
+		border-radius: 12px;
+		background-color: #384BFF;
+		color: var(--white);
+		font-size: 18px;
+		box-shadow: var(--shadow);
+		position: fixed;
+		z-index: 99;
+		right: 30px;
+		bottom: 30px;
+		transition: var(--transition);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(20px);
+		&.show {
+			opacity: 1;
+			visibility: visible;
+			transform: translate(0);
+		}
+	}
+}
+// Button one area end here ***
+
+// Arry button area start here ***
+.arry-prev {
+	@include radius(50px, 50px, 50px);
+	color: var(--primary-color);
+	transition: var(--transition);
+	border: 1px solid var(--primary-color);
+	font-size: 20px;
+	&:hover {
+		background-color: var(--primary-color);
+		color: var(--white);
+	}
+	&.active {
+		background-color: var(--primary-color);
+		color: var(--white);
+	}
+}
+.arry-next {
+	@extend.arry-prev;
+}
+// Arry button area end here ***
+
+// Explore btn area start here ***
+.explore-btn {
+	span {
+		font-weight: 500;
+		color: var(--heading-color);
+		position: relative;
+		z-index: 1;
+		letter-spacing: 1px;
+		&:after {
+			position: absolute;
+			bottom: 3px;
+			left: 0;
+			z-index: -1;
+			content: "";
+			background-color: #020d0a80;
+			width: 100%;
+			height: 1px;
+		}
+	}
+	i {
+		margin-left: 5px;
+		transform: rotate(-45deg);
+		transition: var(--transition);
+	}
+	&:hover {
+		i {
+			transform: rotate(0);
+		}
+	}
+	&-light {
+		@extend .explore-btn;
+		span {
+			color: var(--white);
+			&::after {
+				background-color: #ffffff80;
+			}
+		}
+		i {
+			color: var(--white);
+		}
+	}
+}
+// Explore btn area end here ***
+
+// Video button area start here ***
+.video-btn {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	z-index: 2;
+	a {
+		position: relative;
+		color: var(--primary-color);
+		font-size: 28px;
+		z-index: 1;
+		background-color: var(--white);
+		width: 90px;
+		height: 90px;
+		line-height: 90px;
+		border-radius: 50%;
+		display: block;
+	}
+	&.video-pulse {
+		&::after,
+		&::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			border: 1px solid var(--white);
+			opacity: 0.7;
+			left: 0;
+			top: 0;
+			border-radius: 50%;
+			-webkit-animation-duration: 2.5s;
+			animation-duration: 2.5s;
+			-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+			-webkit-animation-name: video-animation;
+			animation-name: video-animation;
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+		}
+		&::before {
+			-webkit-animation-delay: 1s;
+			animation-delay: 1s;
+		}
+	}
+}
+// Video button area end here ***
