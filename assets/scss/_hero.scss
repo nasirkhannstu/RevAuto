@@ -546,6 +546,9 @@
 .homepage-3 {
   background-image: url("../img/homepage-3/hero-2.jpg");
   height: 100vh;
+  padding: 120px 0 120px;
+  height: auto;
+  position: relative;
 
   &::before {
     content: "";
@@ -558,10 +561,14 @@
 
   .hero-3-slider {
     color: white;
+    // @include breakpoint(xsmall) {
+    //   padding-left: 20px;
+    //   padding-right: 20px;
+    // }
 
     .hero-3-thumb {
       background: transparent;
-      max-height: 700px;
+      max-height: 750px;
       object-fit: cover;
       overflow: hidden;
       position: relative;
@@ -569,8 +576,9 @@
       img {
         object-fit: cover;
         border-radius: 12px;
-        max-width: 700px;
+        max-width: 100%;
         width: 100%;
+        border: 3px solid $white;
       }
 
       .hero-3-footer {
@@ -580,7 +588,52 @@
         right: 0px;
         bottom: 0px;
         padding: 20px 30px;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.5);
+
+        h3 {
+          font-size: 24px;
+          font-weight: 700;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .search-section-3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: $white;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+
+    .search-select-3 {
+      outline: none;
+      padding: 10px 20px;
+      border-radius: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .search-input-3 {
+      outline: none;
+      padding: 10px 20px;
+      border-radius: 0;
+    }
+
+    .search-button-3 {
+      width: 100%;
+      background: $theme-color;
+      color: $white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      svg {
+        width: 20px;
+        height: 20px;
       }
     }
   }

@@ -85,7 +85,7 @@ CSS TABLE OF CONTENTS
     new WOW().init();
 
     //>> Nice Select Start <<//
-    $("select").niceSelect();
+    $("#home-landing-select").niceSelect();
 
     const heroSlider = new Swiper(".hero-slider", {
       speed: 2500,

@@ -12,12 +12,12 @@ Version: 1.0.0
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #4376FB;
-  --theme2: #FFBF25;
+  --theme: #4376fb;
+  --theme2: #ffbf25;
   --header: #000000;
   --text: #555555;
-  --border: #D5D5D5;
-  --bg: #F4F6FA;
+  --border: #d5d5d5;
+  --bg: #f4f6fa;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -3321,6 +3321,9 @@ span {
 .homepage-3 {
   background-image: url("../img/homepage-3/hero-2.jpg");
   height: 100vh;
+  padding: 120px 0 120px;
+  height: auto;
+  position: relative;
 }
 .homepage-3::before {
   content: "";
@@ -3335,7 +3338,7 @@ span {
 }
 .homepage-3 .hero-3-slider .hero-3-thumb {
   background: transparent;
-  max-height: 700px;
+  max-height: 750px;
   object-fit: cover;
   overflow: hidden;
   position: relative;
@@ -3343,8 +3346,9 @@ span {
 .homepage-3 .hero-3-slider .hero-3-thumb img {
   object-fit: cover;
   border-radius: 12px;
-  max-width: 700px;
+  max-width: 100%;
   width: 100%;
+  border: 3px solid var(--white);
 }
 .homepage-3 .hero-3-slider .hero-3-thumb .hero-3-footer {
   position: absolute;
@@ -3353,7 +3357,45 @@ span {
   right: 0px;
   bottom: 0px;
   padding: 20px 30px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
+}
+.homepage-3 .hero-3-slider .hero-3-thumb .hero-3-footer h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+}
+.homepage-3 .search-section-3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: var(--white);
+  padding: 40px 20px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+}
+.homepage-3 .search-section-3 .search-select-3 {
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 0;
+}
+.homepage-3 .search-section-3 .search-select-3:focus {
+  outline: none;
+}
+.homepage-3 .search-section-3 .search-input-3 {
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 0;
+}
+.homepage-3 .search-section-3 .search-button-3 {
+  width: 100%;
+  background: var(--theme);
+  color: var(--white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.homepage-3 .search-section-3 .search-button-3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .mean-container a.meanmenu-reveal {
