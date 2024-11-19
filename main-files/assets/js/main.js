@@ -596,6 +596,43 @@ CSS TABLE OF CONTENTS
       });
     });
 
+    // homepage 3
+    $(".left-section button").click(function () {
+      console.log("clicked");
+
+      $(this).animate({ width: "+=5px" }, 200).animate({ width: "-=5px" }, 200);
+
+      $(".left-section button")
+        .removeClass("car-section-3-active")
+        .css("opacity", "1");
+
+      $(this)
+        .addClass("car-section-3-active")
+        .animate({ opacity: 0.5 }, 200)
+        .animate({ opacity: 1 }, 200);
+
+      var targetId = $(this).text();
+
+      // Hide all tab-pane divs
+      $(".tab-pane").removeClass("show active").hide();
+
+      // Show the div with the corresponding ID
+      $("#" + targetId)
+        .addClass("show active")
+        .fadeIn();
+    });
+
+    $(".right-section button").click(function () {
+      $(".right-section button")
+        .removeClass("car-section-3-active-right")
+        .css("opacity", "1");
+
+      $(this)
+        .addClass("car-section-3-active-right")
+        .animate({ opacity: 0.5 }, 200)
+        .animate({ opacity: 1 }, 200);
+    });
+
     //>> Back To Top Start <<//
     $(window).scroll(function () {
       if ($(this).scrollTop() > 20) {

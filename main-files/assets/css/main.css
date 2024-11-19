@@ -5935,7 +5935,7 @@ span {
   height: 48px;
   line-height: 48px;
   text-align: center;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 50%;
   color: var(--text);
   display: inline-block;
@@ -5944,7 +5944,7 @@ span {
   right: 20px;
 }
 .car-box-items .icon:hover {
-  color: #ED3F3F;
+  color: #ed3f3f;
 }
 .car-box-items .car-titile h4 a:hover {
   color: var(--theme);
@@ -6119,7 +6119,7 @@ span {
 .car-details-wrapper .car-details-items .nav {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #F4F6FA;
+  border: 1px solid #f4f6fa;
   margin-bottom: 30px;
   margin-top: 24px;
 }
@@ -6208,7 +6208,7 @@ span {
   font-size: 14px;
   padding: 10px 16px;
   border-radius: 100px;
-  background-color: #F4F6FA;
+  background-color: #f4f6fa;
   line-height: 1;
 }
 .car-details-wrapper .car-details-right-items .car-details-box-items .list-items li i {
@@ -6288,7 +6288,7 @@ span {
   justify-content: space-between;
   border-radius: 12px;
   border: 1px solid rgba(213, 213, 213, 0.6);
-  background: #F5F5F5;
+  background: #f5f5f5;
   padding: 12px 20px;
   margin-top: 30px;
 }
@@ -6321,6 +6321,49 @@ span {
   background-color: var(--theme);
   color: var(--white);
   border: 1px solid var(--theme);
+}
+
+.car-section-3-short {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.car-section-3-short .left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.car-section-3-short .left-section button {
+  padding-bottom: 10px;
+  transition: color 0.3s;
+}
+.car-section-3-short .left-section button:hover {
+  color: var(--theme);
+}
+.car-section-3-short .right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.car-section-3-short .right-section button {
+  transition: color 0.3s;
+}
+.car-section-3-short .right-section button:hover {
+  color: var(--theme);
+}
+
+.car-section-3-active {
+  color: var(--theme);
+  font-weight: 500;
+  border-bottom: 2px solid var(--theme);
+}
+
+.car-section-3-active-right {
+  color: var(--theme);
+  font-weight: 500;
+  border: 1px solid var(--theme);
+  padding: 10px 20px;
+  border-radius: 12px;
 }
 
 .team-box-items {
