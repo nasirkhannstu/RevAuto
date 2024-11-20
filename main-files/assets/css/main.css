@@ -6576,7 +6576,7 @@ span {
   font-size: 64px;
   transition: all 0.4s ease-in-out;
 }
-.counter-wrapper .counter-box-3 .content h2 span {
+.counter-wrapper .counter-box-3 .content h2 span.count {
   transition: all 0.4s ease-in-out;
 }
 .counter-wrapper .counter-box-3:hover, .counter-wrapper .counter-box-3.active {
