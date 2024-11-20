@@ -341,11 +341,20 @@
 
   &::before {
     position: absolute;
-    top: 52px;
+    top: 35px;
     right: 35px;
     content: "";
     height: 2px;
-    width: 190px;
+    width: 170px;
+    @include breakpoint(xxl){
+      width: 180px;
+    }
+    @include breakpoint(xxxl){
+      width: 190px;
+    }
+    @include breakpoint(4xl){
+      width: 200px;
+    }
     background: linear-gradient(
       180deg,
       #4376fb 0%,

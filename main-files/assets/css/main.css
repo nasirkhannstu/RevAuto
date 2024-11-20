@@ -1668,12 +1668,22 @@ span {
 }
 .feature-card-items-2::before {
   position: absolute;
-  top: 52px;
+  top: 35px;
   right: 35px;
   content: "";
   height: 2px;
-  width: 190px;
+  width: 170px;
   background: linear-gradient(180deg, #4376fb 0%, rgba(67, 118, 251, 0.1) 100%);
+}
+@media (min-width: 1400px) {
+  .feature-card-items-2::before {
+    width: 180px;
+  }
+}
+@media (min-width: 1600px) {
+  .feature-card-items-2::before {
+    width: 190px;
+  }
 }
 @media (max-width: 1199px) {
   .feature-card-items-2::before {
@@ -5387,7 +5397,6 @@ span {
 }
 .main-cart-wrapper .cart-pragh-box {
   margin-top: 10px;
-  padding-right: 30px;
 }
 .main-cart-wrapper .cart-pragh-box .theme-btn {
   border-radius: 10px;
