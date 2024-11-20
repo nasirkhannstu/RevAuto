@@ -596,10 +596,9 @@ CSS TABLE OF CONTENTS
       });
     });
 
-    // homepage 3
+    // Homepage 3
+    // New Arrival
     $(".left-section button").click(function () {
-      console.log("clicked");
-
       $(this).animate({ width: "+=5px" }, 200).animate({ width: "-=5px" }, 200);
 
       $(".left-section button")
@@ -613,10 +612,8 @@ CSS TABLE OF CONTENTS
 
       var targetId = $(this).text();
 
-      // Hide all tab-pane divs
       $(".tab-pane").removeClass("show active").hide();
 
-      // Show the div with the corresponding ID
       $("#" + targetId)
         .addClass("show active")
         .fadeIn();
@@ -631,6 +628,28 @@ CSS TABLE OF CONTENTS
         .addClass("car-section-3-active-right")
         .animate({ opacity: 0.5 }, 200)
         .animate({ opacity: 1 }, 200);
+    });
+
+    // suggested car
+    $("#suggested-car-btns-3 button").click(function () {
+      $(this).animate({ width: "+=5px" }, 200).animate({ width: "-=5px" }, 200);
+
+      $("#suggested-car-btns-3 button")
+        .removeClass("car-section-3-active")
+        .css("opacity", "1");
+
+      $(this)
+        .addClass("car-section-3-active")
+        .animate({ opacity: 0.5 }, 200)
+        .animate({ opacity: 1 }, 200);
+
+      var suggest = $(this).data("suggest");
+
+      $(".tab-panel-suggest").removeClass("show active").hide();
+
+      $(".tab-panel-suggest[data-suggest='" + suggest + "']")
+        .addClass("show active")
+        .fadeIn();
     });
 
     //>> Back To Top Start <<//

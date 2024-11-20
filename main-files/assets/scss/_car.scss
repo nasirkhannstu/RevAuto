@@ -41,6 +41,10 @@
   .car-image {
     text-align: center;
     height: 145px;
+
+    img {
+      max-width: 100%;
+    }
   }
 
   .car-list-items {
@@ -530,3 +534,12 @@
   padding: 10px 20px;
   border-radius: 12px;
 }
+
+#suggested-car-btns-3 {
+  @extend .left-section;
+}
+
+.hide {
+  display: none;
+}
+
