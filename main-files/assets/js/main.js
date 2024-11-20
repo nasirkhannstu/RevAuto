@@ -645,7 +645,10 @@ CSS TABLE OF CONTENTS
 
       var suggest = $(this).data("suggest");
 
-      $(".tab-panel-suggest").removeClass("show active").hide();
+      $(".tab-panel-suggest")
+        .removeClass("show active")
+        .addClass("hide")
+        .hide();
 
       $(".tab-panel-suggest[data-suggest='" + suggest + "']")
         .addClass("show active")
