@@ -6741,8 +6741,20 @@ span {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 25px 0px;
   margin-right: 10px;
 }
-.seller-center-3-right ul span {
-  font-weight: 600;
+.seller-center-3-right ul h4 {
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  .seller-center-3-right ul h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+.seller-center-3-right ul p {
+  font-size: 14px;
+  color: var(--text);
 }
 .seller-center-3-right button {
   padding: 10px 20px;
