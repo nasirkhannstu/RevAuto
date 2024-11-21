@@ -2960,11 +2960,7 @@ span {
   }
 }
 .hero-1 .hero-content {
-  position: relative;
   z-index: 9;
-  transform: translateY(250px);
-  opacity: 0;
-  visibility: hidden;
 }
 .hero-1 .hero-content span {
   font-weight: 400;
@@ -3141,13 +3137,6 @@ span {
   position: relative;
   z-index: 9;
 }
-.hero-1 .hero-image-items .hero-image {
-  position: relative;
-  transform: translateY(250px);
-  opacity: 0;
-  visibility: hidden;
-  z-index: 9;
-}
 @media (max-width: 1199px) {
   .hero-1 .hero-image-items .hero-image img {
     width: 100%;
@@ -3256,24 +3245,6 @@ span {
 }
 .hero-1 .hero-items-image-2 .hero-right .theme-btn:hover {
   color: var(--header);
-}
-.hero-1 .swiper-slide.swiper-slide-active .hero-content {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: all 2500ms ease;
-  visibility: visible;
-}
-.hero-1 .swiper-slide.swiper-slide-active .hero-image-items .hero-image {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: all 1500ms ease;
-  visibility: visible;
-}
-.hero-1 .swiper-slide.swiper-slide-active .hero-image-items .bg-shape {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: all 1000ms ease;
-  visibility: visible;
 }
 
 .hero-3 {

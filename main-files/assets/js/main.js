@@ -92,32 +92,8 @@ CSS TABLE OF CONTENTS
       loop: true,
       //slidesPerView: 1,
       autoplay: true,
-      effect: "fade",
-      // breakpoints: {
-      //     '1600': {
-      //         slidesPerView: 1,
-      //     },
-      //     '1400': {
-      //         slidesPerView: 1,
-      //     },
-      //     '1200': {
-      //         slidesPerView: 1,
-      //     },
-      //     '992': {
-      //         slidesPerView: 1,
-      //     },
-      //     '768': {
-      //         slidesPerView: 1,
-      //     },
-      //     '576': {
-      //         slidesPerView: 1,
-      //     },
-      //     '0': {
-      //         slidesPerView: 1,
-      //     },
-
+      // effect: "fade",
       a11y: false,
-      // },
       pagination: {
         el: ".dot",
         clickable: true,
