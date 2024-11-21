@@ -6738,4 +6738,44 @@ span {
   margin-top: 50px;
 }
 
+.home-car-details-3 {
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.267) 33.33%, rgba(0, 0, 255, 0.349) 33.33%, rgba(0, 0, 255, 0.308) 66.66%, green 66.66%);
+}
+.home-car-details-3-title h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.home-car-details-3-card {
+  padding: 10px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  height: auto;
+  background-color: var(--white);
+}
+.home-car-details-3-card img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+.home-car-details-3 .main-image {
+  max-width: 150%;
+  width: 150%;
+}
+.home-car-details-3 .left-side .navigate-btn {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: var(--theme);
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--white);
+}
+
 /*# sourceMappingURL=main.css.map */
