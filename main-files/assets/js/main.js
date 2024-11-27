@@ -159,14 +159,13 @@ CSS TABLE OF CONTENTS
 
     if ($(".hero-3-slider").length > 0) {
       const hero3Slider = new Swiper(".hero-3-slider", {
+        effect: "cards",
+        grabCursor: true,
         speed: 2000,
-        loop: true,
         autoplay: {
           delay: 1000,
           disableOnInteraction: false,
         },
-        effect: "cards",
-        grabCursor: true,
       });
     }
 

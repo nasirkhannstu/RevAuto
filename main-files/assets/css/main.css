@@ -3403,26 +3403,25 @@ span {
 }
 .homepage-3 .hero-3-slider {
   color: white;
+  width: 350px !important;
+  height: 450px;
 }
-.homepage-3 .hero-3-slider .slider {
-  width: 300px !important;
-  height: 400px;
-}
-.homepage-3 .hero-3-slider .hero-3-thumb {
+.homepage-3 .hero-3-slider .swiper-slide {
   background: transparent;
-  max-height: 750px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   overflow: hidden;
   position: relative;
 }
-.homepage-3 .hero-3-slider .hero-3-thumb img {
+.homepage-3 .hero-3-slider .swiper-slide img {
   object-fit: cover;
   border-radius: 12px;
   max-width: 100%;
   width: 100%;
   border: 3px solid var(--white);
 }
-.homepage-3 .hero-3-slider .hero-3-thumb .hero-3-footer {
+.homepage-3 .hero-3-slider .swiper-slide .hero-3-footer {
   position: absolute;
   z-index: 5;
   left: 0px;
@@ -3431,7 +3430,7 @@ span {
   padding: 20px 30px;
   background: rgba(0, 0, 0, 0.5);
 }
-.homepage-3 .hero-3-slider .hero-3-thumb .hero-3-footer h3 {
+.homepage-3 .hero-3-slider .swiper-slide .hero-3-footer h3 {
   font-size: 24px;
   font-weight: 700;
   color: var(--white);

@@ -552,17 +552,13 @@
 
   .hero-3-slider {
     color: white;
-    // @include breakpoint(xsmall) {
-    //   padding-left: 20px;
-    //   padding-right: 20px;
-    // }
-    .slider{
-      width: 300px !important;
-      height: 400px;
-    }
-    .hero-3-thumb {
+    width: 350px !important;
+    height: 450px;
+    
+    .swiper-slide {
       background: transparent;
-      max-height: 750px;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       overflow: hidden;
       position: relative;
