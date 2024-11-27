@@ -3404,6 +3404,10 @@ span {
 .homepage-3 .hero-3-slider {
   color: white;
 }
+.homepage-3 .hero-3-slider .slider {
+  width: 300px !important;
+  height: 400px;
+}
 .homepage-3 .hero-3-slider .hero-3-thumb {
   background: transparent;
   max-height: 750px;
@@ -3414,9 +3418,8 @@ span {
 .homepage-3 .hero-3-slider .hero-3-thumb img {
   object-fit: cover;
   border-radius: 12px;
-  max-width: 300px;
-  width: 300px;
-  height: 400px;
+  max-width: 100%;
+  width: 100%;
   border: 3px solid var(--white);
 }
 .homepage-3 .hero-3-slider .hero-3-thumb .hero-3-footer {
