@@ -315,14 +315,43 @@
 .about-3 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+
+
+  &-heading{
+    margin-left: -100px;
+    background: $white;
+    margin-top: 30px;
+    padding: 20px;
+  }
   
   &-list {
-    margin-top: 10px;
+    margin-top: 30px;
 
     &-icon {
       display: flex;
       align-items: center;
       gap: 10px;
+      margin-left: -50px;
+      padding: 20px;
+    }
+
+    p{
+      padding-left: 15px;
+    }
+  }
+
+  &-start-btn{
+    background: $theme-color;
+    color: $white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .key-features-3{
+    padding-left: 15px;
+    
+    div div div{
+      background: #e0f2fe
     }
   }
 }
