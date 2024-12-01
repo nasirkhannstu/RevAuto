@@ -89,6 +89,7 @@ CSS TABLE OF CONTENTS
 
     const heroSlider = new Swiper(".hero-slider", {
       speed: 2500,
+      spaceBetween: 30,
       loop: true,
       //slidesPerView: 1,
       autoplay: true,
