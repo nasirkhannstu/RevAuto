@@ -6782,12 +6782,17 @@ span {
 
 .home-car-details-3 {
   background: linear-gradient(90deg, #E8F5E9 33.33%, #EDE7F6 33.33%, #EDE7F6 66.66%, #E0F7FA 66.66%);
-  transform: perspective(1000px) rotateX(10deg);
   box-shadow: 0 0 18px #dbdbdb;
   backdrop-filter: drop-shadow(27px 19px 21px red);
   margin: 100px 50px;
   padding: 20px;
   color: black;
+}
+@media (min-width: 768px) {
+  .home-car-details-3 {
+    background: linear-gradient(90deg, #E8F5E9 33.33%, #EDE7F6 33.33%, #EDE7F6 66.66%, #E0F7FA 66.66%);
+    transform: perspective(1000px) rotateX(10deg);
+  }
 }
 .home-car-details-3-title h2 {
   font-size: 45px;
@@ -6819,9 +6824,15 @@ span {
   height: auto;
 }
 .home-car-details-3 .main-image {
-  max-width: 150%;
-  width: 130%;
-  margin-left: -120px;
+  max-width: 100%;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .home-car-details-3 .main-image {
+    width: 130%;
+    max-width: 150%;
+    margin-left: -120px;
+  }
 }
 .home-car-details-3 .left-side .navigate-btn {
   display: inline-block;

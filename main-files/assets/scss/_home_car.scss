@@ -1,6 +1,9 @@
 .home-car-details-3 {
   background: linear-gradient(90deg, #E8F5E9 33.33%, #EDE7F6 33.33%, #EDE7F6 66.66%, #E0F7FA 66.66%);
-  transform: perspective(1000px) rotateX(10deg);
+  @include breakpoint(md){
+    background: linear-gradient(90deg, #E8F5E9 33.33%, #EDE7F6 33.33%, #EDE7F6 66.66%, #E0F7FA 66.66%);
+    transform: perspective(1000px) rotateX(10deg);
+  }
   box-shadow: 0 0 18px #dbdbdb;
   backdrop-filter: drop-shadow(27px 19px 21px red);
   margin: 100px 50px;
@@ -40,9 +43,13 @@
   }
 
   .main-image {
-    max-width: 150%;
-    width: 130%;
-    margin-left: -120px;
+    max-width: 100%;
+    width: 100%;
+    @include breakpoint(xl){
+      width: 130%;
+      max-width: 150%;
+      margin-left: -120px;
+    }
   }
 
   .left-side {
