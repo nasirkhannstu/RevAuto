@@ -1388,15 +1388,15 @@
   .cart-item-3 {
     @extend .cart-item;
     border-bottom: 1px solid $border-color;
-    
 
     .cart-item-info {
       display: flex;
       align-items: center;
       gap: 15px;
 
-      img{
-        max-width: 150px;
+      img {
+        max-width: 100px;
+        margin: 10px;
         height: auto;
         object-fit: cover;
         border-radius: 5px;

@@ -631,7 +631,7 @@ CSS TABLE OF CONTENTS
     });
 
     // Cart 2
-    const cart2ItemData = [];
+    let cart2ItemData = [];
     const cart2Items = $(".cart-item");
     const cart2ItemsTotal = $("#cart-2-items");
     const cart2ItemsSubtotal = $("#cart-2-items-subtotal");
@@ -673,7 +673,7 @@ CSS TABLE OF CONTENTS
     $(".cart-2-increase-btn").click(function () {
       const id = $(this).data("id");
 
-      const input = $(`#cart-3-quantity-${id}`);
+      const input = $(`#cart-2-quantity-${id}`);
       let inputVal = parseInt(input.val());
 
       if (inputVal >= 0) {
@@ -695,6 +695,16 @@ CSS TABLE OF CONTENTS
         cart2ItemData[id - 1].quantity = inputVal - 1;
         update2Cart();
       }
+    });
+
+    $(".cart-2-delete-item-btn").click(function () {
+      const id = $(this).data("id");
+
+      cart2ItemData = cart2ItemData.filter((item) => item.id !== id);
+
+      $(this).closest(`div.cart-item[data-id='${id}']`).hide(300);
+
+      update2Cart();
     });
 
     // Cart 3

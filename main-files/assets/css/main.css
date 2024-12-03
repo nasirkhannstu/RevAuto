@@ -6137,7 +6137,8 @@ span {
   gap: 15px;
 }
 .cart-wrapper-3 .cart-item-3 .cart-item-info img {
-  max-width: 150px;
+  max-width: 100px;
+  margin: 10px;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
