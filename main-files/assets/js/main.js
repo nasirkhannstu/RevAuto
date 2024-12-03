@@ -796,6 +796,23 @@ CSS TABLE OF CONTENTS
       update3Cart();
     });
 
+    // update cart count
+    const counterBtns = $(".add-to-cart");
+    const counterBtns2 = $(".add-to-cart-2");
+    const cartCount = $("#cart-count");
+    function updateCartCount() {
+      const cartCountValue = cartCount.text();
+      cartCount.text(Number(cartCountValue) + 1);
+    }
+
+    counterBtns.click(function () {
+      updateCartCount();
+    });
+
+    counterBtns2.click(function () {
+      updateCartCount();
+    });
+
     //>> Back To Top Start <<//
     $(window).scroll(function () {
       if ($(this).scrollTop() > 20) {

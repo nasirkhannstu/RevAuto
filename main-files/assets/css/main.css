@@ -130,6 +130,17 @@ Version: 1.0.0
   transform: rotate(0);
 }
 
+.add-to-cart {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(67, 118, 251, 0.1);
+  transition: all 0.3s ease;
+}
+.add-to-cart:hover {
+  color: var(--theme);
+}
+
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
@@ -2128,7 +2139,7 @@ span {
   border: 1px solid var(--white);
   text-align: center;
 }
-.header-1 .header-right .menu-cart .cart-icon::before {
+.header-1 .header-right .menu-cart .cart-icon #cart-count {
   position: absolute;
   top: 0;
   right: -12px;
