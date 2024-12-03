@@ -652,14 +652,18 @@ CSS TABLE OF CONTENTS
 
     function update2Cart() {
       cart2ItemsTotal.text(
-        cart2ItemData.reduce((acc, item) => acc + item.quantity * item.price, 0)
+        cart2ItemData.reduce((acc, item) => acc + Number(item.quantity), 0)
       );
-      cart2ItemsSubtotal.text(
-        cart2ItemData.reduce((acc, item) => acc + item.price * item.quantity, 0)
+
+      const quantity = cart2ItemData.reduce(
+        (acc, item) => acc + Number(item.quantity) * Number(item.price),
+        0
       );
+
+      cart2ItemsSubtotal.text(quantity);
       cart2Total.text(
         cart2ItemData.reduce(
-          (acc, item) => acc + item.price * item.quantity,
+          (acc, item) => acc + Number(item.quantity) * Number(item.price),
           0
         ) + 5
       );
