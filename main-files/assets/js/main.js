@@ -729,7 +729,9 @@ CSS TABLE OF CONTENTS
         cart3ItemData.reduce(
           (acc, item) => acc + Number(item.quantity) * Number(item.price),
           0
-        ) + 10
+        ) +
+          10 -
+          9.99
       );
 
       if (singleSubtotal) {
