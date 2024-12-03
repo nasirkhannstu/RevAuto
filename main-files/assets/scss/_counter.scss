@@ -10,27 +10,27 @@
     justify-content: center;
     display: flex;
   }
+}
+
+
+.counter-wrapper-3{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-left: 15px;
 
   .counter-box-3 {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 200px;
     border-radius: 15px;
-    transform: rotate(15deg);
     border: 1px solid $border-color;
     text-align: center;
     position: relative;
     @include transition;
-    margin-right: -25px;
-    margin-left: -25px;
 
     @include breakpoint(max-xxl) {
       margin-right: 0;
       margin-left: 0;
-    }
-
-    @include breakpoint(max-md) {
-      width: 300px;
-      height: 300px;
     }
 
     .content {
@@ -41,7 +41,7 @@
 
       h2 {
         color: $header-color;
-        font-size: 64px;
+        font-size: 50px;
         @include transition;
 
         span.count {
@@ -52,14 +52,14 @@
 
     &:hover,
     &.active {
-      background-color: $theme-color;
+      background-color: #f1f1f1;
       position: relative;
       z-index: 9;
 
       .content {
         h2,
         p {
-          color: $white;
+          color: $black;
         }
       }
     }

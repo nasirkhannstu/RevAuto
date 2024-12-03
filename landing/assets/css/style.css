@@ -2735,7 +2735,7 @@ input {
   transition: var(--transition);
   border: 1px solid var(--border);
   border-radius: 15px;
-  background-color: #F3F7FB;
+  background-color: #f3f7fb;
   margin: 0 auto !important;
   margin-bottom: 20px !important;
 }
@@ -3706,6 +3706,19 @@ input {
   transform: translateY(50%);
 }
 
+.btn-custom {
+  padding: 20px 60px !important;
+}
+
+.inner-pages-h3 {
+  font-size: 30px !important;
+  line-height: 30px !important;
+  color: #020d0a !important;
+  font-weight: 500 !important;
+  margin-bottom: 20px !important;
+  text-align: left !important;
+}
+
 .footer__main-wrp {
   position: relative;
 }
@@ -3784,4 +3797,6 @@ input {
 .footer-two__copytext p,
 .footer-two__copytext a {
   color: var(--paragraph);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

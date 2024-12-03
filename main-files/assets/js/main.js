@@ -631,6 +631,169 @@ CSS TABLE OF CONTENTS
         .fadeIn();
     });
 
+    // Cart 2
+    let cart2ItemData = [];
+    const cart2Items = $(".cart-item");
+    const cart2ItemsTotal = $("#cart-2-items");
+    const cart2ItemsSubtotal = $("#cart-2-items-subtotal");
+    const cart2Total = $("#cart-2-total-price");
+
+    cart2Items.each(function (index, item) {
+      const id = $(this).data("id");
+      const quantity = $(`#cart-2-quantity-${index + 1}`).val();
+      const price = $(`#cart-2-price-${index + 1}`).text();
+      const priceWithoutDollar = price.replace("$", "");
+
+      cart2ItemData.push({
+        id,
+        quantity: Number(quantity),
+        price: Number(priceWithoutDollar),
+      });
+    });
+
+    function update2Cart() {
+      cart2ItemsTotal.text(
+        cart2ItemData.reduce((acc, item) => acc + Number(item.quantity), 0)
+      );
+
+      const quantity = cart2ItemData.reduce(
+        (acc, item) => acc + Number(item.quantity) * Number(item.price),
+        0
+      );
+
+      cart2ItemsSubtotal.text(quantity);
+      cart2Total.text(
+        cart2ItemData.reduce(
+          (acc, item) => acc + Number(item.quantity) * Number(item.price),
+          0
+        ) + 5
+      );
+    }
+    update2Cart();
+
+    $(".cart-2-increase-btn").click(function () {
+      const id = $(this).data("id");
+
+      const input = $(`#cart-2-quantity-${id}`);
+      let inputVal = parseInt(input.val());
+
+      if (inputVal >= 0) {
+        input.val(inputVal + 1);
+        cart2ItemData[id - 1].quantity = inputVal + 1;
+
+        update2Cart();
+      }
+    });
+
+    $(".cart-2-decrease-btn").click(function () {
+      const id = $(this).data("id");
+
+      const input = $(`#cart-2-quantity-${id}`);
+      let inputVal = parseInt(input.val());
+
+      if (inputVal >= 1) {
+        input.val(inputVal - 1);
+        cart2ItemData[id - 1].quantity = inputVal - 1;
+        update2Cart();
+      }
+    });
+
+    $(".cart-2-delete-item-btn").click(function () {
+      const id = $(this).data("id");
+
+      cart2ItemData = cart2ItemData.filter((item) => item.id !== id);
+
+      $(this).closest(`div.cart-item[data-id='${id}']`).hide(300);
+
+      update2Cart();
+    });
+
+    // Cart 3
+    let cart3ItemData = [];
+    const cart3Items = $(".cart-item-3");
+    const cart3ItemsTotal = $("#cart-3-items");
+    const cart3ItemsSubtotal = $("#cart-3-items-subtotal");
+    const cart3Total = $("#cart-3-total-price");
+
+    function update3Cart(singleSubtotal = null) {
+      cart3ItemsTotal.text(
+        cart3ItemData.reduce((acc, item) => acc + Number(item.quantity), 0)
+      );
+
+      const quantity = cart3ItemData.reduce(
+        (acc, item) => acc + Number(item.quantity) * Number(item.price),
+        0
+      );
+      cart3ItemsSubtotal.text(quantity);
+
+      cart3Total.text(
+        cart3ItemData.reduce(
+          (acc, item) => acc + Number(item.quantity) * Number(item.price),
+          0
+        ) + 10
+      );
+
+      if (singleSubtotal) {
+        const singleSubtotalElement = $(
+          `.cart-3-single-subtotal-${singleSubtotal}`
+        );
+        const singlePrice = cart3ItemData[singleSubtotal - 1];
+
+        singleSubtotalElement.text(singlePrice.quantity * singlePrice.price);
+      }
+    }
+
+    cart3Items.each(function (index, item) {
+      const id = $(this).data("id");
+      const quantity = $(`#cart-3-quantity-${index + 1}`).val();
+      const price = $(`#cart-3-price-${index + 1}`).text();
+
+      cart3ItemData.push({
+        id,
+        quantity: Number(quantity),
+        price: Number(price),
+      });
+
+      update3Cart(id);
+    });
+
+    $(".cart-3-increase-btn").click(function () {
+      const id = $(this).data("id");
+
+      const input = $(`#cart-3-quantity-${id}`);
+      let inputVal = parseInt(input.val());
+
+      if (inputVal >= 0) {
+        input.val(inputVal + 1);
+        cart3ItemData[id - 1].quantity = inputVal + 1;
+
+        update3Cart(id);
+      }
+    });
+
+    $(".cart-3-decrease-btn").click(function () {
+      const id = $(this).data("id");
+
+      const input = $(`#cart-3-quantity-${id}`);
+      let inputVal = parseInt(input.val());
+
+      if (inputVal >= 1) {
+        input.val(inputVal - 1);
+        cart3ItemData[id - 1].quantity = inputVal - 1;
+
+        update3Cart(id);
+      }
+    });
+
+    $(".cart-3-delete-item-btn").click(function () {
+      const id = $(this).data("id");
+      cart3ItemData = cart3ItemData.filter((item) => item.id !== id);
+
+      $(this).closest(`tr[data-id='${id}']`).hide(300);
+
+      update3Cart();
+    });
+
     //>> Back To Top Start <<//
     $(window).scroll(function () {
       if ($(this).scrollTop() > 20) {

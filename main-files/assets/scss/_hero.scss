@@ -102,6 +102,12 @@
     }
   }
 
+  .here-details{
+    border-top: 50px solid #346086;
+    border-left: 50px solid #346086;
+    padding-bottom: 50px;
+    border-radius: 58%;
+  }
   .hero-content-2 {
     position: relative;
     z-index: 9;
@@ -544,7 +550,7 @@
 }
 
 .homepage-3 {
-  background: linear-gradient(145deg, #62aa4b 33.33%, #346086 33.33%, #346086 66.66%, #62aa4b 66.66%);
+  background: linear-gradient(145deg, #8d99ae 33.33%, #8d99ae 33.33%, #346086 66.66%, #346086 66.66%);
   height: 100vh;
   padding: 120px 0 120px;
   height: auto;
