@@ -673,7 +673,7 @@ CSS TABLE OF CONTENTS
     $(".cart-2-increase-btn").click(function () {
       const id = $(this).data("id");
 
-      const input = $(`#cart-2-quantity-${id}`);
+      const input = $(`#cart-3-quantity-${id}`);
       let inputVal = parseInt(input.val());
 
       if (inputVal >= 0) {
@@ -695,6 +695,92 @@ CSS TABLE OF CONTENTS
         cart2ItemData[id - 1].quantity = inputVal - 1;
         update2Cart();
       }
+    });
+
+    // Cart 3
+    let cart3ItemData = [];
+    const cart3Items = $(".cart-item-3");
+    const cart3ItemsTotal = $("#cart-3-items");
+    const cart3ItemsSubtotal = $("#cart-3-items-subtotal");
+    const cart3Total = $("#cart-3-total-price");
+
+    function update3Cart(singleSubtotal = null) {
+      cart3ItemsTotal.text(
+        cart3ItemData.reduce((acc, item) => acc + Number(item.quantity), 0)
+      );
+
+      const quantity = cart3ItemData.reduce(
+        (acc, item) => acc + Number(item.quantity) * Number(item.price),
+        0
+      );
+      cart3ItemsSubtotal.text(quantity);
+
+      cart3Total.text(
+        cart3ItemData.reduce(
+          (acc, item) => acc + Number(item.quantity) * Number(item.price),
+          0
+        ) + 10
+      );
+
+      if (singleSubtotal) {
+        const singleSubtotalElement = $(
+          `.cart-3-single-subtotal-${singleSubtotal}`
+        );
+        const singlePrice = cart3ItemData[singleSubtotal - 1];
+
+        singleSubtotalElement.text(singlePrice.quantity * singlePrice.price);
+      }
+    }
+
+    cart3Items.each(function (index, item) {
+      const id = $(this).data("id");
+      const quantity = $(`#cart-3-quantity-${index + 1}`).val();
+      const price = $(`#cart-3-price-${index + 1}`).text();
+
+      cart3ItemData.push({
+        id,
+        quantity: Number(quantity),
+        price: Number(price),
+      });
+
+      update3Cart(id);
+    });
+
+    $(".cart-3-increase-btn").click(function () {
+      const id = $(this).data("id");
+
+      const input = $(`#cart-3-quantity-${id}`);
+      let inputVal = parseInt(input.val());
+
+      if (inputVal >= 0) {
+        input.val(inputVal + 1);
+        cart3ItemData[id - 1].quantity = inputVal + 1;
+
+        update3Cart(id);
+      }
+    });
+
+    $(".cart-3-decrease-btn").click(function () {
+      const id = $(this).data("id");
+
+      const input = $(`#cart-3-quantity-${id}`);
+      let inputVal = parseInt(input.val());
+
+      if (inputVal >= 1) {
+        input.val(inputVal - 1);
+        cart3ItemData[id - 1].quantity = inputVal - 1;
+
+        update3Cart(id);
+      }
+    });
+
+    $(".cart-3-delete-item-btn").click(function () {
+      const id = $(this).data("id");
+      cart3ItemData = cart3ItemData.filter((item) => item.id !== id);
+
+      $(this).closest(`tr[data-id='${id}']`).hide(300);
+
+      update3Cart();
     });
 
     //>> Back To Top Start <<//
