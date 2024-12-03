@@ -630,6 +630,69 @@ CSS TABLE OF CONTENTS
         .fadeIn();
     });
 
+    // Cart 2
+    const cart2ItemData = [];
+    const cart2Items = $(".cart-item");
+    const cart2ItemsTotal = $("#cart-2-items");
+    const cart2ItemsSubtotal = $("#cart-2-items-subtotal");
+    const cart2Total = $("#cart-2-total-price");
+
+    cart2Items.each(function (index, item) {
+      const id = $(this).data("id");
+      const quantity = $(`#cart-2-quantity-${index + 1}`).val();
+      const price = $(`#cart-2-price-${index + 1}`).text();
+      const priceWithoutDollar = price.replace("$", "");
+
+      cart2ItemData.push({
+        id,
+        quantity: Number(quantity),
+        price: Number(priceWithoutDollar),
+      });
+    });
+
+    function update2Cart() {
+      cart2ItemsTotal.text(
+        cart2ItemData.reduce((acc, item) => acc + item.quantity * item.price, 0)
+      );
+      cart2ItemsSubtotal.text(
+        cart2ItemData.reduce((acc, item) => acc + item.price * item.quantity, 0)
+      );
+      cart2Total.text(
+        cart2ItemData.reduce(
+          (acc, item) => acc + item.price * item.quantity,
+          0
+        ) + 5
+      );
+    }
+    update2Cart();
+
+    $(".cart-2-increase-btn").click(function () {
+      const id = $(this).data("id");
+
+      const input = $(`#cart-2-quantity-${id}`);
+      let inputVal = parseInt(input.val());
+
+      if (inputVal >= 0) {
+        input.val(inputVal + 1);
+        cart2ItemData[id - 1].quantity = inputVal + 1;
+
+        update2Cart();
+      }
+    });
+
+    $(".cart-2-decrease-btn").click(function () {
+      const id = $(this).data("id");
+
+      const input = $(`#cart-2-quantity-${id}`);
+      let inputVal = parseInt(input.val());
+
+      if (inputVal >= 1) {
+        input.val(inputVal - 1);
+        cart2ItemData[id - 1].quantity = inputVal - 1;
+        update2Cart();
+      }
+    });
+
     //>> Back To Top Start <<//
     $(window).scroll(function () {
       if ($(this).scrollTop() > 20) {
