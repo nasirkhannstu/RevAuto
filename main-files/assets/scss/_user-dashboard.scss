@@ -38,4 +38,135 @@
       }
     }
   }
+
+  .right-side {
+    .top {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .profile,
+      .billing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .profile {
+        max-width: 535px;
+        width: 100%;
+        padding: 30px;
+        border: 1px solid $border-color-2;
+        border-radius: 8px;
+        align-items: center;
+
+        img {
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        h5 {
+          font-size: 20px !important;
+          font-weight: 500;
+          line-height: 30px;
+          text-align: center;
+          color: $text-color-2 !important;
+          margin-top: 10px;
+        }
+
+        p {
+          font-weight: 400;
+          text-align: center;
+          line-height: 21px;
+          color: #808080 !important;
+          font-size: 14px;
+        }
+
+        button {
+          margin-top: 10px;
+          font-size: 16px !important;
+          text-align: center;
+          color: $theme-color;
+          font-weight: 500;
+        }
+      }
+
+      .billing {
+        flex: 1;
+        padding: 30px;
+        border: 1px solid $border-color-2;
+        border-radius: 8px;
+        height: 100%;
+
+        .title {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 14px;
+          letter-spacing: 0.03em;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          text-transform: uppercase;
+          color: #999999 !important;
+          margin-bottom: 16px;
+        }
+
+        .name {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: $text-color-2 !important;
+        }
+
+        .address {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: #666666;
+          margin: 8px 0;
+        }
+
+        .email {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: $text-color-2;
+          margin-bottom: 6px;
+        }
+
+        .phone {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: $text-color-2;
+        }
+
+        button {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: $theme-color;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }

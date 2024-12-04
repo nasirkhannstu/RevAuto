@@ -7044,5 +7044,120 @@ span {
 .user-dashboard-wrapper .left-side .navigation-list li.active {
   border-left: 3px solid var(--theme);
 }
+.user-dashboard-wrapper .right-side .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.user-dashboard-wrapper .right-side .top .profile,
+.user-dashboard-wrapper .right-side .top .billing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-dashboard-wrapper .right-side .top .profile {
+  max-width: 535px;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  align-items: center;
+}
+.user-dashboard-wrapper .right-side .top .profile img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user-dashboard-wrapper .right-side .top .profile h5 {
+  font-size: 20px !important;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: var(--text-2) !important;
+  margin-top: 10px;
+}
+.user-dashboard-wrapper .right-side .top .profile p {
+  font-weight: 400;
+  text-align: center;
+  line-height: 21px;
+  color: #808080 !important;
+  font-size: 14px;
+}
+.user-dashboard-wrapper .right-side .top .profile button {
+  margin-top: 10px;
+  font-size: 16px !important;
+  text-align: center;
+  color: var(--theme);
+  font-weight: 500;
+}
+.user-dashboard-wrapper .right-side .top .billing {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  height: 100%;
+}
+.user-dashboard-wrapper .right-side .top .billing .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: #999999 !important;
+  margin-bottom: 16px;
+}
+.user-dashboard-wrapper .right-side .top .billing .name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-2) !important;
+}
+.user-dashboard-wrapper .right-side .top .billing .address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #666666;
+  margin: 8px 0;
+}
+.user-dashboard-wrapper .right-side .top .billing .email {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-2);
+  margin-bottom: 6px;
+}
+.user-dashboard-wrapper .right-side .top .billing .phone {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-2);
+}
+.user-dashboard-wrapper .right-side .top .billing button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--theme);
+  margin-top: 20px;
+}
 
 /*# sourceMappingURL=main.css.map */
