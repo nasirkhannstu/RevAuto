@@ -6056,6 +6056,18 @@ span {
 .cart-wrapper-2 {
   width: 100%;
 }
+.cart-wrapper-2 .cart-container-2 {
+  overflow-x: auto;
+}
+.cart-wrapper-2 .cart-header {
+  padding: 10px;
+  background-color: var(--white);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
 .cart-wrapper-2 .cart-item, .cart-wrapper-2 .cart-wrapper-3 .cart-item-3, .cart-wrapper-3 .cart-wrapper-2 .cart-item-3 {
   background-color: var(--white);
   box-shadow: var(--box-shadow);
@@ -6065,6 +6077,7 @@ span {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  min-width: 840px;
 }
 .cart-wrapper-2 .cart-item .cart-item-image, .cart-wrapper-2 .cart-wrapper-3 .cart-item-3 .cart-item-image, .cart-wrapper-3 .cart-wrapper-2 .cart-item-3 .cart-item-image {
   max-width: 150px;

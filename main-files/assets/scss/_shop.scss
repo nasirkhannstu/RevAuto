@@ -1287,6 +1287,20 @@
 .cart-wrapper-2 {
   width: 100%;
 
+  .cart-container-2{
+    overflow-x: auto;
+  }
+
+  .cart-header{
+    padding: 10px;
+    background-color: $white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
   .cart-item {
     background-color: $white;
     box-shadow: $shadow;
@@ -1296,6 +1310,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    min-width: 840px;
 
     .cart-item-image {
       max-width: 150px;
