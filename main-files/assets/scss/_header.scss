@@ -284,7 +284,7 @@
 				border: 1px solid $white;
 				text-align: center;
 
-				&::before {
+				#cart-count {
 					position: absolute;
 					top: 0;
 					right: -12px;

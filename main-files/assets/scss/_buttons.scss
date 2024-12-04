@@ -121,4 +121,16 @@
     }
 }
 
+.add-to-cart{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(67, 118, 251, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: $theme-color;
+    }
+}
+
 //>>>>> Component Button End <<<<<//

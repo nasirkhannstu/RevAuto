@@ -730,7 +730,9 @@ CSS TABLE OF CONTENTS
         cart3ItemData.reduce(
           (acc, item) => acc + Number(item.quantity) * Number(item.price),
           0
-        ) + 10
+        ) +
+          10 -
+          9.99
       );
 
       if (singleSubtotal) {
@@ -792,6 +794,23 @@ CSS TABLE OF CONTENTS
       $(this).closest(`tr[data-id='${id}']`).hide(300);
 
       update3Cart();
+    });
+
+    // update cart count
+    const counterBtns = $(".add-to-cart");
+    const counterBtns2 = $(".add-to-cart-2");
+    const cartCount = $("#cart-count");
+    function updateCartCount() {
+      const cartCountValue = cartCount.text();
+      cartCount.text(Number(cartCountValue) + 1);
+    }
+
+    counterBtns.click(function () {
+      updateCartCount();
+    });
+
+    counterBtns2.click(function () {
+      updateCartCount();
     });
 
     //>> Back To Top Start <<//

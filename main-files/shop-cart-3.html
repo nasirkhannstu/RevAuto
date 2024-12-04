@@ -12,7 +12,7 @@
       content="RevAuto - Car Dealer & Services Html Template"
     />
     <!-- ======== Page title ============ -->
-    <title>RevAuto - Car Dealer & Services Html Template</title>
+    <title>Shopping Cart 3 - RevAuto</title>
     <!--<< Favcion >>-->
     <link rel="shortcut icon" href="assets/img/favicon.svg" />
     <!--<< Bootstrap min.css >>-->
@@ -355,6 +355,7 @@
               <div class="menu-cart">
                 <a href="shop-cart.html" class="cart-icon">
                   <i class="fa-regular fa-cart-shopping"></i>
+                  <span id="cart-count">0</span>
                 </a>
               </div>
               <div class="header-button">
@@ -497,7 +498,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="cart-wrapper-footer">
+                <div class="cart-wrapper-footer align-items-start">
                   <form action="shop-cart.html">
                     <input
                       type="text"
@@ -509,18 +510,25 @@
                       <span>Apply Code</span>
                     </button>
                   </form>
-                  <div>
-                    <ul class="d-flex align-items-center gap-5 fw-medium">
-                      <li class="d-flex align-items-center gap-4">
+                  <div class="w-25">
+                    <ul class="fw-medium w-100">
+                      <li class="d-flex align-items-center gap-4 justify-content-between ">
                         <span>Subtotal (<span id="cart-3-items"></span>)</span>
                         <span>$<span id="cart-3-items-subtotal"></span></span>
                       </li>
-                      <li class="d-flex align-items-center gap-4">
+                      <hr>
+                      <li class="d-flex align-items-center gap-4 justify-content-between ">
                         <span>Shipping</span>
                         <span>$10</span>
                       </li>
-                      <li class="d-flex align-items-center gap-4">
-                        <span>Total</span>
+                      <hr>
+                      <li class="d-flex align-items-center gap-4 justify-content-between ">
+                        <span>Discount</span>
+                        <span>$9.99</span>
+                      </li>
+                      <hr>
+                      <li class="d-flex align-items-center gap-4 justify-content-between pb-1">
+                        <span>Grand Total</span>
                         <span>$<span id="cart-3-total-price"></span></span>
                       </li>
                     </ul>
