@@ -6167,6 +6167,16 @@ span {
   object-fit: cover;
   border-radius: 5px;
 }
+.cart-wrapper-3 .cart-item-3 .cart-item-input {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .cart-wrapper-3 .cart-item-3 .cart-item-input {
+    flex-direction: row;
+  }
+}
 .cart-wrapper-3 .cart-item-3 .cart-item-input button {
   width: 40px;
   height: 40px;
