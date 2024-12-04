@@ -1,0 +1,35 @@
+{
+  "name": "revauto",
+  "version": "1.0.0",
+  "description": "This is a HTML, CSS, SCSS, JavaScript template for Car Shop",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass assets/scss/main.scss assets/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasirkhannstu/RevAuto.git"
+  },
+  "keywords": [
+    "revauto",
+    "rev-auto",
+    "carshop",
+    "car",
+    "ecommerce",
+    "html",
+    "css",
+    "scss",
+    "javascript",
+    "template",
+    "responsive"
+  ],
+  "author": "https://github.com/nasirkhannstu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nasirkhannstu/RevAuto/issues"
+  },
+  "homepage": "https://github.com/nasirkhannstu/RevAuto#readme",
+  "devDependencies": {
+    "sass": "^1.82.0"
+  }
+}
