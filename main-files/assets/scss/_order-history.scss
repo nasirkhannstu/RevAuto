@@ -1,0 +1,36 @@
+.order-history {
+  .pagination {
+    padding: 0px 24px;
+    width: fit-content;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0px;
+
+      li a {
+        width: 36px;
+        height: 36px;
+        background-color: $theme-fade;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: $theme-color;
+        flex-shrink: 0;
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      li.active a {
+        background-color: $theme-color;
+        color: $white;
+      }
+
+      .no-style {
+        background-color: transparent;
+      }
+    }
+  }
+}

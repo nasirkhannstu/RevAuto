@@ -7229,4 +7229,35 @@ span {
   text-decoration: underline;
 }
 
+.order-history .pagination {
+  padding: 0px 24px;
+  width: fit-content;
+}
+.order-history .pagination ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+.order-history .pagination ul li a {
+  width: 36px;
+  height: 36px;
+  background-color: var(--theme-fade);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--theme);
+  flex-shrink: 0;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+}
+.order-history .pagination ul li.active a {
+  background-color: var(--theme);
+  color: var(--white);
+}
+.order-history .pagination ul .no-style {
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=main.css.map */
