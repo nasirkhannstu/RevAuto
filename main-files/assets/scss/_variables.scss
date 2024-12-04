@@ -3,23 +3,31 @@
   --black: #000;
   --white: #fff;
   --theme: #4376fb;
+  --theme-fade: #4377fb21;
   --theme2: #ffbf25;
   --header: #000000;
   --text: #555555;
+  --text-2: #0a111e;
+  --text-fade: #5f5f5f;
   --border: #d5d5d5;
+  --border-2: #e6e6e6;
   --bg: #f4f6fa;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
   --footer: #0a111e;
 }
 
-// Theme Color - Defualt Colors
+// Theme Color - Default Colors
 $black: var(--black);
 $white: var(--white);
 $theme-color: var(--theme);
+$theme-fade: var(--theme-fade);
 $theme-color-2: var(--theme2);
 $text-color: var(--text);
+$text-color-2: var(--text-2);
+$text-fade: var(--text-fade);
 $header-color: var(--header);
 $border-color: var(--border);
 $bg-color: var(--bg);
 $shadow: var(--box-shadow);
 $footer-3: var(--footer);
+$border-color-2: var(--border-2);
