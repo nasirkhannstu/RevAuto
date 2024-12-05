@@ -7466,8 +7466,8 @@ span {
 }
 .order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step:before {
   content: attr(data-step);
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   line-height: 36px;
   border: 1px dashed var(--theme);
   background-color: white;
@@ -7478,6 +7478,18 @@ span {
   z-index: 2;
   font-weight: 400;
   color: var(--theme);
+}
+@media (min-width: 768px) {
+  .order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step:before {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (min-width: 992px) {
+  .order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step:before {
+    width: 40px;
+    height: 40px;
+  }
 }
 .order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step:after {
   content: "";
@@ -7514,6 +7526,38 @@ span {
 .order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step.active .step-title {
   color: #4376fb;
   font-weight: 400;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-table .product-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-table .table > :not(caption) > * > * {
+  padding: 1rem;
+  background: transparent;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-table .product-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-2);
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-table .table-header {
+  font-size: 12px;
+  color: #5f5f5f;
+  font-weight: 500;
+  background-color: var(--theme-fade) !important;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-table .price,
+.order-details .right-side .main-info .order-details-bottom .order-details-table .quantity {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-2);
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-table .subtotal {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-2);
 }
 
 /*# sourceMappingURL=main.css.map */
