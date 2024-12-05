@@ -7452,5 +7452,68 @@ span {
 .order-details .right-side .main-info .payment-details-item-price {
   color: var(--theme) !important;
 }
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-tracker {
+  position: relative;
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step {
+  width: 25%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step:before {
+  content: attr(data-step);
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  border: 1px dashed var(--theme);
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  color: var(--theme);
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  width: 100%;
+  height: 6px;
+  background-color: var(--theme-fade);
+  z-index: 1;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step:last-child:after {
+  display: none;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step.completed:before {
+  background-color: #4376fb;
+  border-color: #4376fb;
+  color: white;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step.active:before {
+  border-color: #4376fb;
+  background-color: white;
+  color: #4376fb;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step.completed:after {
+  background-color: #4376fb;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .step-title {
+  font-size: 14px;
+  color: var(--theme);
+  margin-top: 5px;
+}
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step.completed .step-title,
+.order-details .right-side .main-info .order-details-bottom .order-details-status .progress-step.active .step-title {
+  color: #4376fb;
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=main.css.map */
