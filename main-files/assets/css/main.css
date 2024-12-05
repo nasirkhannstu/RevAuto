@@ -7560,4 +7560,64 @@ span {
   color: var(--text-2);
 }
 
+.account-settings {
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+}
+.account-settings-heading {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-2);
+}
+.account-settings-heading h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: var(--text-2);
+}
+.account-settings-body {
+  padding: 24px;
+}
+.account-settings-body-form label {
+  color: var(--text-2);
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+.account-settings-body-form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+}
+.account-settings-body-form button[type=submit] {
+  background: var(--theme);
+  color: var(--white);
+  padding: 8px 32px;
+  border-radius: 43px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.account-settings-body-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.account-settings-body-profile img {
+  width: 224px;
+  height: 224px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.account-settings-body-profile button {
+  padding: 7px 32px;
+  border-radius: 43px;
+  font-weight: 600;
+  font-size: 14px;
+  background: transparent;
+  border: 2px solid var(--theme);
+  margin-top: 20px;
+  color: var(--theme);
+}
+
 /*# sourceMappingURL=main.css.map */

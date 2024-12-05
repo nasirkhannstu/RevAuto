@@ -1,0 +1,70 @@
+.account-settings {
+  border: 1px solid $border-color-2;
+  border-radius: 8px;
+
+  &-heading {
+    padding: 16px 24px;
+    border-bottom: 1px solid $border-color-2;
+
+    h5 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      color: $text-color-2;
+    }
+  }
+
+  &-body {
+    padding: 24px;
+
+    &-form {
+      label {
+        color: $text-color-2;
+        margin-bottom: 4px;
+        font-weight: 400;
+      }
+
+      input::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        color: #666;
+      }
+
+      button[type="submit"] {
+        background: $theme-color;
+        color: $white;
+        padding: 8px 32px;
+        border-radius: 43px;
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: 30px;
+      }
+    }
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        width: 224px;
+        height: 224px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      button {
+        padding: 7px 32px;
+        border-radius: 43px;
+        font-weight: 600;
+        font-size: 14px;
+        background: transparent;
+        border: 2px solid $theme-color;
+        margin-top: 20px;
+        color: $theme-color;
+      }
+    }
+  }
+}
