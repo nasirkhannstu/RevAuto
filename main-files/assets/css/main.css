@@ -7260,4 +7260,197 @@ span {
   background-color: transparent;
 }
 
+.order-details .right-side {
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  display: block;
+}
+.order-details .right-side .heading {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-details .right-side .heading div h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: var(--text-2);
+}
+.order-details .right-side .heading div span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: var(--text-fade);
+}
+.order-details .right-side .heading div .circle {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-fade);
+  border-radius: 50%;
+}
+.order-details .right-side .heading a.back-to-list {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--theme);
+}
+.order-details .right-side .main-info {
+  margin: 24px;
+}
+.order-details .right-side .main-info .addresses {
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  display: flex;
+  gap: 0;
+}
+.order-details .right-side .main-info .addresses .billing-address,
+.order-details .right-side .main-info .addresses .shipping-address {
+  flex: 1;
+  border-right: 1px solid var(--border-2);
+}
+.order-details .right-side .main-info .addresses .billing-address .title,
+.order-details .right-side .main-info .addresses .shipping-address .title {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border-2);
+}
+.order-details .right-side .main-info .addresses .billing-address .title p,
+.order-details .right-side .main-info .addresses .shipping-address .title p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #999;
+  text-transform: uppercase;
+}
+.order-details .right-side .main-info .addresses .billing-address .info,
+.order-details .right-side .main-info .addresses .shipping-address .info {
+  padding: 18px 20px;
+}
+.order-details .right-side .main-info .addresses .billing-address .info .name,
+.order-details .right-side .main-info .addresses .shipping-address .info .name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: var(--text-2);
+}
+.order-details .right-side .main-info .addresses .billing-address .info .address,
+.order-details .right-side .main-info .addresses .shipping-address .info .address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #666;
+  margin-top: 8px;
+}
+.order-details .right-side .main-info .addresses .billing-address .info .email .title,
+.order-details .right-side .main-info .addresses .shipping-address .info .email .title {
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  border: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #999;
+}
+.order-details .right-side .main-info .addresses .billing-address .info .email .email,
+.order-details .right-side .main-info .addresses .shipping-address .info .email .email {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: var(--text-2);
+  margin-top: 5px;
+}
+.order-details .right-side .main-info .addresses .billing-address .info .phone .title,
+.order-details .right-side .main-info .addresses .shipping-address .info .phone .title {
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  border: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #999;
+}
+.order-details .right-side .main-info .addresses .billing-address .info .phone .phone,
+.order-details .right-side .main-info .addresses .shipping-address .info .phone .phone {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: var(--text-2);
+  margin-top: 5px;
+}
+.order-details .right-side .main-info .addresses .shipping-address {
+  border-right: 0;
+}
+.order-details .right-side .main-info .payment {
+  border-radius: 8px;
+  border: 1px solid var(--border-2);
+}
+.order-details .right-side .main-info .payment-heading {
+  padding: 18px 20px;
+  display: flex;
+}
+.order-details .right-side .main-info .payment-heading-order, .order-details .right-side .main-info .payment-heading-method {
+  flex: 1;
+}
+.order-details .right-side .main-info .payment-heading-order p, .order-details .right-side .main-info .payment-heading-method p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #999;
+  text-transform: uppercase;
+}
+.order-details .right-side .main-info .payment-heading-order span, .order-details .right-side .main-info .payment-heading-method span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: var(--text-2);
+}
+.order-details .right-side .main-info .payment-details {
+  padding: 0px 20px;
+  margin-top: 5px;
+}
+.order-details .right-side .main-info .payment-details-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+.order-details .right-side .main-info .payment-details-item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #666;
+}
+.order-details .right-side .main-info .payment-details-item span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: var(--text-2);
+}
+.order-details .right-side .main-info .payment-details-item-total {
+  color: var(--text-2) !important;
+}
+.order-details .right-side .main-info .payment-details-item-price {
+  color: var(--theme) !important;
+}
+
 /*# sourceMappingURL=main.css.map */
