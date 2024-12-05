@@ -7620,4 +7620,46 @@ span {
   color: var(--theme);
 }
 
+.billing-settings {
+  margin-top: 24px;
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+}
+.billing-settings-heading {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-2);
+}
+.billing-settings-heading h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: var(--text-2);
+}
+.billing-settings-body {
+  padding: 24px;
+}
+.billing-settings-body label {
+  color: var(--text-2);
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+.billing-settings-body input {
+  border-color: #e6e6e6;
+}
+.billing-settings-body input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+}
+.billing-settings-body button[type=submit] {
+  background: var(--theme);
+  color: var(--white);
+  padding: 8px 32px;
+  border-radius: 43px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
