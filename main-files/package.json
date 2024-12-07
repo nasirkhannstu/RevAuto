@@ -4,7 +4,7 @@
   "description": "This is a HTML, CSS, SCSS, JavaScript template for Car Shop",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "sass assets/scss/main.scss assets/css/main.css --watch"
+    "dev:sass": "sass assets/scss/main.scss assets/css/main.css --watch"
   },
   "repository": {
     "type": "git",
