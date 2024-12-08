@@ -1,0 +1,17 @@
+.offer-4-wrapper {
+  max-width: 1800px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #ff4035 0%, $theme-color-2 100%);
+  border-radius: 40px;
+  color: $white;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-between;
+
+  i {
+    font-size: 16px;
+  }
+}
