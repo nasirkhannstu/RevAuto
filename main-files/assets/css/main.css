@@ -8314,9 +8314,59 @@ span {
   padding-left: 40px;
   padding-right: 40px;
   justify-content: space-between;
+  min-width: 1700px;
 }
 .offer-4-wrapper i {
   font-size: 16px;
+}
+
+.category-4 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.category-4 .container {
+  max-width: 1380px;
+}
+.category-4 .container .category-4-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.category-4 .container .category-4-container .category-4-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 195px;
+  height: 195px;
+  border-radius: 20px;
+  border: 1px solid rgba(22, 22, 22, 0.0784313725);
+}
+.category-4 .container .category-4-container .category-4-item-icon {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: var(--theme-fade);
+  color: var(--theme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--theme);
+}
+.category-4 .container .category-4-container .category-4-item h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 10px;
+}
+.category-4 .container .category-4-container .category-4-item p {
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: #555;
 }
 
 /*# sourceMappingURL=main.css.map */
