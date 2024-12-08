@@ -175,12 +175,17 @@ CSS TABLE OF CONTENTS
 
     // hero 4 slider
     const swiper = new Swiper(".hero-4-swiper", {
-      loop: true, // Enable infinite loop
-      spaceBetween: 10, // Space between slides
-      slidesPerView: 1, // Show 1 slide at a time
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 1,
+      loop: true,
       pagination: {
-        el: ".hero-4-pagination", // Enable pagination
-        clickable: true, // Make it clickable
+        el: ".swiper-dot",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
     });
 

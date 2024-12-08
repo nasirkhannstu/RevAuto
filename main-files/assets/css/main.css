@@ -4036,11 +4036,6 @@ span {
   text-align: left;
   color: var(--text-2);
 }
-@media (min-width: 576px) {
-  .hero-4-container .hero-4-left-content .hero-4-specification .hero-4-colors {
-    margin-right: 110px;
-  }
-}
 .hero-4-container .hero-4-left-content .hero-4-specification .hero-4-colors .colors {
   display: flex;
   align-items: center;
@@ -4063,15 +4058,6 @@ span {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-}
-.hero-4-container .hero-4-left-content .hero-4-specification .hero-4-img-overlay {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 40px;
-  z-index: 1;
 }
 .hero-4-container .hero-4-left-content .hero-4-btns {
   display: flex;

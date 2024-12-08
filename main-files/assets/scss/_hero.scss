@@ -796,10 +796,6 @@
         }
 
         .hero-4-colors {
-          @include breakpoint(sm) {
-            margin-right: 110px;
-          }
-
           .colors {
             display: flex;
             align-items: center;
@@ -825,18 +821,6 @@
               height: 16px;
               border-radius: 50%;
             }
-          }
-        }
-
-        .hero-4-img {
-          &-overlay {
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 40px;
-            z-index: 1;
           }
         }
       }
