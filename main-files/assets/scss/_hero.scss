@@ -647,22 +647,6 @@
     background-color: $theme-fade;
     border-radius: 40px;
     border: 1px solid $theme-fade-2;
-    padding: 20px;
-    @include breakpoint(md) {
-      padding: 30px;
-    }
-    @include breakpoint(xxl) {
-      padding: 10px 75px 25px;
-      padding-top: 100px;
-    }
-    @include breakpoint(xl) {
-      padding: 10px 60px 20px;
-      padding-top: 80px;
-    }
-    @include breakpoint(xl) {
-      padding: 10px 50px 20px;
-      padding-top: 60px;
-    }
 
     .hero-4-left-padding {
       @include breakpoint(lg) {
@@ -678,6 +662,25 @@
       margin-top: 50px;
       @include breakpoint(lg) {
         margin-top: 0px;
+      }
+    }
+
+    .hero-4-swiper-container {
+      padding: 20px;
+      @include breakpoint(md) {
+        padding: 30px;
+      }
+      @include breakpoint(xxl) {
+        padding: 10px 75px 25px;
+        padding-top: 100px;
+      }
+      @include breakpoint(xl) {
+        padding: 10px 60px 20px;
+        padding-top: 80px;
+      }
+      @include breakpoint(xl) {
+        padding: 10px 50px 20px;
+        padding-top: 60px;
       }
     }
 

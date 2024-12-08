@@ -3790,30 +3790,6 @@ span {
   background-color: var(--theme-fade);
   border-radius: 40px;
   border: 1px solid var(--theme-fade-2);
-  padding: 20px;
-}
-@media (min-width: 768px) {
-  .hero-4-container {
-    padding: 30px;
-  }
-}
-@media (min-width: 1400px) {
-  .hero-4-container {
-    padding: 10px 75px 25px;
-    padding-top: 100px;
-  }
-}
-@media (min-width: 1200px) {
-  .hero-4-container {
-    padding: 10px 60px 20px;
-    padding-top: 80px;
-  }
-}
-@media (min-width: 1200px) {
-  .hero-4-container {
-    padding: 10px 50px 20px;
-    padding-top: 60px;
-  }
 }
 .hero-4-container .hero-4-left-padding {
   margin-top: 50px;
@@ -3836,6 +3812,32 @@ span {
 @media (min-width: 992px) {
   .hero-4-container .hero-4-left-padding {
     margin-top: 0px;
+  }
+}
+.hero-4-container .hero-4-swiper-container {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .hero-4-container .hero-4-swiper-container {
+    padding: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-4-container .hero-4-swiper-container {
+    padding: 10px 75px 25px;
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-4-container .hero-4-swiper-container {
+    padding: 10px 60px 20px;
+    padding-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-4-container .hero-4-swiper-container {
+    padding: 10px 50px 20px;
+    padding-top: 60px;
   }
 }
 .hero-4-container .hero-4-left-content .hero-4-offer {
