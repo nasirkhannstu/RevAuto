@@ -164,6 +164,76 @@
 
     <!-- header  section start -->
     <header id="header-sticky" class="navbar-2">
+      <div class="navbar-2-address-bar">
+        <div class="address-bar-content">
+          <p><i class="fa-regular fa-phone"></i> +61 000 321 555 004</p>
+          <p>
+            <i class="fa-sharp fa-regular fa-tag"></i> 59%
+            <span class="highlight">discount</span> for all items
+          </p>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="language-select">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle language-selector"
+                  type="button"
+                  id="languageDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-thin fa-earth-americas"></i>
+                  <span id="selectedLanguage">English</span>
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="languageDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#" data-lang="English"
+                      >English</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" data-lang="Español"
+                      >Español</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" data-lang="Français"
+                      >Français</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" data-lang="Deutsch"
+                      >Deutsch</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" data-lang="Italiano"
+                      >Italiano</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" data-lang="Português"
+                      >Português</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <hr style="width: 2px; height: 20px; background: #fff" />
+            </div>
+            <div class="my-account">
+              <a href="user-dashboard.html"
+                ><i class="fa-regular fa-user"></i> <span>My Account</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-6 col-md-4">
@@ -835,5 +905,19 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownItems = document.querySelectorAll(".dropdown-item");
+        const selectedLanguage = document.getElementById("selectedLanguage");
+
+        dropdownItems.forEach((item) => {
+          item.addEventListener("click", function (e) {
+            e.preventDefault();
+            const lang = this.getAttribute("data-lang");
+            selectedLanguage.textContent = lang;
+          });
+        });
+      });
+    </script>
   </body>
 </html>

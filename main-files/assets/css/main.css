@@ -2695,6 +2695,74 @@ span {
   margin-bottom: 10px;
 }
 
+.navbar-2 {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar-2 .navbar-2-address-bar {
+  width: 100%;
+  background: var(--black);
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .highlight {
+  color: var(--theme);
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .language-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .language-select .language-selector {
+  width: 140px;
+  background-color: #0a0d14;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .language-select .language-selector:focus {
+  box-shadow: none;
+  border: none;
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .language-select .language-selector option {
+  background-color: #0a0d14;
+  color: white;
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .language-select .globe-icon {
+  margin-right: 0.5rem;
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .language-select .dropdown-toggle::after {
+  float: right;
+  margin-top: 0.5rem;
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .language-select .dropdown-menu-dark {
+  background-color: #0a0d14;
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .language-select .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content .my-account a {
+  color: var(--white) !important;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .navbar-2 .container {
   max-width: 1800px !important;
   padding-top: 10px;
@@ -2949,6 +3017,10 @@ span {
   right: -5px;
   background-color: #feb81b;
   border-radius: 50%;
+}
+
+.display-none {
+  display: none;
 }
 
 ::-webkit-scrollbar {

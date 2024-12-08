@@ -57,8 +57,11 @@ CSS TABLE OF CONTENTS
     $(window).scroll(function () {
       if ($(this).scrollTop() > 250) {
         $("#header-sticky").addClass("sticky");
+
+        $(".navbar-2-address-bar").addClass("display-none");
       } else {
         $("#header-sticky").removeClass("sticky");
+        $(".navbar-2-address-bar").removeClass("display-none");
       }
     });
 
