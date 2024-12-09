@@ -346,13 +346,13 @@
     content: "";
     height: 2px;
     width: 170px;
-    @include breakpoint(xxl){
+    @include breakpoint(xxl) {
       width: 180px;
     }
-    @include breakpoint(xxxl){
+    @include breakpoint(xxxl) {
       width: 190px;
     }
-    @include breakpoint(4xl){
+    @include breakpoint(4xl) {
       width: 200px;
     }
     background: linear-gradient(

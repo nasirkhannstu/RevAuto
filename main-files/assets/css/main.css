@@ -1752,11 +1752,11 @@ span {
 }
 
 .footer-widgets-wrapper {
-  padding: 70px 0 100px;
+  padding: 70px 0px 100px;
 }
 @media (max-width: 991px) {
   .footer-widgets-wrapper {
-    padding: 50px 0 80px;
+    padding: 50px 0px 80px;
   }
 }
 .footer-widgets-wrapper .single-footer-widget {
@@ -1813,7 +1813,7 @@ span {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid rgba(67, 118, 251, 0.3);
-  padding: 30px 0;
+  padding: 30px 0px;
 }
 @media (max-width: 767px) {
   .footer-bottom-wrapper {
@@ -1835,7 +1835,7 @@ span {
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 120px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
   color: var(--white);
   background-position: center;
   background-repeat: no-repeat;
@@ -1843,7 +1843,7 @@ span {
 }
 @media (max-width: 1199px) {
   .footer-3 {
-    padding-top: 100px 0;
+    padding-top: 100px 0px;
   }
 }
 @media (max-width: 991px) {
@@ -8319,6 +8319,134 @@ span {
 }
 .offer-4-wrapper i {
   font-size: 16px;
+}
+
+.offer-4-highlight .container {
+  max-width: var(--max-width);
+}
+.offer-4-highlight .container .highlight-4-left {
+  width: 100%;
+  background: #ffdedc;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .offer-4-highlight .container .highlight-4-left {
+    padding: 60px 40px;
+  }
+}
+.offer-4-highlight .container .highlight-4-left .left-side-body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+@media (min-width: 1200px) {
+  .offer-4-highlight .container .highlight-4-left .left-side-body {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.offer-4-highlight .container .highlight-4-left .left-side-body .title span {
+  color: #ff4035;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.offer-4-highlight .container .highlight-4-left .left-side-body .title h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #161616;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.offer-4-highlight .container .highlight-4-left .left-side-body .button {
+  margin-top: 10px;
+}
+@media (min-width: 1200px) {
+  .offer-4-highlight .container .highlight-4-left .left-side-body .button {
+    margin-top: 0;
+  }
+}
+.offer-4-highlight .container .highlight-4-left .left-side-body .button button {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+  text-align: center;
+  color: var(--white);
+  background: #ff4035;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  border-radius: 50px;
+}
+.offer-4-highlight .container .highlight-4-right {
+  width: 100%;
+  background: #ccd9eb;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .offer-4-highlight .container .highlight-4-right {
+    padding: 60px 40px;
+  }
+}
+.offer-4-highlight .container .highlight-4-right .right-side-body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+@media (min-width: 1200px) {
+  .offer-4-highlight .container .highlight-4-right .right-side-body {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.offer-4-highlight .container .highlight-4-right .right-side-body .title span {
+  color: #ff4035;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.offer-4-highlight .container .highlight-4-right .right-side-body .title h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #161616;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.offer-4-highlight .container .highlight-4-right .right-side-body .button {
+  margin-top: 10px;
+}
+@media (min-width: 1200px) {
+  .offer-4-highlight .container .highlight-4-right .right-side-body .button {
+    margin-top: 0;
+  }
+}
+.offer-4-highlight .container .highlight-4-right .right-side-body .button button {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+  text-align: center;
+  color: var(--text-2);
+  background: var(--white);
+  text-transform: uppercase;
+  padding: 15px 50px;
+  border-radius: 50px;
 }
 
 .category-4 {
