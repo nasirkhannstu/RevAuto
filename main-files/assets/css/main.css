@@ -8394,6 +8394,7 @@ span {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 80px;
 }
 @media (min-width: 1200px) {
   .offer-4-highlight .container .highlight-4-right {
