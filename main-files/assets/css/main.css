@@ -6854,6 +6854,18 @@ span {
   color: var(--header);
 }
 
+.shop-image-4 img {
+  width: 188px !important;
+  height: 90px !important;
+  object-fit: contain;
+}
+
+.feature-4-thumb img {
+  max-width: 140px;
+  height: 155px;
+  object-fit: contain;
+}
+
 .car-box-items {
   margin-top: 30px;
   padding: 20px;
