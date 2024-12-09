@@ -25,6 +25,7 @@ Version: 1.0.0
   --bg: #f4f6fa;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
   --footer: #0a111e;
+  --max-width: 1380px;
 }
 
 .theme-btn {
@@ -8368,6 +8369,127 @@ span {
   line-height: 22px;
   text-align: center;
   color: #555;
+}
+
+.video-4 .container {
+  max-width: var(--max-width);
+  position: relative;
+  overflow: hidden;
+}
+.video-4 .container .bg-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: -10;
+  height: 100%;
+  right: 20px;
+  top: 0;
+}
+.video-4 .container .bg-overlay img {
+  height: 100%;
+}
+.video-4 .container .bg-overlay img:first-child {
+  margin-right: -200px;
+}
+.video-4 .container .video-4-content {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(90deg, var(--theme) 0%, var(--theme-fade) 100%);
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .video-4 .container .video-4-content {
+    padding: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .video-4 .container .video-4-content {
+    padding: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .video-4 .container .video-4-content {
+    padding: 45px 55px;
+  }
+}
+.video-4 .container .video-4-content .row {
+  width: 100%;
+}
+.video-4 .container .video-4-content .row .video-4-left .video-4-play-button div {
+  background: transparent;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-4 .container .video-4-content .row .video-4-left .video-4-play-button div div {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-4 .container .video-4-content .row .video-4-left .video-4-play-button div div div {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5019607843);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+}
+.video-4 .container .video-4-content .row .video-4-left .video-4-play-button div div div i {
+  color: var(--white);
+}
+.video-4 .container .video-4-content .row .video-4-left div > h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 30px;
+  color: var(--white);
+}
+@media (min-width: 1200px) {
+  .video-4 .container .video-4-content .row .video-4-left div > h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .video-4 .container .video-4-content .row .video-4-left div > h1 {
+    font-size: 45px;
+  }
+}
+.video-4 .container .video-4-content .row .video-4-left div > a {
+  background: var(--white);
+  color: var(--theme);
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+}
+.video-4 .container .video-4-content .row .video-4-right {
+  width: 100%;
+}
+.video-4 .container .video-4-content .row .video-4-right img {
+  width: 100%;
+  height: auto;
+  transform: rotate(-2deg);
+}
+@media (min-width: 1200px) {
+  .video-4 .container .video-4-content .row .video-4-right img {
+    width: 610px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

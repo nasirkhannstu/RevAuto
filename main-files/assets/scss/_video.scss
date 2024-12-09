@@ -1,0 +1,128 @@
+.video-4 {
+  .container {
+    max-width: $max-width;
+    position: relative;
+    overflow: hidden;
+
+    .bg-overlay {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      z-index: -10;
+      height: 100%;
+      right: 20px;
+      top: 0;
+
+      img {
+        height: 100%;
+      }
+
+      img:first-child {
+        margin-right: -200px;
+      }
+    }
+
+    .video-4-content {
+      width: 100%;
+      padding: 20px;
+      @include breakpoint(md) {
+        padding: 25px;
+      }
+      @include breakpoint(lg) {
+        padding: 35px;
+      }
+      @include breakpoint(xl) {
+        padding: 45px 55px;
+      }
+      background: linear-gradient(90deg, $theme-color 0%, $theme-fade 100%);
+      border-radius: 10px;
+      color: $white;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .row {
+        width: 100%;
+
+        // main content start
+        .video-4-left {
+          .video-4-play-button {
+            div {
+              background: transparent;
+              width: 105px;
+              height: 105px;
+              border-radius: 50%;
+              border: 1px solid #ffffff33;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              div {
+                width: 75px;
+                height: 75px;
+                border-radius: 50%;
+                border: 1px solid #ffffff66;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                  border-radius: 50%;
+                  border: 1px solid #ffffff80;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 45px;
+                  height: 45px;
+
+                  i {
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+
+          div > h1 {
+            font-size: 40px;
+            @include breakpoint(xl) {
+              font-size: 50px;
+            }
+            @include breakpoint(lg) {
+              font-size: 45px;
+            }
+            font-weight: 300;
+            margin-top: 30px;
+            color: $white;
+          }
+
+          div > a {
+            background: $white;
+            color: $theme-color;
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin-top: 15px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 26px;
+            letter-spacing: -0.01em;
+          }
+        }
+
+        .video-4-right {
+          width: 100%;
+
+          img {
+            width: 100%;
+            @include breakpoint(xl) {
+              width: 610px;
+            }
+            height: auto;
+            transform: rotate(-2deg);
+          }
+        }
+      }
+    }
+  }
+}
