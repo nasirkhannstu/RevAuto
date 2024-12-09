@@ -4159,11 +4159,22 @@ span {
   justify-content: center;
   border-radius: 50%;
   background-color: var(--theme-fade);
+  cursor: pointer;
 }
-.hero-4-container .hero-4-right-content .hero-4-slider-navigation div img {
-  width: 48px;
+.hero-4-container .hero-4-right-content .hero-4-slider-navigation div div.ash {
+  background-color: #b2beb5;
+  width: 60px;
   height: 60px;
-  object-fit: cover;
+}
+.hero-4-container .hero-4-right-content .hero-4-slider-navigation div div.black {
+  background-color: #000;
+  width: 60px;
+  height: 60px;
+}
+.hero-4-container .hero-4-right-content .hero-4-slider-navigation div div.yellow {
+  background-color: #e9cf10;
+  width: 60px;
+  height: 60px;
 }
 .hero-4-container .hero-4-right-content .hero-4-slider-navigation div.active {
   background: var(--white);

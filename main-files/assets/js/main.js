@@ -174,7 +174,7 @@ CSS TABLE OF CONTENTS
     }
 
     // hero 4 slider
-    const swiper = new Swiper(".hero-4-swiper", {
+    const home4Slicer = new Swiper(".hero-4-swiper", {
       loop: true,
       spaceBetween: 10,
       slidesPerView: 1,
@@ -187,6 +187,11 @@ CSS TABLE OF CONTENTS
         delay: 2500,
         disableOnInteraction: false,
       },
+    });
+
+    $(".hero-4-thumb").click(function () {
+      const slideIndex = $(this).data("slide"); // Get the slide index from the data-slide attribute
+      home4Slicer.slideTo(slideIndex); // Navigate to the corresponding slide
     });
 
     // category 4 slider

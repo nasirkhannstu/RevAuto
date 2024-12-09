@@ -936,11 +936,24 @@
           justify-content: center;
           border-radius: 50%;
           background-color: $theme-fade;
+          cursor: pointer;
 
-          img {
-            width: 48px;
+          div.ash {
+            background-color: #b2beb5;
+            width: 60px;
             height: 60px;
-            object-fit: cover;
+          }
+
+          div.black {
+            background-color: #000;
+            width: 60px;
+            height: 60px;
+          }
+
+          div.yellow {
+            background-color: #e9cf10;
+            width: 60px;
+            height: 60px;
           }
 
           &.active {
