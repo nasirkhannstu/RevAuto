@@ -8330,6 +8330,7 @@ span {
 .category-4 .container .category-4-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
 }
 .category-4 .container .category-4-container .category-4-item {

@@ -189,6 +189,47 @@ CSS TABLE OF CONTENTS
       },
     });
 
+    // category 4 slider
+    var categorySwiper = new Swiper(".category-4-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        350: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 15,
+        },
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 15,
+        },
+        1380: {
+          slidesPerView: 7,
+          spaceBetween: 15,
+        },
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+
     //>> Testimonial-slider Slider Start <<//
     if ($(".testimonial-slider").length > 0) {
       const testimonialSlider = new Swiper(".testimonial-slider", {
