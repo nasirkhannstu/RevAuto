@@ -647,22 +647,6 @@
     background-color: $theme-fade;
     border-radius: 40px;
     border: 1px solid $theme-fade-2;
-    padding: 20px;
-    @include breakpoint(md) {
-      padding: 30px;
-    }
-    @include breakpoint(xxl) {
-      padding: 10px 75px 25px;
-      padding-top: 100px;
-    }
-    @include breakpoint(xl) {
-      padding: 10px 60px 20px;
-      padding-top: 80px;
-    }
-    @include breakpoint(xl) {
-      padding: 10px 50px 20px;
-      padding-top: 60px;
-    }
 
     .hero-4-left-padding {
       @include breakpoint(lg) {
@@ -678,6 +662,25 @@
       margin-top: 50px;
       @include breakpoint(lg) {
         margin-top: 0px;
+      }
+    }
+
+    .hero-4-swiper-container {
+      padding: 20px;
+      @include breakpoint(md) {
+        padding: 30px;
+      }
+      @include breakpoint(xxl) {
+        padding: 10px 75px 25px;
+        padding-top: 100px;
+      }
+      @include breakpoint(xl) {
+        padding: 10px 60px 20px;
+        padding-top: 80px;
+      }
+      @include breakpoint(xl) {
+        padding: 10px 50px 20px;
+        padding-top: 60px;
       }
     }
 
@@ -793,10 +796,6 @@
         }
 
         .hero-4-colors {
-          @include breakpoint(sm) {
-            margin-right: 110px;
-          }
-
           .colors {
             display: flex;
             align-items: center;
@@ -822,18 +821,6 @@
               height: 16px;
               border-radius: 50%;
             }
-          }
-        }
-
-        .hero-4-img {
-          &-overlay {
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 40px;
-            z-index: 1;
           }
         }
       }
@@ -949,11 +936,24 @@
           justify-content: center;
           border-radius: 50%;
           background-color: $theme-fade;
+          cursor: pointer;
 
-          img {
-            width: 48px;
+          div.ash {
+            background-color: #b2beb5;
+            width: 60px;
             height: 60px;
-            object-fit: cover;
+          }
+
+          div.black {
+            background-color: #000;
+            width: 60px;
+            height: 60px;
+          }
+
+          div.yellow {
+            background-color: #e9cf10;
+            width: 60px;
+            height: 60px;
           }
 
           &.active {

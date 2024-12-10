@@ -57,8 +57,11 @@ CSS TABLE OF CONTENTS
     $(window).scroll(function () {
       if ($(this).scrollTop() > 250) {
         $("#header-sticky").addClass("sticky");
+
+        $(".navbar-2-address-bar").addClass("display-none");
       } else {
         $("#header-sticky").removeClass("sticky");
+        $(".navbar-2-address-bar").removeClass("display-none");
       }
     });
 
@@ -169,6 +172,69 @@ CSS TABLE OF CONTENTS
         },
       });
     }
+
+    // hero 4 slider
+    const home4Slicer = new Swiper(".hero-4-swiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-dot",
+        clickable: true,
+      },
+      duration: 3000,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+
+    $(".hero-4-thumb").click(function () {
+      const slideIndex = $(this).data("slide"); // Get the slide index from the data-slide attribute
+      home4Slicer.slideTo(slideIndex); // Navigate to the corresponding slide
+    });
+
+    // category 4 slider
+    var categorySwiper = new Swiper(".category-4-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        350: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 15,
+        },
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 15,
+        },
+        1380: {
+          slidesPerView: 7,
+          spaceBetween: 15,
+        },
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
 
     //>> Testimonial-slider Slider Start <<//
     if ($(".testimonial-slider").length > 0) {

@@ -1287,11 +1287,11 @@
 .cart-wrapper-2 {
   width: 100%;
 
-  .cart-container-2{
+  .cart-container-2 {
     overflow-x: auto;
   }
 
-  .cart-header{
+  .cart-header {
     padding: 10px;
     background-color: $white;
     margin-bottom: 10px;
@@ -1422,7 +1422,7 @@
       display: flex;
       gap: 5px;
       flex-direction: column;
-      @include breakpoint(md){
+      @include breakpoint(md) {
         flex-direction: row;
       }
 
@@ -1448,5 +1448,21 @@
         color: $header-color;
       }
     }
+  }
+}
+
+.shop-image-4 {
+  img {
+    width: 188px !important;
+    height: 90px !important;
+    object-fit: contain;
+  }
+}
+
+.feature-4-thumb {
+  img {
+    max-width: 140px;
+    height: 155px;
+    object-fit: contain;
   }
 }
