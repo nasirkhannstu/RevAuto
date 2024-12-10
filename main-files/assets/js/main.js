@@ -183,6 +183,7 @@ CSS TABLE OF CONTENTS
         el: ".swiper-dot",
         clickable: true,
       },
+      duration: 3000,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
