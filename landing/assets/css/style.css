@@ -2382,6 +2382,11 @@ input {
 .banner__content {
   max-width: 560px;
 }
+.banner__content h1 {
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 900;
+}
 .banner__content h1 span {
   position: relative;
   z-index: 1;
