@@ -2713,6 +2713,7 @@ span {
   max-width: 1800px;
   margin: 0 auto;
   color: var(--white);
+  padding: 0px 12px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.8px;
@@ -2721,6 +2722,14 @@ span {
 }
 .navbar-2 .navbar-2-address-bar .address-bar-content .highlight {
   color: var(--theme);
+}
+.navbar-2 .navbar-2-address-bar .address-bar-content p:nth-child(2) {
+  display: none;
+}
+@media (min-width: 576px) {
+  .navbar-2 .navbar-2-address-bar .address-bar-content p:nth-child(2) {
+    display: inline;
+  }
 }
 .navbar-2 .navbar-2-address-bar .address-bar-content .language-select {
   display: flex;
@@ -8495,6 +8504,7 @@ span {
   height: 195px;
   border-radius: 20px;
   border: 1px solid rgba(22, 22, 22, 0.0784313725);
+  cursor: pointer;
 }
 .category-4 .container .category-4-container .category-4-item-icon {
   width: 66px;

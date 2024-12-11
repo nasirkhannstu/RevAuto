@@ -953,6 +953,7 @@
       max-width: 1800px;
       margin: 0 auto;
       color: $white;
+      padding: 0px 12px;
 
       font-size: 14px;
       font-weight: 500;
@@ -962,6 +963,14 @@
 
       .highlight {
         color: $theme-color;
+      }
+
+      p:nth-child(2) {
+        display: none;
+
+        @include breakpoint(sm) {
+          display: inline;
+        }
       }
 
       .language-select {
