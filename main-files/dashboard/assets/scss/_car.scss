@@ -1,0 +1,94 @@
+.car-dashboard-section {
+  width: 100%;
+
+  // Car dashboard left
+  .car-left-sidebar {
+    max-width: 335px;
+    width: 100%;
+  }
+
+  // Car dashboard center
+  .car-dashboard-content {
+    .car-dashboard-nav {
+      padding: 26px 28px;
+      color: $white;
+      background-color: $theme-color-2;
+      font-family: $font-inter;
+
+      .left-content {
+        color: $white !important;
+
+        ol {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-weight: 500;
+          font-size: 16px;
+
+          .active {
+            font-weight: normal;
+          }
+        }
+      }
+
+      .right-content {
+        .input {
+          background-color: #ffffff0a;
+          border-radius: 100px;
+          border: 1px solid #ffffff1f;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          gap: 0;
+          padding: 10px 16px;
+          color: $white;
+
+          input {
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            &::placeholder {
+              font-size: 14px;
+              color: $white;
+            }
+          }
+
+          button {
+            background-color: transparent;
+            border: 0;
+            outline: none;
+
+            i {
+              color: $white;
+            }
+          }
+        }
+
+        .theme-button,
+        .notification-button {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #ffffff1f;
+
+          i {
+            font-size: 24px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  // Car dashboard right
+  .car-right-sidebar {
+    max-width: 335px;
+    width: 100%;
+  }
+}
