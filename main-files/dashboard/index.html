@@ -78,7 +78,9 @@
     </button>
 
     <main class="d-flex car-dashboard-section">
-      <div class="car-left-sidebar"></div>
+      <!-- left sidebar -->
+      <div class="car-left-sidebar d-none d-lg-block"></div>
+      <!-- middle and main content -->
       <div class="container-fluid car-dashboard-content w-100">
         <!-- header -->
         <nav
@@ -116,6 +118,7 @@
 
         <!-- main Content started -->
         <div class="main-content">
+          <!-- welcome content -->
           <div
             class="welcome-content d-flex align-items-center justify-content-between"
           >
@@ -127,9 +130,103 @@
               <button>Customize Widgets</button>
             </div>
           </div>
+
+          <!-- charts -->
+          <div class="row g-3">
+            <div class="col-md-8">
+              <div class="row g-3">
+                <!-- active users -->
+                <div class="col-md-4">
+                  <div
+                    class="block-active-user d-flex align-items-center justify-content-between"
+                  >
+                    <div class="block-content">
+                      <p>Active Users</p>
+                      <h5 class="mt-2">239K</h5>
+                    </div>
+                    <div class="block-icons">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <i class="fa-light fa-badge-dollar text-end"></i>
+                      </div>
+                      <span class="text-danger"
+                        >-1.48%
+                        <i
+                          class="fa-sharp fa-light fa-arrow-trend-down rotate-180"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- new users -->
+                <div class="col-md-4">
+                  <div
+                    class="block-new-user d-flex align-items-center justify-content-between"
+                  >
+                    <div class="block-content">
+                      <p>New Users</p>
+                      <h5 class="mt-2">164K</h5>
+                    </div>
+                    <div class="block-icons">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <i class="fa-light fa-badge-dollar"></i>
+                      </div>
+                      <span class="text-success"
+                        >2.15% <i class="fa-light fa-arrow-trend-up"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- engaged users -->
+                <div class="col-md-4">
+                  <div
+                    class="block-engaged-user d-flex align-items-center justify-content-between"
+                  >
+                    <div class="block-content">
+                      <p>Engaged Users</p>
+                      <h5 class="mt-2">324K</h5>
+                    </div>
+                    <div class="block-icons">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <i class="fa-light fa-badge-dollar"></i>
+                      </div>
+                      <span class="text-success"
+                        >3.55% <i class="fa-light fa-arrow-trend-up"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- returning user -->
+            <div class="col-md-4">
+              <div
+                class="block-returning-user d-flex align-items-center justify-content-between"
+              >
+                <div class="block-content">
+                  <p>Returning Users</p>
+                  <h5 class="mt-2">100K</h5>
+                </div>
+                <div class="block-icons">
+                  <div class="d-flex align-items-center justify-content-end">
+                    <i class="fa-light fa-badge-dollar"></i>
+                  </div>
+                  <span class="text-success"
+                    >0.53% <i class="fa-light fa-arrow-trend-up"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="car-right-sidebar"></div>
+      <!-- right right sidebar -->
+      <div class="car-right-sidebar d-none d-xl-block"></div>
     </main>
 
     <!--<< All JS Plugins >>-->

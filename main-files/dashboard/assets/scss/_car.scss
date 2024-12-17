@@ -7,6 +7,12 @@
     width: 100%;
   }
 
+  // Car dashboard right
+  .car-right-sidebar {
+    max-width: 335px;
+    width: 100%;
+  }
+
   // Car dashboard center
   .car-dashboard-content {
     .car-dashboard-nav {
@@ -100,9 +106,9 @@
 
     .main-content {
       margin-top: 32px;
-      margin-bottom: 24px;
 
       .welcome-content {
+        margin-bottom: 24px;
         .content-filters {
           button {
             padding: 10px 16px;
@@ -125,12 +131,53 @@
           }
         }
       }
-    }
-  }
 
-  // Car dashboard right
-  .car-right-sidebar {
-    max-width: 335px;
-    width: 100%;
+      .block-active-user,
+      .block-new-user,
+      .block-engaged-user,
+      .block-returning-user {
+        background: $white;
+        padding: 24px;
+        color: $text-color-4;
+        border-radius: 16px;
+
+        .block-content {
+          p {
+            font-weight: 600;
+            font-size: 14px;
+          }
+
+          h5 {
+            font-weight: 600 !important;
+            font-family: $font-inter !important;
+            color: $text-color-4 !important;
+            font-size: 28px;
+          }
+        }
+
+        .block-icons {
+          div {
+            margin-bottom: 20px;
+            i {
+              font-size: 24px;
+            }
+          }
+          span {
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+
+        .rotate-180 {
+          transform: rotate(120deg);
+        }
+      }
+
+      .main-chart {
+        background-color: $white;
+        padding: 24px 20px;
+        border-radius: 16px;
+      }
+    }
   }
 }

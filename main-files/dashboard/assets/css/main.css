@@ -6,13 +6,14 @@
   --black: #000;
   --white: #fff;
   --theme: #4376fb;
-  --theme-fade: #4377fb21;
+  --theme-fade: rgba(67, 118, 251, 0.12);
   --theme-fade-2: #4377fb62;
   --theme2: #253154;
   --header: #000000;
   --text: #555555;
   --text-2: #7a8699;
   --text-3: #404a60;
+  --text-4: #1c1c1c;
   --border: #d5d5d5;
   --border-2: #e6e6e6;
   --bg: #f4f6fa;
@@ -361,6 +362,10 @@ span {
   max-width: 335px;
   width: 100%;
 }
+.car-dashboard-section .car-right-sidebar {
+  max-width: 335px;
+  width: 100%;
+}
 .car-dashboard-section .car-dashboard-content .car-dashboard-nav {
   padding: 26px 28px;
   color: var(--white);
@@ -439,6 +444,8 @@ span {
 }
 .car-dashboard-section .car-dashboard-content .main-content {
   margin-top: 32px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .welcome-content {
   margin-bottom: 24px;
 }
 .car-dashboard-section .car-dashboard-content .main-content .welcome-content .content-filters button {
@@ -457,9 +464,64 @@ span {
   background-color: var(--theme);
   color: var(--white);
 }
-.car-dashboard-section .car-right-sidebar {
-  max-width: 335px;
-  width: 100%;
+.car-dashboard-section .car-dashboard-content .main-content .block-active-user,
+.car-dashboard-section .car-dashboard-content .main-content .block-new-user,
+.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user,
+.car-dashboard-section .car-dashboard-content .main-content .block-returning-user {
+  background: var(--white);
+  padding: 24px;
+  color: var(--text-4);
+  border-radius: 16px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-content p,
+.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-content p,
+.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-content p,
+.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-content p {
+  font-weight: 600;
+  font-size: 14px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-content h5,
+.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-content h5,
+.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-content h5,
+.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-content h5 {
+  font-weight: 600 !important;
+  font-family: var(--inter) !important;
+  color: var(--text-4) !important;
+  font-size: 28px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-icons div,
+.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-icons div,
+.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-icons div,
+.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-icons div {
+  margin-bottom: 20px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-icons div i,
+.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-icons div i,
+.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-icons div i,
+.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-icons div i {
+  font-size: 24px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-icons span,
+.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-icons span,
+.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-icons span,
+.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-icons span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.car-dashboard-section .car-dashboard-content .main-content .block-active-user .rotate-180,
+.car-dashboard-section .car-dashboard-content .main-content .block-new-user .rotate-180,
+.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .rotate-180,
+.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .rotate-180 {
+  transform: rotate(120deg);
+}
+.car-dashboard-section .car-dashboard-content .main-content .main-chart {
+  background-color: var(--white);
+  padding: 24px 20px;
+  border-radius: 16px;
+}
+
+body {
+  background: var(--bg);
 }
 
 /*# sourceMappingURL=main.css.map */
