@@ -17,19 +17,32 @@
 
       .left-content {
         color: $white !important;
+        display: flex;
+        align-items: center;
+        gap: 24px;
 
-        ol {
+        button.menu-button i {
+          font-size: 20px;
+          color: $white;
+        }
+
+        div.my-breadcrumb ol {
           list-style: none;
           padding: 0;
           margin: 0;
-          display: flex;
-          align-items: center;
+          display: flex !important;
+          align-items: center !important;
           gap: 10px;
           font-weight: 500;
           font-size: 16px;
 
+          li {
+            vertical-align: middle;
+          }
+
           .active {
-            font-weight: normal;
+            font-weight: 400 !important;
+            color: $text-color-2 !important;
           }
         }
       }
@@ -43,8 +56,8 @@
           display: flex;
           align-items: center;
           gap: 0;
-          padding: 10px 16px;
-          color: $white;
+          padding: 8px 16px;
+          color: $white !important;
 
           input {
             background-color: transparent;

@@ -34,7 +34,7 @@
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
+  <body style="font-family: var(--inter)">
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
       <div class="animation-preloader">
@@ -84,15 +84,20 @@
         <nav
           class="car-dashboard-nav w-100 d-flex align-items-center justify-content-between"
         >
-          <nav aria-label="breadcrumb" class="left-content">
-            <ol class="text-white">
-              <li class="">
-                <a href="dashboard.html" class="text-white">Dashboard</a>
-              </li>
-              <li>/</li>
-              <li class="text-white active" aria-current="page">Library</li>
-            </ol>
-          </nav>
+          <div class="left-content">
+            <button class="menu-button">
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            </button>
+            <div aria-label="breadcrumb" class="my-breadcrumb">
+              <ol class="text-white">
+                <li>
+                  <a href="dashboard.html" class="text-white">Dashboard</a>
+                </li>
+                <li>/</li>
+                <li class="text-white active" aria-current="page">Library</li>
+              </ol>
+            </div>
+          </div>
           <div class="right-content d-flex align-items-center gap-2">
             <form action="#">
               <div class="input">
@@ -108,6 +113,9 @@
             </button>
           </div>
         </nav>
+
+        <!-- main Content started -->
+        <div class="main-content"></div>
       </div>
       <div class="car-right-sidebar"></div>
     </main>
