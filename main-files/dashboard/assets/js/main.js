@@ -28,32 +28,6 @@ CSS TABLE OF CONTENTS
   "use strict";
 
   $(document).ready(function () {
-    //>> Mobile Menu Js Start <<//
-    $("#mobile-menu").meanmenu({
-      meanMenuContainer: ".mobile-menu",
-      meanScreenWidth: "1199",
-      meanExpand: ['<i class="far fa-plus"></i>'],
-    });
-
-    //>> Sidebar Toggle Js Start <<//
-    $(".offcanvas__close,.offcanvas__overlay").on("click", function () {
-      $(".offcanvas__info").removeClass("info-open");
-      $(".offcanvas__overlay").removeClass("overlay-open");
-    });
-    $(".sidebar__toggle").on("click", function () {
-      $(".offcanvas__info").addClass("info-open");
-      $(".offcanvas__overlay").addClass("overlay-open");
-    });
-
-    //>> Body Overlay Js Start <<//
-    $(".body-overlay").on("click", function () {
-      $(".offcanvas__area").removeClass("offcanvas-opened");
-      $(".df-search-area").removeClass("opened");
-      $(".body-overlay").removeClass("opened");
-    });
-
-    //>> Sticky Header Js Start <<//
-
     $(window).scroll(function () {
       if ($(this).scrollTop() > 250) {
         $("#header-sticky").addClass("sticky");
@@ -65,819 +39,8 @@ CSS TABLE OF CONTENTS
       }
     });
 
-    //>> Video Popup Start <<//
-    $(".img-popup").magnificPopup({
-      type: "image",
-      gallery: {
-        enabled: true,
-      },
-    });
-
-    $(".video-popup").magnificPopup({
-      type: "iframe",
-      callbacks: {},
-    });
-
-    //>> Counterup Start <<//
-    $(".count").counterUp({
-      delay: 15,
-      time: 4000,
-    });
-
     //>> Wow Animation Start <<//
     new WOW().init();
-
-    //>> Nice Select Start <<//
-    $("#home-landing-select").niceSelect();
-
-    const heroSlider = new Swiper(".hero-slider", {
-      speed: 2500,
-      spaceBetween: 30,
-      loop: true,
-      //slidesPerView: 1,
-      autoplay: true,
-      // effect: "fade",
-      a11y: false,
-      pagination: {
-        el: ".dot",
-        clickable: true,
-      },
-    });
-
-    const heroSlider2 = new Swiper(".hero-slider-2", {
-      speed: 1500,
-      loop: true,
-      //slidesPerView: 1,
-      autoplay: true,
-      effect: "fade",
-      // breakpoints: {
-      //     '1600': {
-      //         slidesPerView: 1,
-      //     },
-      //     '1400': {
-      //         slidesPerView: 1,
-      //     },
-      //     '1200': {
-      //         slidesPerView: 1,
-      //     },
-      //     '992': {
-      //         slidesPerView: 1,
-      //     },
-      //     '768': {
-      //         slidesPerView: 1,
-      //     },
-      //     '576': {
-      //         slidesPerView: 1,
-      //     },
-      //     '0': {
-      //         slidesPerView: 1,
-      //     },
-
-      a11y: false,
-      // },
-      navigation: {
-        nextEl: ".array-prev",
-        prevEl: ".array-next",
-      },
-      pagination: {
-        el: ".dot",
-        clickable: true,
-      },
-    });
-
-    if ($(".hero-img-slider").length > 0) {
-      const heroImgSlider = new Swiper(".hero-img-slider", {
-        spaceBetween: 30,
-        speed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".array-prev",
-          prevEl: ".array-next",
-        },
-      });
-    }
-
-    if ($(".hero-3-slider").length > 0) {
-      const hero3Slider = new Swiper(".hero-3-slider", {
-        effect: "cards",
-        grabCursor: true,
-        speed: 2000,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-      });
-    }
-
-    // hero 4 slider
-    const home4Slicer = new Swiper(".hero-4-swiper", {
-      loop: true,
-      spaceBetween: 10,
-      slidesPerView: 1,
-      loop: true,
-      pagination: {
-        el: ".swiper-dot",
-        clickable: true,
-      },
-      duration: 3000,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-    });
-
-    $(".hero-4-thumb").click(function () {
-      const slideIndex = $(this).data("slide"); // Get the slide index from the data-slide attribute
-      home4Slicer.slideTo(slideIndex); // Navigate to the corresponding slide
-    });
-
-    // category 4 slider
-    var categorySwiper = new Swiper(".category-4-swiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        350: {
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 15,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 15,
-        },
-        1200: {
-          slidesPerView: 6,
-          spaceBetween: 15,
-        },
-        1380: {
-          slidesPerView: 7,
-          spaceBetween: 15,
-        },
-      },
-      autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-      },
-      loop: true,
-    });
-
-    //>> Testimonial-slider Slider Start <<//
-    if ($(".testimonial-slider").length > 0) {
-      const testimonialSlider = new Swiper(".testimonial-slider", {
-        spaceBetween: 30,
-        speed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".dots",
-          clickable: true,
-        },
-
-        breakpoints: {
-          991: {
-            slidesPerView: 2,
-          },
-          767: {
-            slidesPerView: 1,
-          },
-          575: {
-            slidesPerView: 1,
-          },
-          0: {
-            slidesPerView: 1,
-          },
-        },
-      });
-    }
-
-    if ($(".testimonial-slider-2").length > 0) {
-      const testimonialSlider2 = new Swiper(".testimonial-slider-2", {
-        spaceBetween: 30,
-        speed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          1399: {
-            slidesPerView: 4,
-          },
-          1199: {
-            slidesPerView: 3,
-          },
-          991: {
-            slidesPerView: 2,
-          },
-          767: {
-            slidesPerView: 2,
-          },
-          575: {
-            slidesPerView: 1,
-          },
-          0: {
-            slidesPerView: 1,
-          },
-        },
-      });
-    }
-
-    if ($(".testimonial-slider-3").length > 0) {
-      const testimonialSlider3 = new Swiper(".testimonial-slider-3", {
-        spaceBetween: 30,
-        speed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          1399: {
-            slidesPerView: 5,
-          },
-          1199: {
-            slidesPerView: 3,
-          },
-          991: {
-            slidesPerView: 2,
-          },
-          767: {
-            slidesPerView: 2,
-          },
-          575: {
-            slidesPerView: 1,
-          },
-          0: {
-            slidesPerView: 1,
-          },
-        },
-      });
-    }
-
-    //>> Testimonial-slider Slider Start <<//
-    if ($(".team-slider").length > 0) {
-      const teamSlider = new Swiper(".team-slider", {
-        spaceBetween: 30,
-        speed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".dots",
-          clickable: true,
-        },
-
-        breakpoints: {
-          991: {
-            slidesPerView: 2,
-          },
-          767: {
-            slidesPerView: 1,
-          },
-          575: {
-            slidesPerView: 1,
-          },
-          0: {
-            slidesPerView: 1,
-          },
-        },
-      });
-    }
-
-    //>> Brand Slider Start <<//
-    if ($(".brand-slider").length > 0) {
-      const brandSlider = new Swiper(".brand-slider", {
-        spaceBetween: 30,
-        speed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        },
-
-        breakpoints: {
-          1399: {
-            slidesPerView: 6,
-          },
-          1199: {
-            slidesPerView: 5,
-          },
-          991: {
-            slidesPerView: 4,
-          },
-          767: {
-            slidesPerView: 3,
-          },
-          575: {
-            slidesPerView: 2,
-          },
-          0: {
-            slidesPerView: 1,
-          },
-        },
-      });
-    }
-
-    //>> Shop-slider Slider Start <<//
-    if ($(".shop-slider").length > 0) {
-      const shopSlider = new Swiper(".shop-slider", {
-        spaceBetween: 24,
-        speed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".dot",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".array-prev",
-          prevEl: ".array-next",
-        },
-        breakpoints: {
-          1399: {
-            slidesPerView: 6,
-          },
-          1199: {
-            slidesPerView: 5,
-          },
-          991: {
-            slidesPerView: 4,
-          },
-          767: {
-            slidesPerView: 3,
-          },
-          575: {
-            slidesPerView: 2,
-          },
-          0: {
-            slidesPerView: 1,
-          },
-        },
-      });
-    }
-
-    // client swiper
-    if ($(".client-swiper").length > 0) {
-      const clientSwiper = new Swiper(".client-swiper", {
-        spaceBetween: 30,
-        speed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          1199: {
-            slidesPerView: 5,
-          },
-          991: {
-            slidesPerView: 4,
-          },
-          767: {
-            slidesPerView: 3,
-          },
-          575: {
-            slidesPerView: 2,
-          },
-          0: {
-            slidesPerView: 1,
-          },
-        },
-      });
-    }
-
-    //>> Quantity Cart Js Start <<//
-    let quantity = 0;
-    let price = 0;
-    $(".cart-item-quantity-amount, .product-quant").html(quantity);
-    $(".total-price, .product-pri").html(price.toFixed(2));
-    $(".cart-increment, .cart-incre").on("click", function () {
-      if (quantity <= 4) {
-        quantity++;
-        $(".cart-item-quantity-amount, .product-quant").html(quantity);
-        let basePrice = $(".base-price, .base-pri").text();
-        $(".total-price, .product-pri").html((basePrice * quantity).toFixed(2));
-      }
-    });
-
-    $(".cart-decrement, .cart-decre").on("click", function () {
-      if (quantity >= 1) {
-        quantity--;
-        $(".cart-item-quantity-amount, .product-quant").html(quantity);
-        let basePrice = $(".base-price, .base-pri").text();
-        $(".total-price, .product-pri").html((basePrice * quantity).toFixed(2));
-      }
-    });
-
-    $(".cart-item-remove>a").on("click", function () {
-      $(this).closest(".cart-item").hide(300);
-    });
-
-    //>> Quantity Js Start <<//
-    $(".quantity").on("click", ".plus", function (e) {
-      let $input = $(this).prev("input.qty");
-      let val = parseInt($input.val(), 10); // Specify base 10
-      $input.val(val + 1).change();
-    });
-
-    $(".quantity").on("click", ".minus", function (e) {
-      let $input = $(this).next("input.qty");
-      let val = parseInt($input.val(), 10); // Specify base 10
-      if (val > 0) {
-        $input.val(val - 1).change();
-      }
-    });
-
-    // 11.Range sliger
-    function getVals() {
-      let parent = this.parentNode;
-      let slides = parent.getElementsByTagName("input");
-      let slide1 = parseFloat(slides[0].value);
-      let slide2 = parseFloat(slides[1].value);
-      if (slide1 > slide2) {
-        let tmp = slide2;
-        slide2 = slide1;
-        slide1 = tmp;
-      }
-
-      let displayElement = parent.getElementsByClassName("rangeValues")[0];
-      displayElement.innerHTML = "$" + slide1 + " - $" + slide2;
-    }
-
-    window.onload = function () {
-      let sliderSections = document.getElementsByClassName("range-slider");
-      for (let x = 0; x < sliderSections.length; x++) {
-        let sliders = sliderSections[x].getElementsByTagName("input");
-        for (let y = 0; y < sliders.length; y++) {
-          if (sliders[y].type === "range") {
-            sliders[y].oninput = getVals;
-            sliders[y].oninput();
-          }
-        }
-      }
-    };
-
-    progressBar: () => {
-      const pline = document.querySelectorAll(".progressbar.line");
-      const pcircle = document.querySelectorAll(".progressbar.semi-circle");
-      pline.forEach((e) => {
-        const line = new ProgressBar.Line(e, {
-          strokeWidth: 6,
-          trailWidth: 6,
-          duration: 3000,
-          easing: "easeInOut",
-          text: {
-            style: {
-              color: "inherit",
-              position: "absolute",
-              right: "0",
-              top: "-30px",
-              padding: 0,
-              margin: 0,
-              transform: null,
-            },
-            autoStyleContainer: false,
-          },
-          step: (state, line) => {
-            line.setText(Math.round(line.value() * 100) + " %");
-          },
-        });
-        let value = e.getAttribute("data-value") / 100;
-        new Waypoint({
-          element: e,
-          handler: function () {
-            line.animate(value);
-          },
-          offset: "bottom-in-view",
-        });
-      });
-      pcircle.forEach((e) => {
-        const circle = new ProgressBar.SemiCircle(e, {
-          strokeWidth: 6,
-          trailWidth: 6,
-          duration: 2000,
-          easing: "easeInOut",
-          step: (state, circle) => {
-            circle.setText(Math.round(circle.value() * 100));
-          },
-        });
-        let value = e.getAttribute("data-value") / 100;
-        new Waypoint({
-          element: e,
-          handler: function () {
-            circle.animate(value);
-          },
-          offset: "bottom-in-view",
-        });
-      });
-    };
-
-    const rangeInput = document.querySelectorAll(".range-input input"),
-      priceInput = document.querySelectorAll(".price-input input"),
-      range = document.querySelector(".slider .progress");
-    let priceGap = 1000;
-
-    priceInput.forEach((input) => {
-      input.addEventListener("input", (e) => {
-        let minPrice = parseInt(priceInput[0].value),
-          maxPrice = parseInt(priceInput[1].value);
-
-        if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
-          if (e.target.className === "input-min") {
-            rangeInput[0].value = minPrice;
-            range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-          } else {
-            rangeInput[1].value = maxPrice;
-            range.style.right =
-              100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-          }
-        }
-      });
-    });
-
-    rangeInput.forEach((input) => {
-      input.addEventListener("input", (e) => {
-        let minVal = parseInt(rangeInput[0].value),
-          maxVal = parseInt(rangeInput[1].value);
-
-        if (maxVal - minVal < priceGap) {
-          if (e.target.className === "range-min") {
-            rangeInput[0].value = maxVal - priceGap;
-          } else {
-            rangeInput[1].value = minVal + priceGap;
-          }
-        } else {
-          priceInput[0].value = minVal;
-          priceInput[1].value = maxVal;
-          range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
-          range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-        }
-      });
-    });
-
-    // Homepage 3
-    // New Arrival
-    $(".left-section button").click(function () {
-      $(this).animate({ width: "+=5px" }, 200).animate({ width: "-=5px" }, 200);
-
-      $(".left-section button")
-        .removeClass("car-section-3-active")
-        .css("opacity", "1");
-
-      $(this)
-        .addClass("car-section-3-active")
-        .animate({ opacity: 0.5 }, 200)
-        .animate({ opacity: 1 }, 200);
-
-      var targetId = $(this).text();
-
-      $(".tab-pane").removeClass("show active").hide();
-
-      $("#" + targetId)
-        .addClass("show active")
-        .fadeIn();
-    });
-
-    $(".right-section button").click(function () {
-      $(".right-section button")
-        .removeClass("car-section-3-active-right")
-        .css("opacity", "1");
-
-      $(this)
-        .addClass("car-section-3-active-right")
-        .animate({ opacity: 0.5 }, 200)
-        .animate({ opacity: 1 }, 200);
-    });
-
-    // suggested car
-    $("#suggested-car-btns-3 button").click(function () {
-      $(this).animate({ width: "+=5px" }, 200).animate({ width: "-=5px" }, 200);
-
-      $("#suggested-car-btns-3 button")
-        .removeClass("car-section-3-active")
-        .css("opacity", "1");
-
-      $(this)
-        .addClass("car-section-3-active")
-        .animate({ opacity: 0.5 }, 200)
-        .animate({ opacity: 1 }, 200);
-
-      var suggest = $(this).data("suggest");
-
-      $(".tab-panel-suggest")
-        .removeClass("show active")
-        .addClass("hide")
-        .hide();
-
-      $(".tab-panel-suggest[data-suggest='" + suggest + "']")
-        .addClass("show active")
-        .fadeIn();
-    });
-
-    // Cart 2
-    let cart2ItemData = [];
-    const cart2Items = $(".cart-item");
-    const cart2ItemsTotal = $("#cart-2-items");
-    const cart2ItemsSubtotal = $("#cart-2-items-subtotal");
-    const cart2Total = $("#cart-2-total-price");
-
-    cart2Items.each(function (index, item) {
-      const id = $(this).data("id");
-      const quantity = $(`#cart-2-quantity-${index + 1}`).val();
-      const price = $(`#cart-2-price-${index + 1}`).text();
-      const priceWithoutDollar = price.replace("$", "");
-
-      cart2ItemData.push({
-        id,
-        quantity: Number(quantity),
-        price: Number(priceWithoutDollar),
-      });
-    });
-
-    function update2Cart() {
-      cart2ItemsTotal.text(
-        cart2ItemData.reduce((acc, item) => acc + Number(item.quantity), 0)
-      );
-
-      const quantity = cart2ItemData.reduce(
-        (acc, item) => acc + Number(item.quantity) * Number(item.price),
-        0
-      );
-
-      cart2ItemsSubtotal.text(quantity);
-      cart2Total.text(
-        cart2ItemData.reduce(
-          (acc, item) => acc + Number(item.quantity) * Number(item.price),
-          0
-        ) + 5
-      );
-    }
-    update2Cart();
-
-    $(".cart-2-increase-btn").click(function () {
-      const id = $(this).data("id");
-
-      const input = $(`#cart-2-quantity-${id}`);
-      let inputVal = parseInt(input.val());
-
-      if (inputVal >= 0) {
-        input.val(inputVal + 1);
-        cart2ItemData[id - 1].quantity = inputVal + 1;
-
-        update2Cart();
-      }
-    });
-
-    $(".cart-2-decrease-btn").click(function () {
-      const id = $(this).data("id");
-
-      const input = $(`#cart-2-quantity-${id}`);
-      let inputVal = parseInt(input.val());
-
-      if (inputVal >= 1) {
-        input.val(inputVal - 1);
-        cart2ItemData[id - 1].quantity = inputVal - 1;
-        update2Cart();
-      }
-    });
-
-    $(".cart-2-delete-item-btn").click(function () {
-      const id = $(this).data("id");
-
-      cart2ItemData = cart2ItemData.filter((item) => item.id !== id);
-
-      $(this).closest(`div.cart-item[data-id='${id}']`).hide(300);
-
-      update2Cart();
-    });
-
-    // Cart 3
-    let cart3ItemData = [];
-    const cart3Items = $(".cart-item-3");
-    const cart3ItemsTotal = $("#cart-3-items");
-    const cart3ItemsSubtotal = $("#cart-3-items-subtotal");
-    const cart3Total = $("#cart-3-total-price");
-
-    function update3Cart(singleSubtotal = null) {
-      cart3ItemsTotal.text(
-        cart3ItemData.reduce((acc, item) => acc + Number(item.quantity), 0)
-      );
-
-      const quantity = cart3ItemData.reduce(
-        (acc, item) => acc + Number(item.quantity) * Number(item.price),
-        0
-      );
-      cart3ItemsSubtotal.text(quantity);
-
-      cart3Total.text(
-        cart3ItemData.reduce(
-          (acc, item) => acc + Number(item.quantity) * Number(item.price),
-          0
-        ) +
-          10 -
-          9.99
-      );
-
-      if (singleSubtotal) {
-        const singleSubtotalElement = $(
-          `.cart-3-single-subtotal-${singleSubtotal}`
-        );
-        const singlePrice = cart3ItemData[singleSubtotal - 1];
-
-        singleSubtotalElement.text(singlePrice.quantity * singlePrice.price);
-      }
-    }
-
-    cart3Items.each(function (index, item) {
-      const id = $(this).data("id");
-      const quantity = $(`#cart-3-quantity-${index + 1}`).val();
-      const price = $(`#cart-3-price-${index + 1}`).text();
-
-      cart3ItemData.push({
-        id,
-        quantity: Number(quantity),
-        price: Number(price),
-      });
-
-      update3Cart(id);
-    });
-
-    $(".cart-3-increase-btn").click(function () {
-      const id = $(this).data("id");
-
-      const input = $(`#cart-3-quantity-${id}`);
-      let inputVal = parseInt(input.val());
-
-      if (inputVal >= 0) {
-        input.val(inputVal + 1);
-        cart3ItemData[id - 1].quantity = inputVal + 1;
-
-        update3Cart(id);
-      }
-    });
-
-    $(".cart-3-decrease-btn").click(function () {
-      const id = $(this).data("id");
-
-      const input = $(`#cart-3-quantity-${id}`);
-      let inputVal = parseInt(input.val());
-
-      if (inputVal >= 1) {
-        input.val(inputVal - 1);
-        cart3ItemData[id - 1].quantity = inputVal - 1;
-
-        update3Cart(id);
-      }
-    });
-
-    $(".cart-3-delete-item-btn").click(function () {
-      const id = $(this).data("id");
-      cart3ItemData = cart3ItemData.filter((item) => item.id !== id);
-
-      $(this).closest(`tr[data-id='${id}']`).hide(300);
-
-      update3Cart();
-    });
-
-    // update cart count
-    const counterBtns = $(".add-to-cart");
-    const counterBtns2 = $(".add-to-cart-2");
-    const cartCount = $("#cart-count");
-    function updateCartCount() {
-      const cartCountValue = cartCount.text();
-      cartCount.text(Number(cartCountValue) + 1);
-    }
-
-    counterBtns.click(function () {
-      updateCartCount();
-    });
-
-    counterBtns2.click(function () {
-      updateCartCount();
-    });
 
     //>> Back To Top Start <<//
     $(window).scroll(function () {
@@ -892,6 +55,127 @@ CSS TABLE OF CONTENTS
       return false;
     });
     // Back to top btn area end here ***
+
+    // Predefined chart data
+    const weeklyData = {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [
+        [9000, 19000, 27000, 15000, 18000, 17000, 22000],
+        [8000, 12000, 23000, 17000, 9000, 15000, 19000],
+        [7000, 11000, 17000, 19000, 18000, 16000, 21000],
+      ],
+    };
+
+    const lastWeekData = { ...weeklyData };
+    const thisMonthData = {
+      labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+      datasets: [
+        [40000, 50000, 30000, 45000],
+        [35000, 42000, 28000, 37000],
+        [32000, 34000, 24000, 31000],
+      ],
+    };
+
+    const ctx = document.getElementById("myChart").getContext("2d");
+    const myChart = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: weeklyData.labels,
+        datasets: [
+          {
+            label: "Orders",
+            data: weeklyData.datasets[0],
+            borderColor: "#2196F3",
+            pointBackgroundColor: "#fff",
+            pointBorderColor: "#2196F3",
+            borderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 6,
+            tension: 0.4,
+          },
+          {
+            label: "Sale",
+            data: weeklyData.datasets[1],
+            borderColor: "#4CAF50",
+            pointBackgroundColor: "#fff",
+            pointBorderColor: "#4CAF50",
+            borderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 6,
+            tension: 0.4,
+          },
+          {
+            label: "User",
+            data: weeklyData.datasets[2],
+            borderColor: "#FFC107",
+            pointBackgroundColor: "#fff",
+            pointBorderColor: "#FFC107",
+            borderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 6,
+            tension: 0.4,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true } },
+      },
+    });
+
+    // Toggle dataset visibility
+    document
+      .getElementById("legend-orders")
+      .addEventListener("click", () => toggleDataset(0));
+    document
+      .getElementById("legend-sale")
+      .addEventListener("click", () => toggleDataset(1));
+    document
+      .getElementById("legend-user")
+      .addEventListener("click", () => toggleDataset(2));
+
+    function toggleDataset(index) {
+      const meta = myChart.getDatasetMeta(index);
+      meta.hidden = meta.hidden === null ? true : !meta.hidden;
+      myChart.update();
+      document
+        .querySelectorAll(".legend-btn")
+        [index].classList.toggle("hidden", meta.hidden);
+    }
+
+    // Dropdown functionality
+    document
+      .querySelectorAll("#dropdownMenu .dropdown-item")
+      .forEach((item) => {
+        item.addEventListener("click", (e) => {
+          e.preventDefault();
+          const timeframe = e.target.dataset.timeframe;
+          changeTimeframe(timeframe);
+          document.getElementById("dropdownButton").innerText = timeframe;
+        });
+      });
+
+    function changeTimeframe(timeframe) {
+      let newLabels, newData;
+      if (timeframe === "This Week") {
+        newLabels = weeklyData.labels;
+        newData = weeklyData.datasets;
+      } else if (timeframe === "Last Week") {
+        newLabels = lastWeekData.labels;
+        newData = lastWeekData.datasets;
+      } else {
+        newLabels = thisMonthData.labels;
+        newData = thisMonthData.datasets;
+      }
+
+      myChart.data.labels = newLabels;
+      myChart.data.datasets.forEach((dataset, i) => {
+        dataset.data = newData[i];
+      });
+      myChart.update();
+    }
 
     //>> Mouse Cursor Start <<//
     function mousecursor() {

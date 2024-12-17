@@ -131,7 +131,7 @@
             </div>
           </div>
 
-          <!-- charts -->
+          <!-- block contents -->
           <div class="row g-3">
             <div class="col-md-8">
               <div class="row g-3">
@@ -223,6 +223,82 @@
               </div>
             </div>
           </div>
+
+          <!-- charts content -->
+          <div class="row g-3 mt-1">
+            <!-- left side content -->
+            <div class="col-xl-8">
+              <div class="main-chart">
+                <div class="chart-container">
+                  <!-- Header with Legend and Dropdown -->
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <!-- Legend Buttons -->
+                    <div>
+                      <span
+                        class="legend-btn text-primary me-3"
+                        id="legend-orders"
+                      >
+                        Orders
+                      </span>
+                      <span
+                        class="legend-btn text-success me-3"
+                        id="legend-sale"
+                      >
+                        Sale
+                      </span>
+                      <span class="legend-btn text-warning" id="legend-user">
+                        User
+                      </span>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                        type="button"
+                        id="dropdownButton"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        This Week
+                      </button>
+                      <ul class="dropdown-menu" id="dropdownMenu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#"
+                            data-timeframe="This Week"
+                            >This Week</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#"
+                            data-timeframe="Last Week"
+                            >Last Week</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#"
+                            data-timeframe="This Month"
+                            >This Month</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Chart -->
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- right side content -->
+            <div class="col-xl-4"></div>
+          </div>
         </div>
       </div>
       <!-- right right sidebar -->
@@ -249,6 +325,8 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< Wow Animation Js >>-->
     <script src="assets/js/wow.min.js"></script>
+    <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
   </body>
