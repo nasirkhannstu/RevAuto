@@ -202,6 +202,7 @@
         background: $white;
         padding: 24px;
         border-radius: 16px;
+        box-shadow: $shadow;
 
         &-header {
           h5 {
@@ -277,6 +278,13 @@
             }
           }
         }
+      }
+
+      .revenue-by-region {
+        background: $white;
+        border-radius: 16px;
+        box-shadow: $shadow;
+        padding: 24px 20px;
       }
     }
   }
