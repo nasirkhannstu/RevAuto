@@ -42,10 +42,6 @@
           font-weight: 500;
           font-size: 16px;
 
-          li {
-            vertical-align: middle;
-          }
-
           .active {
             font-weight: 400 !important;
             color: $text-color-2 !important;
@@ -199,6 +195,87 @@
         }
         #myChart {
           max-height: 260px; /* Adjust chart height to fit within container */
+        }
+      }
+
+      .revenue-table {
+        background: $white;
+        padding: 24px;
+        border-radius: 16px;
+
+        &-header {
+          h5 {
+            font-weight: 600;
+            font-size: 20px;
+            color: $text-color-4;
+            font-family: $font-inter;
+          }
+
+          .revenue-line {
+            width: 1px;
+            height: 20px;
+            background: #00000033;
+          }
+
+          .filter-button {
+            padding: 10px 16px;
+            font-weight: 500;
+            border-radius: 8px;
+            background-color: $bg-color-2;
+            color: $text-color-3;
+            i {
+              color: $theme-color;
+            }
+          }
+
+          .revenue-more-button {
+            font-size: 20px;
+            color: $text-color-4;
+          }
+        }
+
+        &-data {
+          thead {
+            tr {
+              border-top: none !important;
+              th {
+                background: $theme-fade;
+                color: #091e42 !important;
+                font-size: 12px;
+                font-weight: 500;
+                overflow: hidden;
+              }
+
+              th:first-child {
+                border-top-left-radius: 16px;
+                border-left-color: $theme-fade !important;
+              }
+
+              th:last-child {
+                border-top-right-radius: 16px;
+                border-right-color: $theme-fade !important;
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              td {
+                font-size: 12px;
+                font-weight: 400;
+                color: $text-color-4;
+              }
+
+              td:first-child {
+                img {
+                  width: 32px;
+                  height: 32px;
+                  object-fit: cover;
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
         }
       }
     }

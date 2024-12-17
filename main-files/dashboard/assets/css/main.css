@@ -392,9 +392,6 @@ span {
   font-weight: 500;
   font-size: 16px;
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content div.my-breadcrumb ol li {
-  vertical-align: middle;
-}
 .car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content div.my-breadcrumb ol .active {
   font-weight: 400 !important;
   color: var(--text-2) !important;
@@ -540,6 +537,65 @@ span {
 }
 .car-dashboard-section .car-dashboard-content .main-content .main-chart #myChart {
   max-height: 260px; /* Adjust chart height to fit within container */
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 16px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header h5 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-4);
+  font-family: var(--inter);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .revenue-line {
+  width: 1px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .filter-button {
+  padding: 10px 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: var(--bg-2);
+  color: var(--text-3);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .filter-button i {
+  color: var(--theme);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .revenue-more-button {
+  font-size: 20px;
+  color: var(--text-4);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data thead tr {
+  border-top: none !important;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data thead tr th {
+  background: var(--theme-fade);
+  color: #091e42 !important;
+  font-size: 12px;
+  font-weight: 500;
+  overflow: hidden;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data thead tr th:first-child {
+  border-top-left-radius: 16px;
+  border-left-color: var(--theme-fade) !important;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data thead tr th:last-child {
+  border-top-right-radius: 16px;
+  border-right-color: var(--theme-fade) !important;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-4);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td:first-child img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
 body {
