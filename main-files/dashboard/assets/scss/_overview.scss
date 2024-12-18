@@ -5,13 +5,9 @@
   width: 100%;
 
   // Car dashboard left
-  .car-left-sidebar {
-    max-width: 335px;
-    width: 100%;
-  }
 
   // Car dashboard right
-  .car-right-sidebar {
+  .right-sidebar {
     max-width: 335px;
     width: 100%;
   }
@@ -105,6 +101,7 @@
 
     .main-content {
       margin-top: 32px;
+      padding: 0 28px;
 
       .welcome-content {
         margin-bottom: 24px;

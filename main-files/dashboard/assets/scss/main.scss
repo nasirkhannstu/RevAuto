@@ -2,9 +2,11 @@
 @use "mixins" as *;
 @use "typography" as *;
 @use "preloader" as *;
+@use "colors" as *;
 
 // pages
 @use "overview" as *;
+@use "left-sidebar" as *;
 
 body {
   background: $bg-color;

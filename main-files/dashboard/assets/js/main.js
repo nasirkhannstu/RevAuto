@@ -56,6 +56,31 @@ CSS TABLE OF CONTENTS
     });
     // Back to top btn area end here ***
 
+    /* << Sidebars Start >> */
+    // left sidebar
+    $(".left-sidebar-list-container ul li a").on("click", function (e) {
+      // FIXME: the below code should be remove in the future
+      $(".left-sidebar-list-container ul li a").removeClass("active");
+      $(this).addClass("active");
+      // FIXME: the above code should be remove in the future
+
+      $(".collapse.show").collapse("hide");
+
+      // Reset rotation for all icons
+      $(".left-sidebar-list-container ul li a i.fa-sharp.fa-solid").removeClass(
+        "rotate-180"
+      );
+
+      // Find the icon inside the clicked link and toggle rotation
+      const collapseTarget = $(this).attr("href");
+      const icon = $(this).find("i.fa-sharp.fa-solid");
+
+      if (collapseTarget && collapseTarget.startsWith("#")) {
+        // Toggle the icon rotation only for the clicked item
+        icon.toggleClass("rotate-180");
+      }
+    });
+
     // main chart data
     const weeklyData = {
       labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
