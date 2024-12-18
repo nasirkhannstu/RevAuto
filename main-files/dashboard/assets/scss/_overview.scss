@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "typography" as *;
+
 .car-dashboard-section {
   width: 100%;
 
@@ -285,6 +288,14 @@
         border-radius: 16px;
         box-shadow: $shadow;
         padding: 24px 20px;
+
+        .revenue-chart {
+          width: 100%;
+        }
+
+        .revenue-list {
+          margin-top: 20px;
+        }
       }
     }
   }
