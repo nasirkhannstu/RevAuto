@@ -56,7 +56,7 @@ CSS TABLE OF CONTENTS
     });
     // Back to top btn area end here ***
 
-    // Predefined chart data
+    // main chart data
     const weeklyData = {
       labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
       datasets: [
@@ -176,6 +176,77 @@ CSS TABLE OF CONTENTS
       });
       myChart.update();
     }
+
+    // map chart data
+    fetch("https://unpkg.com/world-atlas@2.0.2/countries-50m.json")
+      .then((response) => response.json())
+      .then((topology) => {
+        // Convert TopoJSON to GeoJSON
+        const countries = ChartGeo.topojson.feature(
+          topology,
+          topology.objects.countries
+        );
+
+        // Prepare random revenue data
+        const data = countries.features.map((feature) => ({
+          feature: feature,
+          value: Math.floor(Math.random() * 1000) + 100, // Random revenue
+        }));
+
+        // Initialize Chart.js Choropleth Map
+        const ctx = document.getElementById("worldMapChart").getContext("2d");
+        new Chart(ctx, {
+          type: "choropleth",
+          data: {
+            labels: countries.features.map((d) => d.properties.name),
+            datasets: [
+              {
+                label: "Revenue by Region",
+                outline: countries,
+                data: data,
+              },
+            ],
+          },
+          options: {
+            showOutline: true,
+            showGraticule: false,
+            plugins: {
+              tooltip: {
+                callbacks: {
+                  label: (context) => {
+                    return `${context.chart.data.labels[context.dataIndex]}: $${
+                      context.raw.value
+                    }`;
+                  },
+                },
+              },
+            },
+            scales: {
+              xy: {
+                projection: "equalEarth",
+              },
+            },
+            elements: {
+              geoFeature: {
+                backgroundColor: (context) => {
+                  const value = context.raw?.value || 0;
+                  return getColor(value);
+                },
+                borderColor: "#ffffff",
+                borderWidth: 1,
+              },
+            },
+          },
+        });
+
+        function getColor(value) {
+          if (value > 700) return "#0d47a1";
+          if (value > 500) return "#1976d2";
+          if (value > 300) return "#42a5f5";
+          return "#bbdefb";
+        }
+      })
+      .catch((error) => console.error("Error fetching map data:", error));
 
     //>> Mouse Cursor Start <<//
     function mousecursor() {
