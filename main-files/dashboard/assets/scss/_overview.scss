@@ -204,6 +204,7 @@
       .revenue-table {
         background: $white;
         padding: 24px;
+        padding-bottom: 10px;
         border-radius: 16px;
         box-shadow: $shadow;
 
@@ -222,11 +223,12 @@
           }
 
           .filter-button {
-            padding: 10px 16px;
+            padding: 4px 16px;
             font-weight: 500;
             border-radius: 8px;
             background-color: $bg-color-2;
             color: $text-color-3;
+            font-size: 12px;
             i {
               color: $theme-color;
             }
@@ -268,6 +270,43 @@
                 font-size: 12px;
                 font-weight: 400;
                 color: $text-color-4;
+                padding: 4px 12px;
+
+                .chip {
+                  border-radius: 4px;
+                  font-weight: 400;
+                  font-size: 12px;
+                  color: $white;
+                  padding: 4px 8px;
+                }
+
+                .chip-available {
+                  background: #34c759;
+                }
+
+                .chip-reserved {
+                  background: #4376fb;
+                }
+
+                .chip-instock {
+                  background: #00c7be;
+                }
+
+                .chip-outstock {
+                  background: #ff3b30;
+                }
+
+                .chip-backorder {
+                  background: #af52de;
+                }
+
+                .chip-limited {
+                  background: #ff9500;
+                }
+
+                .chip-soldout {
+                  background: #b3b9c4;
+                }
               }
 
               td:first-child {
@@ -288,6 +327,14 @@
         border-radius: 16px;
         box-shadow: $shadow;
         padding: 24px 20px;
+
+        div {
+          h5 {
+            font-family: $font-inter;
+            color: $text-color-4;
+            font-weight: 600;
+          }
+        }
 
         .revenue-chart {
           width: 100%;
@@ -323,6 +370,68 @@
                 margin-top: 4px;
                 background: $white;
               }
+            }
+          }
+        }
+      }
+
+      .revenue-by-ads {
+        background: $white;
+        padding: 24px;
+        border-radius: 16px;
+        box-shadow: $shadow;
+
+        div {
+          h5 {
+            font-family: $font-inter;
+            color: $text-color-4;
+            font-weight: 600;
+          }
+        }
+
+        .revenue-by-ads-chart {
+          width: 100%;
+          max-height: 170px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .revenue-by-chart-list {
+          .ads,
+          .count {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: $text-color-4;
+          }
+
+          ul {
+            li {
+              margin-bottom: 10px;
+
+              .revenue-by-ads-circle {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+              }
+            }
+
+            li:nth-child(1) .revenue-by-ads-circle {
+              background: rgba(255, 99, 132);
+            }
+            li:nth-child(2) .revenue-by-ads-circle {
+              background: rgba(54, 162, 235);
+            }
+            li:nth-child(3) .revenue-by-ads-circle {
+              background: rgba(255, 206, 86);
+            }
+            li:nth-child(4) .revenue-by-ads-circle {
+              background: rgba(75, 192, 192);
+            }
+            li:nth-child(5) .revenue-by-ads-circle {
+              background: rgba(153, 102, 255);
             }
           }
         }

@@ -541,6 +541,7 @@ span {
 .car-dashboard-section .car-dashboard-content .main-content .revenue-table {
   background: var(--white);
   padding: 24px;
+  padding-bottom: 10px;
   border-radius: 16px;
   box-shadow: var(--box-shadow);
 }
@@ -556,11 +557,12 @@ span {
   background: rgba(0, 0, 0, 0.2);
 }
 .car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .filter-button {
-  padding: 10px 16px;
+  padding: 4px 16px;
   font-weight: 500;
   border-radius: 8px;
   background-color: var(--bg-2);
   color: var(--text-3);
+  font-size: 12px;
 }
 .car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .filter-button i {
   color: var(--theme);
@@ -591,6 +593,35 @@ span {
   font-size: 12px;
   font-weight: 400;
   color: var(--text-4);
+  padding: 4px 12px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip {
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--white);
+  padding: 4px 8px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-available {
+  background: #34c759;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-reserved {
+  background: #4376fb;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-instock {
+  background: #00c7be;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-outstock {
+  background: #ff3b30;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-backorder {
+  background: #af52de;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-limited {
+  background: #ff9500;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-soldout {
+  background: #b3b9c4;
 }
 .car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td:first-child img {
   width: 32px;
@@ -603,6 +634,11 @@ span {
   border-radius: 16px;
   box-shadow: var(--box-shadow);
   padding: 24px 20px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region div h5 {
+  font-family: var(--inter);
+  color: var(--text-4);
+  font-weight: 600;
 }
 .car-dashboard-section .car-dashboard-content .main-content .revenue-by-region .revenue-chart {
   width: 100%;
@@ -633,6 +669,55 @@ span {
   height: 2px;
   margin-top: 4px;
   background: var(--white);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads div h5 {
+  font-family: var(--inter);
+  color: var(--text-4);
+  font-weight: 600;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-ads-chart {
+  width: 100%;
+  max-height: 170px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list .ads,
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list .count {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-4);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li {
+  margin-bottom: 10px;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li .revenue-by-ads-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(1) .revenue-by-ads-circle {
+  background: rgb(255, 99, 132);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(2) .revenue-by-ads-circle {
+  background: rgb(54, 162, 235);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(3) .revenue-by-ads-circle {
+  background: rgb(255, 206, 86);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(4) .revenue-by-ads-circle {
+  background: rgb(75, 192, 192);
+}
+.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(5) .revenue-by-ads-circle {
+  background: rgb(153, 102, 255);
 }
 
 body {

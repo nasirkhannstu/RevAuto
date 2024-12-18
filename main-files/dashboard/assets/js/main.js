@@ -248,6 +248,59 @@ CSS TABLE OF CONTENTS
       })
       .catch((error) => console.error("Error fetching map data:", error));
 
+    // Get chart context
+    const revenueByAdsChart = document
+      .getElementById("revenueByAdsChart")
+      .getContext("2d");
+
+    // Chart data
+    const data = {
+      labels: ["Fashion", "Gadget", "Books", "Sports", "Grocery"],
+      datasets: [
+        {
+          label: "Values",
+          data: [38.6, 30.8, 22.5, 28.99, 20.1],
+          backgroundColor: [
+            "rgba(255, 99, 132)",
+            "rgba(54, 162, 235)",
+            "rgba(255, 206, 86)",
+            "rgba(75, 192, 192)",
+            "rgba(153, 102, 255)",
+          ],
+          borderColor: "#E8E8E8",
+          borderWidth: 0,
+        },
+      ],
+    };
+
+    // Chart options
+    const options = {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: false,
+        },
+      },
+      scales: {
+        r: {
+          grid: {
+            color: "#E8E8E8",
+            display: false,
+          },
+          ticks: {
+            display: false,
+          },
+        },
+      },
+    };
+
+    // Initialize Polar Area Chart
+    new Chart(revenueByAdsChart, {
+      type: "polarArea",
+      data: data,
+      options: options,
+    });
+
     //>> Mouse Cursor Start <<//
     function mousecursor() {
       if ($("body")) {
