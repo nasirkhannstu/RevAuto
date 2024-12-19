@@ -365,35 +365,45 @@ span {
   transition: transform 0.3s ease; /* Smooth rotation */
 }
 
-.car-dashboard-section {
+.overview-dashboard-section {
   width: 100%;
 }
-.car-dashboard-section .right-sidebar {
+.overview-dashboard-section .right-sidebar {
   max-width: 335px;
   width: 100%;
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav {
-  padding: 26px 28px;
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav {
+  padding: 10px 16px;
   color: var(--white);
   background-color: var(--theme2);
   font-family: var(--inter);
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content {
+@media (min-width: 992px) {
+  .overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav {
+    padding: 20px 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav {
+    padding: 26px 28px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .left-content {
   color: var(--white) !important;
   display: flex;
   align-items: center;
   gap: 24px;
 }
 @media (min-width: 1600px) {
-  .car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content button.menu-button {
+  .overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .left-content button.menu-button {
     display: none;
   }
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content button.menu-button i {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .left-content button.menu-button i {
   font-size: 20px;
   color: var(--white);
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content div.my-breadcrumb ol {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .left-content div.my-breadcrumb ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -403,11 +413,11 @@ span {
   font-weight: 500;
   font-size: 16px;
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content div.my-breadcrumb ol .active {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .left-content div.my-breadcrumb ol .active {
   font-weight: 400 !important;
   color: var(--text-2) !important;
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .input {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .input {
   background-color: rgba(255, 255, 255, 0.0392156863);
   border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.1215686275);
@@ -418,26 +428,26 @@ span {
   padding: 8px 16px;
   color: var(--white) !important;
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .input input {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .input input {
   background-color: transparent;
   border: 0;
   outline: 0;
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .input input::placeholder {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .input input::placeholder {
   font-size: 14px;
   color: var(--white);
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .input button {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .input button {
   background-color: transparent;
   border: 0;
   outline: none;
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .input button i {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .input button i {
   color: var(--white);
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .theme-button,
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .notification-button,
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .right-sidebar-action-button {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .theme-button,
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .notification-button,
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .right-sidebar-action-button {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -446,136 +456,211 @@ span {
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.1215686275);
 }
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .theme-button i,
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .notification-button i,
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .right-sidebar-action-button i {
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .theme-button i,
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .notification-button i,
+.overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .right-sidebar-action-button i {
   font-size: 24px;
   color: var(--white);
 }
 @media (min-width: 1600px) {
-  .car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .right-sidebar-action-button {
+  .overview-dashboard-section .overview-dashboard-content .overview-dashboard-nav .right-content .right-sidebar-action-button {
     display: none;
   }
 }
-.car-dashboard-section .car-dashboard-content .main-content {
-  margin-top: 32px;
-  padding: 0 28px;
+.overview-dashboard-section .overview-dashboard-content .main-content {
+  margin-top: 20px;
+  padding: 0 15px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .welcome-content {
-  margin-bottom: 24px;
+@media (min-width: 992px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content {
+    padding: 0 20px;
+    margin-top: 25px;
+  }
 }
-.car-dashboard-section .car-dashboard-content .main-content .welcome-content .content-filters button {
-  padding: 10px 16px;
+@media (min-width: 1200px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content {
+    padding: 0 28px;
+    margin-top: 32px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .welcome-content {
+  margin-bottom: 18px;
+}
+@media (min-width: 1200px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .welcome-content {
+    margin-bottom: 24px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .welcome-content h5.title {
+  font-weight: 700;
+  font-size: 16px !important;
+}
+@media (min-width: 768px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .welcome-content h5.title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .welcome-content h5.title {
+    font-size: 24px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .welcome-content .content-filters button {
+  padding: 6px 16px;
   font-weight: 500;
   border-radius: 8px;
+  font-family: var(--inter);
+  font-size: 16px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .welcome-content .content-filters button:first-child {
+.overview-dashboard-section .overview-dashboard-content .main-content .welcome-content .content-filters button:first-child {
   background-color: var(--bg-2);
   color: var(--text-3);
 }
-.car-dashboard-section .car-dashboard-content .main-content .welcome-content .content-filters button:first-child i {
+.overview-dashboard-section .overview-dashboard-content .main-content .welcome-content .content-filters button:first-child i {
   color: var(--theme);
 }
-.car-dashboard-section .car-dashboard-content .main-content .welcome-content .content-filters button:last-child {
+.overview-dashboard-section .overview-dashboard-content .main-content .welcome-content .content-filters button:last-child {
   background-color: var(--theme);
   color: var(--white);
+  display: none;
 }
-.car-dashboard-section .car-dashboard-content .main-content .block-active-user,
-.car-dashboard-section .car-dashboard-content .main-content .block-new-user,
-.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user,
-.car-dashboard-section .car-dashboard-content .main-content .block-returning-user {
+@media (min-width: 768px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .welcome-content .content-filters button:last-child {
+    display: inline-block;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .block-active-user,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-new-user,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user {
   background: var(--white);
-  padding: 24px;
+  padding: 16px;
   color: var(--text-4);
   border-radius: 16px;
   box-shadow: var(--box-shadow);
 }
-.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-content p,
-.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-content p,
-.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-content p,
-.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-content p {
+@media (min-width: 992px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .block-active-user,
+  .overview-dashboard-section .overview-dashboard-content .main-content .block-new-user,
+  .overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user,
+  .overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .block-active-user,
+  .overview-dashboard-section .overview-dashboard-content .main-content .block-new-user,
+  .overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user,
+  .overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user {
+    padding: 24px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .block-active-user .block-content p,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-new-user .block-content p,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user .block-content p,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user .block-content p {
   font-weight: 600;
   font-size: 14px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-content h5,
-.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-content h5,
-.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-content h5,
-.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-content h5 {
+.overview-dashboard-section .overview-dashboard-content .main-content .block-active-user .block-content h5,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-new-user .block-content h5,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user .block-content h5,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user .block-content h5 {
   font-weight: 600 !important;
   font-family: var(--inter) !important;
   color: var(--text-4) !important;
   font-size: 28px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-icons div,
-.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-icons div,
-.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-icons div,
-.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-icons div {
+.overview-dashboard-section .overview-dashboard-content .main-content .block-active-user .block-icons div,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-new-user .block-icons div,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user .block-icons div,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user .block-icons div {
   margin-bottom: 20px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-icons div i,
-.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-icons div i,
-.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-icons div i,
-.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-icons div i {
+.overview-dashboard-section .overview-dashboard-content .main-content .block-active-user .block-icons div i,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-new-user .block-icons div i,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user .block-icons div i,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user .block-icons div i {
   font-size: 24px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .block-active-user .block-icons span,
-.car-dashboard-section .car-dashboard-content .main-content .block-new-user .block-icons span,
-.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .block-icons span,
-.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .block-icons span {
+.overview-dashboard-section .overview-dashboard-content .main-content .block-active-user .block-icons span,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-new-user .block-icons span,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user .block-icons span,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user .block-icons span {
   font-size: 12px;
   font-weight: 400;
 }
-.car-dashboard-section .car-dashboard-content .main-content .block-active-user .rotate-180,
-.car-dashboard-section .car-dashboard-content .main-content .block-new-user .rotate-180,
-.car-dashboard-section .car-dashboard-content .main-content .block-engaged-user .rotate-180,
-.car-dashboard-section .car-dashboard-content .main-content .block-returning-user .rotate-180 {
+.overview-dashboard-section .overview-dashboard-content .main-content .block-active-user .rotate-180,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-new-user .rotate-180,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-engaged-user .rotate-180,
+.overview-dashboard-section .overview-dashboard-content .main-content .block-returning-user .rotate-180 {
   transform: rotate(120deg);
 }
-.car-dashboard-section .car-dashboard-content .main-content .main-chart {
+.overview-dashboard-section .overview-dashboard-content .main-content .main-chart {
   width: 100%;
   max-height: 330px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .main-chart .chart-container {
+.overview-dashboard-section .overview-dashboard-content .main-content .main-chart .chart-container {
   background: var(--white);
   box-shadow: var(--box-shadow);
-  padding: 20px;
+  padding: 16px;
   position: relative;
   width: 100%;
   height: 330px;
   border-radius: 16px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .main-chart .legend-btn {
+@media (min-width: 992px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .main-chart .chart-container {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .main-chart .chart-container {
+    padding: 24px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .main-chart .legend-btn {
   cursor: pointer;
   font-size: 14px;
   font-weight: normal;
   color: #555;
   transition: opacity 0.3s ease;
 }
-.car-dashboard-section .car-dashboard-content .main-content .main-chart .legend-btn.hidden {
+.overview-dashboard-section .overview-dashboard-content .main-content .main-chart .legend-btn.hidden {
   opacity: 0.5;
 }
-.car-dashboard-section .car-dashboard-content .main-content .main-chart #myChart {
+.overview-dashboard-section .overview-dashboard-content .main-content .main-chart #myChart {
   max-height: 260px; /* Adjust chart height to fit within container */
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table {
   background: var(--white);
-  padding: 24px;
+  padding: 16px;
   padding-bottom: 10px;
   border-radius: 16px;
   box-shadow: var(--box-shadow);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header h5 {
+@media (min-width: 992px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .revenue-table {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .revenue-table {
+    padding: 24px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-header h5 {
   font-weight: 600;
   font-size: 20px;
   color: var(--text-4);
   font-family: var(--inter);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .revenue-line {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-header .revenue-line {
   width: 1px;
   height: 20px;
   background: rgba(0, 0, 0, 0.2);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .filter-button {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-header .filter-button {
   padding: 4px 16px;
   font-weight: 500;
   border-radius: 8px;
@@ -583,124 +668,153 @@ span {
   color: var(--text-3);
   font-size: 12px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .filter-button i {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-header .filter-button i {
   color: var(--theme);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-header .revenue-more-button {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-header .revenue-more-button {
   font-size: 20px;
   color: var(--text-4);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data thead tr {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data thead tr {
   border-top: none !important;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data thead tr th {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data thead tr th {
   background: var(--theme-fade);
   color: #091e42 !important;
   font-size: 12px;
   font-weight: 500;
   overflow: hidden;
+  padding: 12px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data thead tr th:first-child {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data thead tr th:first-child {
   border-top-left-radius: 16px;
   border-left-color: var(--theme-fade) !important;
+  border: 0;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data thead tr th:last-child {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data thead tr th:last-child {
   border-top-right-radius: 16px;
   border-right-color: var(--theme-fade) !important;
+  border: 0;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td {
   font-size: 12px;
   font-weight: 400;
   color: var(--text-4);
   padding: 4px 12px;
+  width: fit-content;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td .chip {
   border-radius: 4px;
   font-weight: 400;
   font-size: 12px;
   color: var(--white);
   padding: 4px 8px;
+  flex-shrink: 0;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-available {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td .chip-available {
   background: #34c759;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-reserved {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td .chip-reserved {
   background: #4376fb;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-instock {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td .chip-instock {
   background: #00c7be;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-outstock {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td .chip-outstock {
   background: #ff3b30;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-backorder {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td .chip-backorder {
   background: #af52de;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-limited {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td .chip-limited {
   background: #ff9500;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td .chip-soldout {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td .chip-soldout {
   background: #b3b9c4;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-table-data tbody tr td:first-child img {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td:first-child {
+  display: flex;
+  align-items: center;
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-table-data tbody tr td:first-child img {
   width: 32px;
   height: 32px;
   object-fit: cover;
   margin-right: 10px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region {
   background: var(--white);
   border-radius: 16px;
   box-shadow: var(--box-shadow);
-  padding: 24px 20px;
+  padding: 16px 16px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region div h5 {
+@media (min-width: 992px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region {
+    padding: 20px 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region {
+    padding: 24px 20px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region div h5 {
   font-family: var(--inter);
   color: var(--text-4);
   font-weight: 600;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region .revenue-chart {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region .revenue-chart {
   width: 100%;
   max-height: 250px;
   height: 100%;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region .revenue-list {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region .revenue-list {
   margin-top: 20px;
   background: var(--bg-2);
   padding: 16px;
   border-radius: 16px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region .revenue-list ul li {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region .revenue-list ul li {
   margin-bottom: 10px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region .revenue-list ul li div {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region .revenue-list ul li div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region .revenue-list ul li div span.country,
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region .revenue-list ul li div span.percentage {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region .revenue-list ul li div span.country,
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region .revenue-list ul li div span.percentage {
   font-weight: 500;
   font-size: 14px;
   color: var(--text-4);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-region .revenue-list ul li .progress {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-region .revenue-list ul li .progress {
   height: 2px;
   margin-top: 4px;
   background: var(--white);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads {
   background: var(--white);
-  padding: 24px;
+  padding: 16px;
   border-radius: 16px;
   box-shadow: var(--box-shadow);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads div h5 {
+@media (min-width: 992px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads {
+    padding: 24px;
+  }
+}
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads div h5 {
   font-family: var(--inter);
   color: var(--text-4);
   font-weight: 600;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-ads-chart {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-ads-chart {
   width: 100%;
   max-height: 170px;
   height: 100%;
@@ -708,41 +822,41 @@ span {
   align-items: center;
   justify-content: center;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list .ads,
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list .count {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list .ads,
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list .count {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   color: var(--text-4);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li {
   margin-bottom: 10px;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li .revenue-by-ads-circle {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li .revenue-by-ads-circle {
   width: 6px;
   height: 6px;
   border-radius: 50%;
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(1) .revenue-by-ads-circle {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(1) .revenue-by-ads-circle {
   background: rgb(255, 99, 132);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(2) .revenue-by-ads-circle {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(2) .revenue-by-ads-circle {
   background: rgb(54, 162, 235);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(3) .revenue-by-ads-circle {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(3) .revenue-by-ads-circle {
   background: rgb(255, 206, 86);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(4) .revenue-by-ads-circle {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(4) .revenue-by-ads-circle {
   background: rgb(75, 192, 192);
 }
-.car-dashboard-section .car-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(5) .revenue-by-ads-circle {
+.overview-dashboard-section .overview-dashboard-content .main-content .revenue-by-ads .revenue-by-chart-list ul li:nth-child(5) .revenue-by-ads-circle {
   background: rgb(153, 102, 255);
 }
 
 .left-sidebar {
   max-width: 335px;
-  padding: 32px;
-  padding-bottom: 24px;
+  padding: 20px;
+  padding-bottom: 16px;
   width: 100%;
   background: var(--white);
   height: 100vh;
@@ -754,6 +868,18 @@ span {
   border: none !important;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+@media (min-width: 992px) {
+  .left-sidebar {
+    padding: 25px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .left-sidebar {
+    padding: 32px;
+    padding-bottom: 24px;
+  }
 }
 @media (min-width: 1600px) {
   .left-sidebar {
@@ -894,8 +1020,8 @@ span {
 
 .right-sidebar {
   max-width: 335px;
-  padding: 32px;
-  padding-bottom: 24px;
+  padding: 20px;
+  padding-bottom: 16px;
   width: 100%;
   background: var(--white);
   height: 100vh;
@@ -908,6 +1034,18 @@ span {
   -ms-overflow-style: none;
   scrollbar-width: none;
   transition: all 0.5s ease;
+}
+@media (min-width: 992px) {
+  .right-sidebar {
+    padding: 25px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .right-sidebar {
+    padding: 32px;
+    padding-bottom: 24px;
+  }
 }
 @media (min-width: 1600px) {
   .right-sidebar {

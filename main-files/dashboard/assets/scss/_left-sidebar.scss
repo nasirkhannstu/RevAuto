@@ -5,8 +5,16 @@
 
 .left-sidebar {
    max-width: 335px;
-   padding: 32px;
-   padding-bottom: 24px;
+   padding: 20px;
+   padding-bottom: 16px;
+   @include breakpoint(lg) {
+      padding: 25px;
+      padding-bottom: 20px;
+   }
+   @include breakpoint(xl) {
+      padding: 32px;
+      padding-bottom: 24px;
+   }
    width: 100%;
    background: $white;
    height: 100vh;
