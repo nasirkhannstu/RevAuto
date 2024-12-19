@@ -1187,6 +1187,54 @@ span {
   color: var(--theme);
 }
 
+.create-product-uploads {
+  background: var(--white);
+  border-radius: 12px;
+}
+.create-product-uploads .uploads-header {
+  padding: 24px 16px;
+}
+.create-product-uploads .uploads-header h4 {
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 700;
+}
+.create-product-uploads .uploads-container {
+  margin-top: 20px;
+  padding: 24px;
+}
+.create-product-uploads .uploads-container label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--theme);
+  height: 320px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.create-product-uploads .uploads-container label i {
+  font-size: 49px;
+  color: #798090;
+}
+.create-product-uploads .uploads-container label p.title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #091e42;
+}
+.create-product-uploads .uploads-container label p.title span {
+  color: var(--theme);
+}
+.create-product-uploads .uploads-container label p.message {
+  color: #505f79;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
+
 body {
   background: var(--bg);
 }

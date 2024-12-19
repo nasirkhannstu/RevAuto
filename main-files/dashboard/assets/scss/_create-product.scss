@@ -1,0 +1,59 @@
+@use "variables" as variables;
+@use "typography" as typography;
+
+.create-product {
+   &-uploads {
+      background: variables.$white;
+      border-radius: 12px;
+
+      .uploads-header {
+         padding: 24px 16px;
+         h4 {
+            color: variables.$black;
+            font-size: 24px;
+            font-weight: 700;
+         }
+      }
+
+      .uploads-container {
+         margin-top: 20px;
+         padding: 24px;
+
+         label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed variables.$theme-color;
+            height: 320px;
+            border-radius: 16px;
+            cursor: pointer;
+
+            i {
+               font-size: 49px;
+               color: #798090;
+            }
+
+            p.title {
+               font-size: 24px;
+               font-weight: 500;
+               font-family: typography.$heading-font;
+               margin-top: 16px;
+               margin-bottom: 16px;
+               color: #091e42;
+
+               span {
+                  color: variables.$theme-color;
+               }
+            }
+
+            p.message {
+               color: #505f79;
+               font-family: typography.$font-roboto;
+               font-size: 14px;
+               font-weight: 400;
+            }
+         }
+      }
+   }
+}

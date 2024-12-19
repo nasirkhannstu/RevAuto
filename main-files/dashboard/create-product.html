@@ -141,7 +141,11 @@
                               <a href="#">Create With AI</a>
                            </li>
                            <li>
-                              <a href="#" class="active-sublist">Create New</a>
+                              <a
+                                 href="create-product.html"
+                                 class="active-sublist"
+                                 >Create New</a
+                              >
                            </li>
                            <li>
                               <a href="#">View All</a>
@@ -371,9 +375,29 @@
             </nav>
 
             <!-- main Content started -->
-            <div class="main-content">
+            <div class="main-content create-product">
                <!-- welcome content -->
-
+               <form action="#">
+                  <div class="create-product-uploads">
+                     <div class="uploads-header">
+                        <h4>Add Product Photo</h4>
+                     </div>
+                     <hr class="m-0 p-0" style="background-color: #dfe2e6" />
+                     <div class="uploads-container">
+                        <label for="images">
+                           <i class="fa-regular fa-cloud-arrow-up"></i>
+                           <p class="title">
+                              Drop files here, or <span>click to upload</span>
+                           </p>
+                           <p class="message">
+                              1660x1200 (423) recommended, PNG, JPG And GIF has
+                              an allowed
+                           </p>
+                        </label>
+                        <input type="file" id="images" multiple hidden />
+                     </div>
+                  </div>
+               </form>
                <!--  -->
             </div>
          </div>
