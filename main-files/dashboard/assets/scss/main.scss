@@ -8,6 +8,7 @@
 @use "overview" as *;
 @use "left-sidebar" as *;
 @use "right-sidebar" as *;
+@use "create-new" as *;
 
 body {
    background: $bg-color;

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--<< Header Area >>-->
+   <head>
+      <!-- ========== Meta Tags ========== -->
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="author" content="namespace-it" />
+      <meta
+         name="description"
+         content="RevAuto - Car Dealer & Services Html Template"
+      />
+      <!-- ======== Page title ============ -->
+      <title>RevAuto - Car Dealer & Services Html Template</title>
+      <!--<< Favcion >>-->
+      <link rel="shortcut icon" href="assets/img/favicon.svg" />
+      <!--<< Bootstrap min.css >>-->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+      <!--<< All Min Css >>-->
+      <link rel="stylesheet" href="assets/css/all.min.css" />
+      <!--<< Animate.css >>-->
+      <link rel="stylesheet" href="assets/css/animate.css" />
+      <!--<< Magnific Popup.css >>-->
+      <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+      <!--<< MeanMenu.css >>-->
+      <link rel="stylesheet" href="assets/css/meanmenu.css" />
+      <!--<< Swiper Bundle.css >>-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+      <!--<< Nice Select.css >>-->
+      <link rel="stylesheet" href="assets/css/nice-select.css" />
+      <!--<< Color.css >>-->
+      <link rel="stylesheet" href="assets/css/color.css" />
+      <!--<< Main.css >>-->
+      <link rel="stylesheet" href="assets/css/main.css" />
+   </head>
+   <body style="font-family: var(--inter)">
+      <!-- Preloader Start -->
+      <div id="preloader" class="preloader">
+         <div class="animation-preloader">
+            <div class="spinner"></div>
+            <div class="txt-loading">
+               <span data-text-preloader="R" class="letters-loading"> R </span>
+               <span data-text-preloader="E" class="letters-loading"> E </span>
+               <span data-text-preloader="V" class="letters-loading"> V </span>
+               <span data-text-preloader="A" class="letters-loading"> A </span>
+               <span data-text-preloader="U" class="letters-loading"> U </span>
+               <span data-text-preloader="T" class="letters-loading"> T </span>
+               <span data-text-preloader="0" class="letters-loading"> O </span>
+            </div>
+            <p class="text-center">Loading</p>
+         </div>
+         <div class="loader">
+            <div class="row">
+               <div class="col-3 loader-section section-left">
+                  <div class="bg"></div>
+               </div>
+               <div class="col-3 loader-section section-left">
+                  <div class="bg"></div>
+               </div>
+               <div class="col-3 loader-section section-right">
+                  <div class="bg"></div>
+               </div>
+               <div class="col-3 loader-section section-right">
+                  <div class="bg"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--<< Mouse Cursor Start >>-->
+      <div class="mouse-cursor cursor-outer"></div>
+      <div class="mouse-cursor cursor-inner"></div>
+
+      <!-- Back To Top Start -->
+      <button id="back-top" class="back-to-top">
+         <i class="fa-regular fa-arrow-up"></i>
+      </button>
+
+      <main class="d-flex overview-dashboard-section">
+         <!-- left sidebar -->
+         <aside
+            class="left-sidebar offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="leftSidebarToggle"
+         >
+            <div class="logo d-flex align-items-center justify-content-between">
+               <a href="index.html">
+                  <img src="assets/images/logo.png" alt="RevAuto" />
+               </a>
+               <button
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+               >
+                  <i class="fa-sharp fa-solid fa-angles-left color-primary"></i>
+               </button>
+            </div>
+
+            <div class="left-sidebar-list-container">
+               <ul class="d-flex flex-column gap-2">
+                  <li>
+                     <a
+                        href="index.html"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i class="fa-solid fa-grid-2 color-primary"></i>
+                           <span>Overview</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        data-bs-toggle="collapse"
+                        href="#collapseProducts"
+                        role="button"
+                        class="active d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i
+                              class="fa-sharp fa-light fa-bag-shopping color-primary"
+                           ></i>
+                           <span>Products</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+
+                     <!-- collapse 1 -->
+                     <div
+                        class="collapse collapsed-items"
+                        id="collapseProducts"
+                     >
+                        <ul class="d-flex flex-column">
+                           <li>
+                              <a href="#">Create With AI</a>
+                           </li>
+                           <li>
+                              <a href="#" class="active-sublist">Create New</a>
+                           </li>
+                           <li>
+                              <a href="#">View All</a>
+                           </li>
+                           <li>
+                              <a href="#">Products Images</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i
+                              class="fa-light fa-user fa-sharp color-primary"
+                           ></i>
+                           <span>Customers</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i
+                              class="fa-regular fa-square-list color-primary"
+                           ></i>
+                           <span>Orders</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i
+                              class="fa-light fa-bags-shopping color-primary"
+                           ></i>
+                           <span>Checkout</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i class="fa-solid fa-chart-mixed color-primary"></i>
+                           <span>Analytics</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i class="fa-light fa-truck-fast color-primary"></i>
+                           <span>Shipping</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i class="fa-light fa-speaker color-primary"></i>
+                           <span>Promotions</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i
+                              class="fa-regular fa-sack-dollar color-primary"
+                           ></i>
+                           <span>Shipping</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i
+                              class="fa-regular fa-user-headset color-primary"
+                           ></i>
+                           <span>Supports</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i
+                              class="fa-sharp fa-light fa-comments-question-check color-primary"
+                           ></i>
+                           <span>Feedback</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <div class="before d-none"></div>
+                        <div class="d-flex align-items-center gap-2">
+                           <i class="fa-regular fa-gear color-primary"></i>
+                           <span>Settings</span>
+                        </div>
+                        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="left-sidebar-user-options">
+               <button class="btn btn-primary block-content">
+                  <i class="fa-regular fa-arrow-right-from-bracket me-2"></i>
+                  Log out
+               </button>
+               <p class="text-center mt-2">&copy; 2025 RevAuto</p>
+            </div>
+         </aside>
+         <!-- middle and main content -->
+         <div class="container-fluid p-0 overview-dashboard-content w-100">
+            <!-- header -->
+            <nav
+               class="overview-dashboard-nav w-100 d-flex align-items-center justify-content-between"
+            >
+               <div class="left-content">
+                  <button
+                     class="menu-button"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#leftSidebarToggle"
+                  >
+                     <i class="fa-sharp fa-solid fa-bars"></i>
+                  </button>
+                  <div aria-label="breadcrumb" class="my-breadcrumb">
+                     <ol class="text-white">
+                        <li class="d-none d-md-inline">
+                           <a href="dashboard.html" class="text-white"
+                              >Dashboard</a
+                           >
+                        </li>
+                        <li class="d-none d-md-inline">/</li>
+                        <li class="text-white active" aria-current="page">
+                           Create New
+                        </li>
+                     </ol>
+                  </div>
+               </div>
+               <div class="right-content d-flex align-items-center gap-2">
+                  <form action="#" class="d-none d-md-inline">
+                     <div class="input">
+                        <input type="text" placeholder="Search" />
+                        <button>
+                           <i class="fa-light fa-magnifying-glass"></i>
+                        </button>
+                     </div>
+                  </form>
+                  <button class="theme-button">
+                     <i class="fa-sharp fa-regular fa-moon"></i>
+                  </button>
+                  <button class="notification-button">
+                     <i class="fa-light fa-bell"></i>
+                  </button>
+                  <button
+                     class="right-sidebar-action-button"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#rightSidebarToggle"
+                  >
+                     <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </button>
+               </div>
+            </nav>
+
+            <!-- main Content started -->
+            <div class="main-content">
+               <!-- welcome content -->
+
+               <!--  -->
+            </div>
+         </div>
+
+         <!-- right right sidebar -->
+         <aside
+            class="right-sidebar offcanvas offcanvas-end"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="rightSidebarToggle"
+         >
+            <div
+               class="right-sidebar-header d-flex align-items-center justify-content-between"
+            >
+               <h5>Notification</h5>
+               <div class="d-flex align-items-center gap-3">
+                  <button class="filter-button">
+                     Today
+                     <i class="fa-sharp fa-solid fa-chevron-up ms-2"></i>
+                  </button>
+                  <button
+                     class="action-button"
+                     data-bs-dismiss="offcanvas"
+                     aria-label="Close"
+                  >
+                     <i
+                        class="fa-sharp fa-solid fa-arrow-right color-primary"
+                     ></i>
+                  </button>
+               </div>
+            </div>
+
+            <div class="right-sidebar-notifications">
+               <ul class="d-flex flex-column gap-3">
+                  <li>
+                     <a href="#" class="d-flex gap-2">
+                        <span class="notification-icon">
+                           <i class="fa-light fa-bell"></i>
+                        </span>
+                        <div class="notification-content">
+                           <span>New user register</span>
+                           <p>David John just register from New York</p>
+                        </div>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="d-flex gap-2">
+                        <span class="notification-icon">
+                           <i class="fa-light fa-bell"></i>
+                        </span>
+                        <div class="notification-content">
+                           <span>New order placed</span>
+                           <p>
+                              New order received! Click here to view and process
+                              the order.
+                           </p>
+                        </div>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="d-flex gap-2">
+                        <span class="notification-icon">
+                           <i class="fa-light fa-bell"></i>
+                        </span>
+                        <div class="notification-content">
+                           <span>Payment processed successfully</span>
+                           <p>
+                              Michael Williams just made a payment from Chicago
+                           </p>
+                        </div>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="d-flex gap-2">
+                        <span class="notification-icon">
+                           <i class="fa-light fa-bell"></i>
+                        </span>
+                        <div class="notification-content">
+                           <span>New article published </span>
+                           <p>
+                              Sarah Davis just published a new article from San
+                              Francisco
+                           </p>
+                        </div>
+                     </a>
+                  </li>
+
+                  <li>
+                     <button class="notification-see-all-btn">See all</button>
+                  </li>
+               </ul>
+            </div>
+
+            <hr style="margin: 24px 0px; background-color: #f5f6f7" />
+
+            <div class="right-sidebar-recent-events">
+               <div class="recent-events-header">
+                  <h5>Recent Events</h5>
+                  <button class="filter-button">
+                     Descending
+                     <i class="fa-sharp fa-solid fa-chevron-up ms-2"></i>
+                  </button>
+               </div>
+
+               <div class="recent-events-list">
+                  <ul class="d-grid gap-2">
+                     <li>
+                        <div
+                           class="recent-events-item d-flex align-items-center justify-content-between"
+                        >
+                           <span>New York</span>
+                           <span>49%</span>
+                        </div>
+                        <div
+                           class="progress"
+                           style="background: #ecf1ff"
+                           role="progressbar"
+                        >
+                           <div
+                              class="progress-bar h-100"
+                              style="width: 49%; background: var(--theme)"
+                           ></div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div
+                           class="recent-events-item d-flex align-items-center justify-content-between"
+                        >
+                           <span>San Francisco</span>
+                           <span>25%</span>
+                        </div>
+                        <div
+                           class="progress"
+                           style="background: #ecf1ff"
+                           role="progressbar"
+                        >
+                           <div
+                              class="progress-bar h-100"
+                              style="width: 25%; background: var(--theme)"
+                           ></div>
+                        </div>
+                     </li>
+                     <li>
+                        <div
+                           class="recent-events-item d-flex align-items-center justify-content-between"
+                        >
+                           <span>Tokyo</span>
+                           <span>10%</span>
+                        </div>
+                        <div
+                           class="progress"
+                           style="background: #ecf1ff"
+                           role="progressbar"
+                        >
+                           <div
+                              class="progress-bar h-100"
+                              style="width: 10%; background: var(--theme)"
+                           ></div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div
+                           class="recent-events-item d-flex align-items-center justify-content-between"
+                        >
+                           <span>London</span>
+                           <span>5%</span>
+                        </div>
+                        <div
+                           class="progress"
+                           style="background: #ecf1ff"
+                           role="progressbar"
+                        >
+                           <div
+                              class="progress-bar h-100"
+                              style="width: 5%; background: var(--theme)"
+                           ></div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div
+                           class="recent-events-item d-flex align-items-center justify-content-between"
+                        >
+                           <span>Paris</span>
+                           <span>4%</span>
+                        </div>
+                        <div
+                           class="progress"
+                           style="background: #ecf1ff"
+                           role="progressbar"
+                        >
+                           <div
+                              class="progress-bar h-100"
+                              style="width: 4%; background: var(--theme)"
+                           ></div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div
+                           class="recent-events-item d-flex align-items-center justify-content-between"
+                        >
+                           <span>Sydney</span>
+                           <span>3%</span>
+                        </div>
+                        <div
+                           class="progress"
+                           style="background: #ecf1ff"
+                           role="progressbar"
+                        >
+                           <div
+                              class="progress-bar h-100"
+                              style="width: 3%; background: var(--theme)"
+                           ></div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div
+                           class="recent-events-item d-flex align-items-center justify-content-between"
+                        >
+                           <span>Berlin</span>
+                           <span>2%</span>
+                        </div>
+                        <div
+                           class="progress"
+                           style="background: #ecf1ff"
+                           role="progressbar"
+                        >
+                           <div
+                              class="progress-bar h-100"
+                              style="width: 2%; background: var(--theme)"
+                           ></div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div
+                           class="recent-events-item d-flex align-items-center justify-content-between"
+                        >
+                           <span>Shanghai</span>
+                           <span>2%</span>
+                        </div>
+                        <div
+                           class="progress"
+                           style="background: #ecf1ff"
+                           role="progressbar"
+                        >
+                           <div
+                              class="progress-bar h-100"
+                              style="width: 2%; background: var(--theme)"
+                           ></div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <button>Sell all</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </aside>
+      </main>
+
+      <!--<< All JS Plugins >>-->
+      <script src="assets/js/jquery-3.7.1.min.js"></script>
+      <!--<< Viewport Js >>-->
+      <script src="assets/js/viewport.jquery.js"></script>
+      <!--<< Bootstrap Js >>-->
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <!--<< Nice Select Js >>-->
+      <script src="assets/js/jquery.nice-select.min.js"></script>
+      <!--<< Waypoints Js >>-->
+      <script src="assets/js/jquery.waypoints.js"></script>
+      <!--<< Counterup Js >>-->
+      <script src="assets/js/jquery.counterup.min.js"></script>
+      <!--<< Swiper Slider Js >>-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <!--<< MeanMenu Js >>-->
+      <script src="assets/js/jquery.meanmenu.min.js"></script>
+      <!--<< Magnific Popup Js >>-->
+      <script src="assets/js/jquery.magnific-popup.min.js"></script>
+      <!--<< Wow Animation Js >>-->
+      <script src="assets/js/wow.min.js"></script>
+      <!-- chartjs -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- Chart.js Geo Plugin v3.0.1 -->
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo@3.0.1"></script>
+      <!-- TopoJSON -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+      <!--<< Main.js >>-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
