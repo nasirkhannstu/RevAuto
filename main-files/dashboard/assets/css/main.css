@@ -734,12 +734,19 @@ body {
 .left-sidebar {
   max-width: 335px;
   padding: 32px;
+  padding-bottom: 24px;
   width: 100%;
   background: var(--white);
   height: 100vh;
   position: sticky;
   top: 0;
   box-shadow: var(--box-shadow);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.left-sidebar::-webkit-scrollbar {
+  display: none;
 }
 .left-sidebar-list-container {
   margin-top: 40px;
@@ -750,7 +757,7 @@ body {
 }
 .left-sidebar-list-container ul li a {
   color: var(--text-3) !important;
-  padding: 14px 16px;
+  padding: 10px 12px;
   color: #091e42 !important;
   font-weight: 500;
   font-family: "Roboto";
@@ -769,7 +776,8 @@ body {
   font-size: 20px;
 }
 .left-sidebar-list-container ul li a i:last-child {
-  font-size: 16px;
+  font-size: 12px;
+  color: #c2c7d0;
 }
 .left-sidebar-list-container ul li a.active {
   background: var(--bg-2);
@@ -780,11 +788,14 @@ body {
   position: relative;
 }
 .left-sidebar-list-container ul li a.active i {
-  color: var(--theme);
+  color: var(--theme) !important;
+}
+.left-sidebar-list-container ul li a.active i:last-child {
+  transform: rotate(90deg);
 }
 .left-sidebar-list-container ul li .collapsed-items {
   background: #f5f6f7;
-  padding: 12px 24px;
+  padding: 8px 16px;
   padding-top: 24px;
   border-radius: 0px 0px 16px 16px;
   position: relative;
@@ -799,7 +810,7 @@ body {
 }
 .left-sidebar-list-container ul li .collapsed-items ul li a {
   color: #091e42 !important;
-  padding: 12px 24px;
+  padding: 8px 24px;
   width: 100%;
   display: block;
   font-size: 16px;
@@ -809,7 +820,9 @@ body {
   transition: all 0.3s ease;
 }
 .left-sidebar-list-container ul li .collapsed-items ul li a:hover {
-  color: var(--theme);
+  color: var(--theme) !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
 }
 .left-sidebar-list-container ul li .collapsed-items ul li a::before {
   content: "";
@@ -827,6 +840,27 @@ body {
 }
 .left-sidebar-list-container ul li .collapsed-items ul li a.active-sublist::before {
   background-color: var(--theme);
+}
+.left-sidebar-user-options {
+  margin-top: auto;
+  width: 100%;
+  display: grid;
+}
+.left-sidebar-user-options button {
+  background: var(--theme) !important;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  padding: 16px 0;
+  border-radius: 8px !important;
+}
+.left-sidebar-user-options button i {
+  font-size: 20px;
+}
+.left-sidebar-user-options p {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 body {

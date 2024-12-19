@@ -57,29 +57,28 @@ CSS TABLE OF CONTENTS
       // Back to top btn area end here ***
 
       /* << Sidebars Start >> */
-      // left sidebar
+      // left sidebar //
       $(".left-sidebar-list-container ul li a").on("click", function (e) {
-         // FIXME: the below code should be remove in the future
+         const isSubmenu = $(this).closest(".collapsed-items").length > 0;
+         if (isSubmenu) {
+            return;
+         }
+
+         $(".collapse.show").not($(this).attr("href")).collapse("hide");
+
+         // The line should be above the below line
          $(".left-sidebar-list-container ul li a").removeClass("active");
          $(this).addClass("active");
-         // FIXME: the above code should be remove in the future
+         // The above line should be above the below line
 
-         $(".collapse.show").collapse("hide");
-
-         // Reset rotation for all icons
-         $(
-            ".left-sidebar-list-container ul li a i.fa-sharp.fa-solid"
-         ).removeClass("rotate-180");
-
-         // Find the icon inside the clicked link and toggle rotation
          const collapseTarget = $(this).attr("href");
          const icon = $(this).find("i.fa-sharp.fa-solid");
 
          if (collapseTarget && collapseTarget.startsWith("#")) {
-            // Toggle the icon rotation only for the clicked item
             icon.toggleClass("rotate-180");
          }
       });
+      /* << Sidebars Ended >> */
 
       // main chart data
       const weeklyData = {
