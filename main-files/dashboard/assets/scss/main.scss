@@ -7,7 +7,8 @@
 // pages
 @use "overview" as *;
 @use "left-sidebar" as *;
+@use "right-sidebar" as *;
 
 body {
-  background: $bg-color;
+   background: $bg-color;
 }
