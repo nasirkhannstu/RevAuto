@@ -79,7 +79,12 @@
 
       <main class="d-flex car-dashboard-section">
          <!-- left sidebar -->
-         <aside class="left-sidebar d-none d-xl-flex flex-column">
+         <aside
+            class="left-sidebar offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="leftSidebarToggle"
+         >
             <div class="logo d-flex align-items-center justify-content-between">
                <a href="index.html">
                   <img src="assets/images/logo.png" alt="RevAuto" />
@@ -313,7 +318,12 @@
                class="car-dashboard-nav w-100 d-flex align-items-center justify-content-between"
             >
                <div class="left-content">
-                  <button class="menu-button">
+                  <button
+                     class="menu-button"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#leftSidebarToggle"
+                  >
                      <i class="fa-sharp fa-solid fa-bars"></i>
                   </button>
                   <div aria-label="breadcrumb" class="my-breadcrumb">

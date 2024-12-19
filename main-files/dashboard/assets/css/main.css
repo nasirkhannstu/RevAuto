@@ -384,6 +384,11 @@ span {
   align-items: center;
   gap: 24px;
 }
+@media (min-width: 1600px) {
+  .car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content button.menu-button {
+    display: none;
+  }
+}
 .car-dashboard-section .car-dashboard-content .car-dashboard-nav .left-content button.menu-button i {
   font-size: 20px;
   color: var(--white);
@@ -741,15 +746,36 @@ span {
   width: 100%;
   background: var(--white);
   height: 100vh;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   box-shadow: var(--box-shadow);
   overflow-y: auto;
+  border: none !important;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+@media (min-width: 1600px) {
+  .left-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    right: unset;
+  }
+}
 .left-sidebar::-webkit-scrollbar {
   display: none;
+}
+@media (min-width: 1600px) {
+  .left-sidebar.offcanvas {
+    transform: translateX(0) !important;
+    visibility: visible;
+  }
+}
+.left-sidebar.show {
+  transform: translateX(0);
+  visibility: visible;
 }
 .left-sidebar-list-container {
   margin-top: 40px;
