@@ -1,438 +1,446 @@
 @use "variables" as *;
 @use "typography" as *;
+@use "mixins" as *;
 
 .car-dashboard-section {
-  width: 100%;
+   width: 100%;
 
-  // Car dashboard left
+   // Car dashboard left
 
-  // Car dashboard right
-  .right-sidebar {
-    max-width: 335px;
-    width: 100%;
-  }
+   // Car dashboard right
+   .right-sidebar {
+      max-width: 335px;
+      width: 100%;
+   }
 
-  // Car dashboard center
-  .car-dashboard-content {
-    .car-dashboard-nav {
-      padding: 26px 28px;
-      color: $white;
-      background-color: $theme-color-2;
-      font-family: $font-inter;
+   // Car dashboard center
+   .car-dashboard-content {
+      .car-dashboard-nav {
+         padding: 26px 28px;
+         color: $white;
+         background-color: $theme-color-2;
+         font-family: $font-inter;
 
-      .left-content {
-        color: $white !important;
-        display: flex;
-        align-items: center;
-        gap: 24px;
+         .left-content {
+            color: $white !important;
+            display: flex;
+            align-items: center;
+            gap: 24px;
 
-        button.menu-button i {
-          font-size: 20px;
-          color: $white;
-        }
-
-        div.my-breadcrumb ol {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          display: flex !important;
-          align-items: center !important;
-          gap: 10px;
-          font-weight: 500;
-          font-size: 16px;
-
-          .active {
-            font-weight: 400 !important;
-            color: $text-color-2 !important;
-          }
-        }
-      }
-
-      .right-content {
-        .input {
-          background-color: #ffffff0a;
-          border-radius: 100px;
-          border: 1px solid #ffffff1f;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          gap: 0;
-          padding: 8px 16px;
-          color: $white !important;
-
-          input {
-            background-color: transparent;
-            border: 0;
-            outline: 0;
-            &::placeholder {
-              font-size: 14px;
-              color: $white;
+            button.menu-button i {
+               font-size: 20px;
+               color: $white;
             }
-          }
 
-          button {
-            background-color: transparent;
-            border: 0;
-            outline: none;
+            div.my-breadcrumb ol {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+               display: flex !important;
+               align-items: center !important;
+               gap: 10px;
+               font-weight: 500;
+               font-size: 16px;
 
-            i {
-              color: $white;
+               .active {
+                  font-weight: 400 !important;
+                  color: $text-color-2 !important;
+               }
             }
-          }
-        }
+         }
 
-        .theme-button,
-        .notification-button {
-          width: 48px;
-          height: 48px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid #ffffff1f;
+         .right-content {
+            .input {
+               background-color: #ffffff0a;
+               border-radius: 100px;
+               border: 1px solid #ffffff1f;
+               overflow: hidden;
+               display: flex;
+               align-items: center;
+               gap: 0;
+               padding: 8px 16px;
+               color: $white !important;
 
-          i {
-            font-size: 24px;
-            color: $white;
-          }
-        }
-      }
-    }
+               input {
+                  background-color: transparent;
+                  border: 0;
+                  outline: 0;
+                  &::placeholder {
+                     font-size: 14px;
+                     color: $white;
+                  }
+               }
 
-    .main-content {
-      margin-top: 32px;
-      padding: 0 28px;
+               button {
+                  background-color: transparent;
+                  border: 0;
+                  outline: none;
 
-      .welcome-content {
-        margin-bottom: 24px;
-        .content-filters {
-          button {
-            padding: 10px 16px;
-            font-weight: 500;
-            border-radius: 8px;
-          }
-
-          button:first-child {
-            background-color: $bg-color-2;
-            color: $text-color-3;
-
-            i {
-              color: $theme-color;
+                  i {
+                     color: $white;
+                  }
+               }
             }
-          }
 
-          button:last-child {
-            background-color: $theme-color;
-            color: $white;
-          }
-        }
-      }
+            .theme-button,
+            .notification-button,
+            .right-sidebar-action-button {
+               width: 48px;
+               height: 48px;
+               border-radius: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               border: 1px solid #ffffff1f;
 
-      .block-active-user,
-      .block-new-user,
-      .block-engaged-user,
-      .block-returning-user {
-        background: $white;
-        padding: 24px;
-        color: $text-color-4;
-        border-radius: 16px;
-        box-shadow: $shadow;
-
-        .block-content {
-          p {
-            font-weight: 600;
-            font-size: 14px;
-          }
-
-          h5 {
-            font-weight: 600 !important;
-            font-family: $font-inter !important;
-            color: $text-color-4 !important;
-            font-size: 28px;
-          }
-        }
-
-        .block-icons {
-          div {
-            margin-bottom: 20px;
-            i {
-              font-size: 24px;
-            }
-          }
-          span {
-            font-size: 12px;
-            font-weight: 400;
-          }
-        }
-
-        .rotate-180 {
-          transform: rotate(120deg);
-        }
-      }
-
-      .main-chart {
-        width: 100%;
-        max-height: 330px;
-
-        .chart-container {
-          background: $white;
-          box-shadow: $shadow;
-          padding: 20px;
-          position: relative;
-          width: 100%;
-          height: 330px;
-          border-radius: 16px;
-        }
-        .legend-btn {
-          cursor: pointer;
-          font-size: 14px;
-          font-weight: normal;
-          color: #555;
-          transition: opacity 0.3s ease;
-        }
-        .legend-btn.hidden {
-          opacity: 0.5;
-        }
-        #myChart {
-          max-height: 260px; /* Adjust chart height to fit within container */
-        }
-      }
-
-      .revenue-table {
-        background: $white;
-        padding: 24px;
-        padding-bottom: 10px;
-        border-radius: 16px;
-        box-shadow: $shadow;
-
-        &-header {
-          h5 {
-            font-weight: 600;
-            font-size: 20px;
-            color: $text-color-4;
-            font-family: $font-inter;
-          }
-
-          .revenue-line {
-            width: 1px;
-            height: 20px;
-            background: #00000033;
-          }
-
-          .filter-button {
-            padding: 4px 16px;
-            font-weight: 500;
-            border-radius: 8px;
-            background-color: $bg-color-2;
-            color: $text-color-3;
-            font-size: 12px;
-            i {
-              color: $theme-color;
-            }
-          }
-
-          .revenue-more-button {
-            font-size: 20px;
-            color: $text-color-4;
-          }
-        }
-
-        &-data {
-          thead {
-            tr {
-              border-top: none !important;
-              th {
-                background: $theme-fade;
-                color: #091e42 !important;
-                font-size: 12px;
-                font-weight: 500;
-                overflow: hidden;
-              }
-
-              th:first-child {
-                border-top-left-radius: 16px;
-                border-left-color: $theme-fade !important;
-              }
-
-              th:last-child {
-                border-top-right-radius: 16px;
-                border-right-color: $theme-fade !important;
-              }
-            }
-          }
-
-          tbody {
-            tr {
-              td {
-                font-size: 12px;
-                font-weight: 400;
-                color: $text-color-4;
-                padding: 4px 12px;
-
-                .chip {
-                  border-radius: 4px;
-                  font-weight: 400;
-                  font-size: 12px;
+               i {
+                  font-size: 24px;
                   color: $white;
-                  padding: 4px 8px;
-                }
-
-                .chip-available {
-                  background: #34c759;
-                }
-
-                .chip-reserved {
-                  background: #4376fb;
-                }
-
-                .chip-instock {
-                  background: #00c7be;
-                }
-
-                .chip-outstock {
-                  background: #ff3b30;
-                }
-
-                .chip-backorder {
-                  background: #af52de;
-                }
-
-                .chip-limited {
-                  background: #ff9500;
-                }
-
-                .chip-soldout {
-                  background: #b3b9c4;
-                }
-              }
-
-              td:first-child {
-                img {
-                  width: 32px;
-                  height: 32px;
-                  object-fit: cover;
-                  margin-right: 10px;
-                }
-              }
+               }
             }
-          }
-        }
+
+            .right-sidebar-action-button {
+               @include breakpoint(xxxl) {
+                  display: none;
+               }
+            }
+         }
       }
 
-      .revenue-by-region {
-        background: $white;
-        border-radius: 16px;
-        box-shadow: $shadow;
-        padding: 24px 20px;
+      .main-content {
+         margin-top: 32px;
+         padding: 0 28px;
 
-        div {
-          h5 {
-            font-family: $font-inter;
-            color: $text-color-4;
-            font-weight: 600;
-          }
-        }
-
-        .revenue-chart {
-          width: 100%;
-          max-height: 250px;
-          height: 100%;
-        }
-
-        .revenue-list {
-          margin-top: 20px;
-          background: $bg-color-2;
-          padding: 16px;
-          border-radius: 16px;
-
-          ul {
-            li {
-              margin-bottom: 10px;
-
-              div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                span.country,
-                span.percentage {
+         .welcome-content {
+            margin-bottom: 24px;
+            .content-filters {
+               button {
+                  padding: 10px 16px;
                   font-weight: 500;
+                  border-radius: 8px;
+               }
+
+               button:first-child {
+                  background-color: $bg-color-2;
+                  color: $text-color-3;
+
+                  i {
+                     color: $theme-color;
+                  }
+               }
+
+               button:last-child {
+                  background-color: $theme-color;
+                  color: $white;
+               }
+            }
+         }
+
+         .block-active-user,
+         .block-new-user,
+         .block-engaged-user,
+         .block-returning-user {
+            background: $white;
+            padding: 24px;
+            color: $text-color-4;
+            border-radius: 16px;
+            box-shadow: $shadow;
+
+            .block-content {
+               p {
+                  font-weight: 600;
                   font-size: 14px;
+               }
+
+               h5 {
+                  font-weight: 600 !important;
+                  font-family: $font-inter !important;
+                  color: $text-color-4 !important;
+                  font-size: 28px;
+               }
+            }
+
+            .block-icons {
+               div {
+                  margin-bottom: 20px;
+                  i {
+                     font-size: 24px;
+                  }
+               }
+               span {
+                  font-size: 12px;
+                  font-weight: 400;
+               }
+            }
+
+            .rotate-180 {
+               transform: rotate(120deg);
+            }
+         }
+
+         .main-chart {
+            width: 100%;
+            max-height: 330px;
+
+            .chart-container {
+               background: $white;
+               box-shadow: $shadow;
+               padding: 20px;
+               position: relative;
+               width: 100%;
+               height: 330px;
+               border-radius: 16px;
+            }
+            .legend-btn {
+               cursor: pointer;
+               font-size: 14px;
+               font-weight: normal;
+               color: #555;
+               transition: opacity 0.3s ease;
+            }
+            .legend-btn.hidden {
+               opacity: 0.5;
+            }
+            #myChart {
+               max-height: 260px; /* Adjust chart height to fit within container */
+            }
+         }
+
+         .revenue-table {
+            background: $white;
+            padding: 24px;
+            padding-bottom: 10px;
+            border-radius: 16px;
+            box-shadow: $shadow;
+
+            &-header {
+               h5 {
+                  font-weight: 600;
+                  font-size: 20px;
                   color: $text-color-4;
-                }
-              }
+                  font-family: $font-inter;
+               }
 
-              .progress {
-                height: 2px;
-                margin-top: 4px;
-                background: $white;
-              }
+               .revenue-line {
+                  width: 1px;
+                  height: 20px;
+                  background: #00000033;
+               }
+
+               .filter-button {
+                  padding: 4px 16px;
+                  font-weight: 500;
+                  border-radius: 8px;
+                  background-color: $bg-color-2;
+                  color: $text-color-3;
+                  font-size: 12px;
+                  i {
+                     color: $theme-color;
+                  }
+               }
+
+               .revenue-more-button {
+                  font-size: 20px;
+                  color: $text-color-4;
+               }
             }
-          }
-        }
+
+            &-data {
+               thead {
+                  tr {
+                     border-top: none !important;
+                     th {
+                        background: $theme-fade;
+                        color: #091e42 !important;
+                        font-size: 12px;
+                        font-weight: 500;
+                        overflow: hidden;
+                     }
+
+                     th:first-child {
+                        border-top-left-radius: 16px;
+                        border-left-color: $theme-fade !important;
+                     }
+
+                     th:last-child {
+                        border-top-right-radius: 16px;
+                        border-right-color: $theme-fade !important;
+                     }
+                  }
+               }
+
+               tbody {
+                  tr {
+                     td {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $text-color-4;
+                        padding: 4px 12px;
+
+                        .chip {
+                           border-radius: 4px;
+                           font-weight: 400;
+                           font-size: 12px;
+                           color: $white;
+                           padding: 4px 8px;
+                        }
+
+                        .chip-available {
+                           background: #34c759;
+                        }
+
+                        .chip-reserved {
+                           background: #4376fb;
+                        }
+
+                        .chip-instock {
+                           background: #00c7be;
+                        }
+
+                        .chip-outstock {
+                           background: #ff3b30;
+                        }
+
+                        .chip-backorder {
+                           background: #af52de;
+                        }
+
+                        .chip-limited {
+                           background: #ff9500;
+                        }
+
+                        .chip-soldout {
+                           background: #b3b9c4;
+                        }
+                     }
+
+                     td:first-child {
+                        img {
+                           width: 32px;
+                           height: 32px;
+                           object-fit: cover;
+                           margin-right: 10px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+
+         .revenue-by-region {
+            background: $white;
+            border-radius: 16px;
+            box-shadow: $shadow;
+            padding: 24px 20px;
+
+            div {
+               h5 {
+                  font-family: $font-inter;
+                  color: $text-color-4;
+                  font-weight: 600;
+               }
+            }
+
+            .revenue-chart {
+               width: 100%;
+               max-height: 250px;
+               height: 100%;
+            }
+
+            .revenue-list {
+               margin-top: 20px;
+               background: $bg-color-2;
+               padding: 16px;
+               border-radius: 16px;
+
+               ul {
+                  li {
+                     margin-bottom: 10px;
+
+                     div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        span.country,
+                        span.percentage {
+                           font-weight: 500;
+                           font-size: 14px;
+                           color: $text-color-4;
+                        }
+                     }
+
+                     .progress {
+                        height: 2px;
+                        margin-top: 4px;
+                        background: $white;
+                     }
+                  }
+               }
+            }
+         }
+
+         .revenue-by-ads {
+            background: $white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: $shadow;
+
+            div {
+               h5 {
+                  font-family: $font-inter;
+                  color: $text-color-4;
+                  font-weight: 600;
+               }
+            }
+
+            .revenue-by-ads-chart {
+               width: 100%;
+               max-height: 170px;
+               height: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+
+            .revenue-by-chart-list {
+               .ads,
+               .count {
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 18px;
+                  color: $text-color-4;
+               }
+
+               ul {
+                  li {
+                     margin-bottom: 10px;
+
+                     .revenue-by-ads-circle {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                     }
+                  }
+
+                  li:nth-child(1) .revenue-by-ads-circle {
+                     background: rgba(255, 99, 132);
+                  }
+                  li:nth-child(2) .revenue-by-ads-circle {
+                     background: rgba(54, 162, 235);
+                  }
+                  li:nth-child(3) .revenue-by-ads-circle {
+                     background: rgba(255, 206, 86);
+                  }
+                  li:nth-child(4) .revenue-by-ads-circle {
+                     background: rgba(75, 192, 192);
+                  }
+                  li:nth-child(5) .revenue-by-ads-circle {
+                     background: rgba(153, 102, 255);
+                  }
+               }
+            }
+         }
       }
-
-      .revenue-by-ads {
-        background: $white;
-        padding: 24px;
-        border-radius: 16px;
-        box-shadow: $shadow;
-
-        div {
-          h5 {
-            font-family: $font-inter;
-            color: $text-color-4;
-            font-weight: 600;
-          }
-        }
-
-        .revenue-by-ads-chart {
-          width: 100%;
-          max-height: 170px;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .revenue-by-chart-list {
-          .ads,
-          .count {
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px;
-            color: $text-color-4;
-          }
-
-          ul {
-            li {
-              margin-bottom: 10px;
-
-              .revenue-by-ads-circle {
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-              }
-            }
-
-            li:nth-child(1) .revenue-by-ads-circle {
-              background: rgba(255, 99, 132);
-            }
-            li:nth-child(2) .revenue-by-ads-circle {
-              background: rgba(54, 162, 235);
-            }
-            li:nth-child(3) .revenue-by-ads-circle {
-              background: rgba(255, 206, 86);
-            }
-            li:nth-child(4) .revenue-by-ads-circle {
-              background: rgba(75, 192, 192);
-            }
-            li:nth-child(5) .revenue-by-ads-circle {
-              background: rgba(153, 102, 255);
-            }
-          }
-        }
-      }
-    }
-  }
+   }
 }

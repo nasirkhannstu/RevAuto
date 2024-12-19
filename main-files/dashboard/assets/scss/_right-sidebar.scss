@@ -10,14 +10,18 @@
    width: 100%;
    background: $white;
    height: 100vh;
-   position: sticky;
-   top: 0;
    box-shadow: $shadow;
    overflow-y: auto;
-   display: none;
+   position: fixed;
+   top: 0;
+   right: 0;
+   border: none !important;
    @include breakpoint(xxxl) {
       display: flex;
       flex-direction: column;
+      position: sticky;
+      top: 0;
+      right: unset;
    }
    &::-webkit-scrollbar {
       display: none;
@@ -25,6 +29,17 @@
    -ms-overflow-style: none;
    scrollbar-width: none;
    transition: all 0.5s ease;
+
+   &.offcanvas {
+      @include breakpoint(xxxl) {
+         transform: translateX(0) !important;
+         visibility: visible;
+      }
+   }
+   &.show {
+      transform: translateX(0);
+      visibility: visible;
+   }
 
    &-header {
       .filter-button {
@@ -45,6 +60,12 @@
          font-family: $font-inter !important;
          font-size: 16px !important;
          color: $black !important;
+      }
+
+      .action-button {
+         @include breakpoint(xxxl) {
+            display: none;
+         }
       }
    }
 

@@ -345,6 +345,14 @@
                   <button class="notification-button">
                      <i class="fa-light fa-bell"></i>
                   </button>
+                  <button
+                     class="right-sidebar-action-button"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#rightSidebarToggle"
+                  >
+                     <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </button>
                </div>
             </nav>
 
@@ -944,7 +952,12 @@
          </div>
 
          <!-- right right sidebar -->
-         <aside class="right-sidebar">
+         <aside
+            class="right-sidebar offcanvas offcanvas-end"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="rightSidebarToggle"
+         >
             <div
                class="right-sidebar-header d-flex align-items-center justify-content-between"
             >
@@ -954,7 +967,7 @@
                      Today
                      <i class="fa-sharp fa-solid fa-chevron-up ms-2"></i>
                   </button>
-                  <button>
+                  <button class="action-button">
                      <i
                         class="fa-sharp fa-solid fa-arrow-right color-primary"
                      ></i>

@@ -431,7 +431,8 @@ span {
   color: var(--white);
 }
 .car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .theme-button,
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .notification-button {
+.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .notification-button,
+.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .right-sidebar-action-button {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -441,9 +442,15 @@ span {
   border: 1px solid rgba(255, 255, 255, 0.1215686275);
 }
 .car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .theme-button i,
-.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .notification-button i {
+.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .notification-button i,
+.car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .right-sidebar-action-button i {
   font-size: 24px;
   color: var(--white);
+}
+@media (min-width: 1600px) {
+  .car-dashboard-section .car-dashboard-content .car-dashboard-nav .right-content .right-sidebar-action-button {
+    display: none;
+  }
 }
 .car-dashboard-section .car-dashboard-content .main-content {
   margin-top: 32px;
@@ -866,11 +873,12 @@ span {
   width: 100%;
   background: var(--white);
   height: 100vh;
-  position: sticky;
-  top: 0;
   box-shadow: var(--box-shadow);
   overflow-y: auto;
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: none !important;
   -ms-overflow-style: none;
   scrollbar-width: none;
   transition: all 0.5s ease;
@@ -879,10 +887,23 @@ span {
   .right-sidebar {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    right: unset;
   }
 }
 .right-sidebar::-webkit-scrollbar {
   display: none;
+}
+@media (min-width: 1600px) {
+  .right-sidebar.offcanvas {
+    transform: translateX(0) !important;
+    visibility: visible;
+  }
+}
+.right-sidebar.show {
+  transform: translateX(0);
+  visibility: visible;
 }
 .right-sidebar-header .filter-button {
   padding: 4px 20px;
@@ -901,6 +922,11 @@ span {
   font-family: var(--inter) !important;
   font-size: 16px !important;
   color: var(--black) !important;
+}
+@media (min-width: 1600px) {
+  .right-sidebar-header .action-button {
+    display: none;
+  }
 }
 .right-sidebar-notifications {
   margin-top: 24px;
