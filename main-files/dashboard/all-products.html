@@ -141,14 +141,12 @@
                               <a href="#">Create With AI</a>
                            </li>
                            <li>
-                              <a
-                                 href="create-product.html"
-                                 class="active-sublist"
-                                 >Create New</a
-                              >
+                              <a href="create-product.html">Create New</a>
                            </li>
                            <li>
-                              <a href="all-products.html">View All</a>
+                              <a href="all-products.html" class="active-sublist"
+                                 >View All</a
+                              >
                            </li>
                            <li>
                               <a href="#">Products Images</a>
@@ -343,7 +341,7 @@
                         </li>
                         <li class="d-none d-md-inline">/</li>
                         <li class="text-white active" aria-current="page">
-                           Create New
+                           View All
                         </li>
                      </ol>
                   </div>
@@ -375,175 +373,8 @@
             </nav>
 
             <!-- main Content started -->
-            <div class="main-content create-product">
-               <!-- welcome content -->
-               <form action="#">
-                  <div class="create-product-uploads">
-                     <div class="uploads-header">
-                        <h4>Add Product Photo</h4>
-                     </div>
-                     <hr class="m-0 p-0" style="background-color: #dfe2e6" />
-                     <div class="uploads-container">
-                        <label for="images">
-                           <i class="fa-regular fa-cloud-arrow-up"></i>
-                           <p class="title">
-                              Drop files here, or <span>click to upload</span>
-                           </p>
-                           <p class="message">
-                              1660x1200 (423) recommended, PNG, JPG And GIF has
-                              an allowed
-                           </p>
-                        </label>
-                        <input type="file" id="images" multiple hidden />
-                     </div>
-                  </div>
-
-                  <div class="create-product-details">
-                     <div class="details-header">
-                        <h4>Add Product Information</h4>
-                     </div>
-                     <hr class="m-0 p-0" style="background-color: #dfe2e6" />
-                     <div class="details-container">
-                        <div class="row g-4">
-                           <div class="col-md-6">
-                              <label for="product-name" class="form-label"
-                                 >Product Name</label
-                              >
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 id="product-name"
-                                 name="name"
-                                 placeholder="Enter product name"
-                              />
-                           </div>
-                           <div class="col-md-6">
-                              <label for="product-name" class="form-label"
-                                 >Product Category</label
-                              >
-                              <select id="inputState" class="form-select">
-                                 <option selected disabled>
-                                    Choose a Category
-                                 </option>
-                                 <option>Category 1</option>
-                                 <option>Category 2</option>
-                                 <option>Category 3</option>
-                                 <option>Category 4</option>
-                                 <option>Category 5</option>
-                              </select>
-                           </div>
-                           <div class="col-md-4">
-                              <label for="product-name" class="form-label"
-                                 >Product Price</label
-                              >
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 id="product-name"
-                                 name="name"
-                                 placeholder="Enter product name"
-                              />
-                           </div>
-                           <div class="col-md-4">
-                              <label for="product-name" class="form-label"
-                                 >Stock Status</label
-                              >
-
-                              <select id="inputState" class="form-select">
-                                 <option selected>Choose a Stock</option>
-                                 <option>In Stock</option>
-                                 <option>Out of Stock</option>
-                                 <option>Limited Stock</option>
-                                 <option>Sold Out</option>
-                              </select>
-                           </div>
-                           <div class="col-md-4">
-                              <label for="product-name" class="form-label"
-                                 >SKU</label
-                              >
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 id="product-name"
-                                 name="name"
-                                 placeholder="Enter product name"
-                              />
-                           </div>
-
-                           <div class="col-12">
-                              <label for="product-name" class="form-label">
-                                 Description
-                              </label>
-                              <textarea
-                                 class="form-control"
-                                 id="product-name"
-                                 name="name"
-                                 placeholder="Enter product name"
-                                 rows="6"
-                              ></textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="create-product-colors">
-                     <div class="colors-header">
-                        <h6>Colors:</h6>
-                     </div>
-                     <hr class="m-0 p-0" style="background-color: #dfe2e6" />
-                     <div class="colors-container">
-                        <div
-                           class="btn-group colors-wrapper"
-                           role="group"
-                           aria-label="Basic radio toggle button group"
-                        >
-                           <input
-                              type="radio"
-                              class="btn-check"
-                              name="btnradio"
-                              id="btnradio1"
-                              autocomplete="off"
-                              checked
-                           />
-                           <label class="" for="btnradio1"
-                              ><span class="color-1"></span
-                           ></label>
-
-                           <input
-                              type="radio"
-                              class="btn-check"
-                              name="btnradio"
-                              id="btnradio2"
-                              autocomplete="off"
-                           />
-                           <label class="" for="btnradio2"
-                              ><span class="color-2"></span
-                           ></label>
-
-                           <input
-                              type="radio"
-                              class="btn-check"
-                              name="btnradio"
-                              id="btnradio3"
-                              autocomplete="off"
-                           />
-                           <label class="" for="btnradio3"
-                              ><span class="color-3"></span
-                           ></label>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="create-product-buttons d-grid gap-3">
-                     <button class="btn btn-primary" type="submit">
-                        Create Now
-                     </button>
-                     <button class="btn btn-secondary" type="reset">
-                        Cancel
-                     </button>
-                     <p>&copy; 2025 RevAuto</p>
-                  </div>
-               </form>
+            <div class="main-content all-products">
+               <!--  -->
                <!--  -->
             </div>
          </div>

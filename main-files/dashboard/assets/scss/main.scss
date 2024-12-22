@@ -9,6 +9,7 @@
 @use "left-sidebar" as *;
 @use "right-sidebar" as *;
 @use "create-product" as *;
+@use "all-products" as *;
 
 body {
    background: $bg-color;
