@@ -1,7 +1,9 @@
 @use "variables" as variables;
 @use "typography" as typography;
+@use "mixins" as *;
 
 .create-product {
+   margin-bottom: 32px;
    &-uploads {
       background: variables.$white;
       border-radius: 12px;
@@ -28,6 +30,10 @@
             height: 320px;
             border-radius: 16px;
             cursor: pointer;
+            padding: 10px;
+            @include breakpoint(lg) {
+               padding: 0px;
+            }
 
             i {
                font-size: 49px;
@@ -41,6 +47,7 @@
                margin-top: 16px;
                margin-bottom: 16px;
                color: #091e42;
+               text-align: center;
 
                span {
                   color: variables.$theme-color;
@@ -52,8 +59,154 @@
                font-family: typography.$font-roboto;
                font-size: 14px;
                font-weight: 400;
+               text-align: center;
             }
          }
+      }
+   }
+
+   &-details {
+      background: variables.$white;
+      border-radius: 12px;
+      margin-top: 20px;
+
+      .details-header {
+         padding: 24px 16px;
+         h4 {
+            color: variables.$black;
+            font-size: 24px;
+            font-weight: 700;
+         }
+      }
+
+      .details-container {
+         margin-top: 20px;
+         padding: 24px;
+
+         label {
+            color: variables.$text-color-5 !important;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: typography.$font-roboto;
+         }
+
+         input {
+            background: variables.$body;
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid #ebedf0;
+
+            &::placeholder {
+               color: #505f79;
+               font-family: typography.$font-roboto;
+            }
+         }
+
+         select {
+            background: variables.$body;
+            font-size: 14px;
+            font-weight: 400;
+            appearance: none;
+            padding-right: 30px;
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='gray' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 12px;
+            border: 1px solid #ebedf0;
+         }
+
+         textarea {
+            background: variables.$body;
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid #ebedf0;
+
+            &::placeholder {
+               color: #505f79;
+               font-family: typography.$font-roboto;
+            }
+         }
+      }
+   }
+
+   &-colors {
+      background: variables.$white;
+      border-radius: 12px;
+      margin-top: 20px;
+
+      .colors-header {
+         padding: 14px;
+         h6 {
+            color: variables.$black;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: typography.$font-inter;
+         }
+      }
+
+      .colors-container {
+         padding: 20px 24px;
+
+         .colors-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            label {
+               width: 60px;
+               height: 60px;
+               background: #d2ddfd;
+               border-radius: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               span {
+                  width: 32px;
+                  height: 32px;
+                  border-radius: 50%;
+               }
+
+               span.color-1 {
+                  background: #b2beb5;
+               }
+               span.color-2 {
+                  background: variables.$black;
+               }
+               span.color-3 {
+                  background: #e9cf10;
+               }
+            }
+         }
+      }
+   }
+
+   &-buttons {
+      margin-top: 32px;
+      button {
+         font-size: 18px;
+         font-weight: 400;
+      }
+
+      button[type="submit"] {
+         background: transparent;
+         border-radius: 32px;
+         color: variables.$text-color-5;
+         border: 1px solid #dfe2e6;
+      }
+
+      button[type="reset"] {
+         background: #ff9500;
+         border-color: #ff9500;
+         border-radius: 32px;
+         color: variables.$white;
+      }
+
+      p {
+         text-align: center;
+         font-size: 12px;
+         color: #00000066;
+         font-family: typography.$font-inter;
       }
    }
 }
