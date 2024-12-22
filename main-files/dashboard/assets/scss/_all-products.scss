@@ -1,2 +1,55 @@
+@use "variables" as vars;
+@use "typography" as typo;
+
+body {
+   background: #fafbfb !important;
+}
+
 .all-products {
+   &-header {
+      h4 {
+         font-weight: 700;
+         font-size: 24px;
+      }
+
+      select {
+         background: vars.$bg-color-2;
+         border: 2px solid vars.$bg-color-2 !important;
+         font-size: 16px;
+         font-weight: 500;
+         appearance: none;
+         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='blue' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/></svg>");
+         background-repeat: no-repeat;
+         background-position: right 10px center;
+         background-size: 12px;
+         width: fit-content !important;
+         color: vars.$text-color-3;
+         font-family: typo.$font-inter;
+         border-radius: 8px;
+         padding: 6px 16px;
+         padding-right: 30px;
+      }
+
+      .add-product-button {
+         background: vars.$theme-color;
+         color: vars.$white;
+         font-size: 16px;
+         font-weight: 500;
+         font-family: typo.$font-inter;
+         border-radius: 8px;
+         padding: 6px 16px;
+         transition: all 0.3s ease;
+
+         &:hover {
+            background: vars.$theme-color-2;
+         }
+      }
+   }
+
+   &-table {
+      background: vars.$white;
+      border-radius: 16px;
+      box-shadow: vars.$shadow;
+      margin-top: 24px;
+   }
 }

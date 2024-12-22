@@ -1373,6 +1373,51 @@ span {
 }
 
 body {
+  background: #fafbfb !important;
+}
+
+.all-products-header h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.all-products-header select {
+  background: var(--bg-2);
+  border: 2px solid var(--bg-2) !important;
+  font-size: 16px;
+  font-weight: 500;
+  appearance: none;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='blue' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  width: fit-content !important;
+  color: var(--text-3);
+  font-family: var(--inter);
+  border-radius: 8px;
+  padding: 6px 16px;
+  padding-right: 30px;
+}
+.all-products-header .add-product-button {
+  background: var(--theme);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--inter);
+  border-radius: 8px;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+}
+.all-products-header .add-product-button:hover {
+  background: var(--theme2);
+}
+.all-products-table {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  margin-top: 24px;
+}
+
+body {
   background: var(--bg);
 }
 
