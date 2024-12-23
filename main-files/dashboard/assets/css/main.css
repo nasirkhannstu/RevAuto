@@ -1415,6 +1415,50 @@ body {
   border-radius: 16px;
   box-shadow: var(--box-shadow);
   margin-top: 24px;
+  padding: 24px;
+}
+.all-products-table table thead tr {
+  border: 0;
+}
+.all-products-table table thead tr th {
+  background: var(--bg-2);
+  padding-left: 12px;
+  padding-right: 12px;
+  color: var(--text-5);
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--inter);
+  border-color: var(--bg-2);
+  border-right: 0;
+}
+.all-products-table table thead tr th:first-child {
+  border-top-left-radius: 12px;
+}
+.all-products-table table thead tr th:last-child {
+  border-top-right-radius: 12px;
+}
+.all-products-table table tbody tr td {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--inter);
+  color: var(--text-4);
+}
+.all-products-table table tbody tr td .title {
+  font-family: "Kanit", sans-serif;
+}
+.all-products-table table tbody tr td img {
+  max-width: 40px;
+  height: auto;
+  width: 100%;
+}
+.all-products-table table tbody tr td .table-rating {
+  background: var(--body);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.all-products-table table tbody tr td .table-rating i {
+  color: #ffcc00;
 }
 
 body {
