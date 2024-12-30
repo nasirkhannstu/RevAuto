@@ -1,0 +1,154 @@
+.register-2-section {
+   padding: 50px 0px;
+
+   .register-2-header {
+      p {
+         margin-top: 10px;
+      }
+   }
+
+   .register-2-content {
+      margin-top: 30px;
+      @include breakpoint(md) {
+         margin-top: 35px;
+      }
+      @include breakpoint(lg) {
+         margin-top: 40px;
+      }
+      border-radius: 16px;
+      background: $white;
+      box-shadow: 0px 4px 72px 0px #0000001f;
+      border: 1px solid #e0e1e2;
+      overflow: hidden;
+
+      .register-2-form-container {
+         padding: 40px;
+
+         .form-header {
+            h2 {
+               font-size: 32px;
+               font-weight: 700;
+               margin-bottom: 10px;
+            }
+         }
+
+         .register-form {
+            div {
+               .form-item {
+                  margin-bottom: 24px;
+               }
+
+               label {
+                  color: #0c0d0d;
+                  font-size: 18px;
+                  font-weight: 400;
+                  font-feature-settings: $body-font;
+                  margin-bottom: 12px;
+               }
+
+               div.input {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  background: $bg-color;
+                  border-radius: 8px;
+                  padding: 18px;
+
+                  input {
+                     background: transparent;
+                     border: none;
+                     border-radius: 8px;
+                     padding: 0;
+                     margin: 0;
+                     outline: none;
+                     border: none;
+                     font-size: 16px;
+                     font-weight: 300;
+                     font-family: $body-font;
+                     color: #575a61;
+
+                     &:focus {
+                        outline: none;
+                     }
+                  }
+               }
+
+               button[type="submit"] {
+                  background: $theme-color;
+                  color: $white;
+                  border: none;
+                  border-radius: 8px;
+                  padding: 12px 0;
+                  font-size: 16px;
+                  font-weight: 500;
+                  font-family: $body-font;
+                  cursor: pointer;
+                  transition: all 0.3s;
+
+                  &:hover {
+                     background: darkblue;
+                  }
+               }
+            }
+         }
+
+         .hr-text {
+            padding: 35px 0px;
+
+            div {
+               position: relative;
+               height: 1px;
+               background: #e0e1e2;
+               width: 100%;
+
+               .hr-text-content {
+                  display: inline-block;
+                  background: #fff;
+                  font-weight: 300;
+                  font-size: 16px;
+                  color: #575a61;
+                  font-family: $body-font;
+                  border-radius: 30rem;
+                  padding: 0.2rem 1rem;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+               }
+            }
+         }
+
+         .register-2-social {
+            a {
+               width: 48px;
+               height: 48px;
+               border-radius: 50%;
+               border: 1px solid #e0e1e2;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               transition: all 0.3s;
+
+               &:hover {
+                  background: $theme-color;
+                  border-color: $theme-color;
+                  color: $white;
+               }
+            }
+         }
+      }
+   }
+
+   .register-2-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: linear-gradient(
+         180.66deg,
+         rgba(17, 156, 255, 0.6) 3.99%,
+         rgba(67, 118, 251, 0.5) 51.71%,
+         rgba(67, 118, 251, 0) 99.43%
+      );
+   }
+}

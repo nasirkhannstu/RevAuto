@@ -1,0 +1,21 @@
+.footer-2 {
+   div.container {
+      padding: 32px 0;
+      font-weight: 300;
+      font-size: 18px;
+      color: #121721;
+
+      .separator {
+         color: #b2c7fd;
+      }
+
+      ul li a {
+         transition: all 0.3s ease;
+
+         &:hover {
+            color: #4376fb;
+            text-decoration: underline;
+         }
+      }
+   }
+}
