@@ -8716,6 +8716,7 @@ span {
   font-weight: 300;
   font-family: "Kanit", sans-serif;
   color: #575a61;
+  width: 100%;
 }
 .register-2-section .register-2-content .register-2-form-container .register-form div div.input input:focus {
   outline: none;
