@@ -8702,7 +8702,7 @@ span {
   justify-content: space-between;
   background: var(--bg);
   border-radius: 8px;
-  padding: 18px;
+  padding: 16px 18px;
 }
 .register-2-section .register-2-content .register-2-form-container .register-form div div.input input {
   background: transparent;
@@ -8791,6 +8791,110 @@ span {
   font-size: 16px;
   font-weight: 400;
   font-family: "Kanit", sans-serif;
+}
+
+.register-3-section .register-3-content {
+  width: 100%;
+  height: 100vh;
+  display: flex !important;
+}
+.register-3-section .register-3-content .register-3-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 12px 0px 72px 0px rgba(0, 0, 0, 0.1607843137);
+  width: 100%;
+  height: 100%;
+}
+.register-3-section .register-3-content .register-3-right {
+  display: grid;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(180.66deg, rgba(104, 17, 255, 0.24) 3.99%, rgba(104, 17, 255, 0.08) 51.71%, rgba(104, 17, 255, 0) 99.43%);
+}
+.register-3-section .register-3-content .register-3-right .floating-home-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  box-shadow: 0px 0px 24px 0px rgba(67, 118, 251, 0.4784313725);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--theme);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .register-3-section .register-3-content .register-3-right .floating-home-button {
+    right: 45px;
+    top: 45px;
+  }
+}
+@media (min-width: 1400px) {
+  .register-3-section .register-3-content .register-3-right .floating-home-button {
+    right: 55px;
+    top: 55px;
+  }
+}
+.register-3-section .register-3-content .register-3-right .floating-home-button i {
+  font-size: 30px;
+}
+.register-3-section .register-3-content .register-3-right .register-3-img img {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  flex-shrink: 1;
+}
+@media (min-width: 992px) {
+  .register-3-section .register-3-content .register-3-right .register-3-img img {
+    max-height: 645px;
+  }
+}
+.register-3-section .register-3-content .register-3-right .features-container {
+  margin: 40px;
+  margin-top: 0px;
+}
+.register-3-section .register-3-content .register-3-right .features-container .feature-item {
+  border: 1px solid #b2c7fd;
+  padding: 18px;
+  border-radius: 16px;
+}
+.register-3-section .register-3-content .register-3-right .features-container .feature-item h4 {
+  margin-bottom: 8px;
+}
+.register-3-section .register-3-content .register-3-right .features-container .feature-item p {
+  color: #575a61;
+  font-size: 16px;
+  line-height: 24px;
+}
+.register-3-section .register-3-content .register-3-right footer.footer-2 {
+  align-self: flex-end;
+}
+.register-3-section .register-3-content .register-3-right footer.footer-2 .container {
+  padding: 26px;
+}
+@media (min-width: 992px) {
+  .register-3-section .register-3-content .register-3-right footer.footer-2 .container .footer-2-merge-3 {
+    flex-direction: column !important;
+  }
+  .register-3-section .register-3-content .register-3-right footer.footer-2 .container .footer-2-merge-3 p {
+    text-align: center !important;
+  }
+  .register-3-section .register-3-content .register-3-right footer.footer-2 .container .footer-2-merge-3 ul {
+    margin: 0 auto !important;
+    margin-top: 8px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .register-3-section .register-3-content .register-3-right footer.footer-2 .container .footer-2-merge-3 {
+    flex-direction: row !important;
+  }
+  .register-3-section .register-3-content .register-3-right footer.footer-2 .container .footer-2-merge-3 ul {
+    margin: 0 !important;
+  }
 }
 
 .footer-2 div.container {
