@@ -288,3 +288,20 @@
       }
    }
 }
+
+.login-3-section {
+   .remember-me {
+      label {
+         font-weight: 400 !important;
+         font-size: 16px !important;
+         color: #555 !important;
+         font-family: $body-font !important;
+      }
+   }
+
+   .forgot-password {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $body-font;
+   }
+}
